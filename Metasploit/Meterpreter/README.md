@@ -4,9 +4,8 @@
 > Laboratorio Meterpreter en <b>framework Metasploit</b> (Kali Linux 2023.4). Meterpreter (Meterpreter es el diminutivo para meta-interprete) es un payload que permite ejecutar tareas de forma remota en una máquina que se ejecuta en un nivel muy bajo de la máquina, por lo que es bastante difícil de detectar y, por tanto, muy útil para evadir sistemas antivirus, IDS o IPS. Gracias al payload Meterpreter, es posible realizar multitud de acciones sobre el sistema vulnerado, si bien no tiene porqué comportarse de la misma forma en todos los sistemas operativos. Este Payload que se ejecuta después del proceso de explotación o abuso de una vulnerabilidad en un sistema operativo, siempre en memoria, lo que evitará ser detectado.
 
 > ### Trabajando con Meterpreter: MSFVenom y la generación de un Payload :computer:
-> Con MSFVenom se simplifica la generación de payloads y los intentos de codificación de éstos.
-> Entre las opciones más destacadas de MSFVenom, se encuentra:
-- Payload, parámetro que especifica el payload que se utilizará.
+> Con MSFVenom se simplifica la generación de payloads y los intentos de codificación de éstos, entre cuyas opciones podemos destacar: 
+> - Payload, parámetro que especifica el payload que se utilizará.
 - Encoder, otro parámetro que especifica el algoritmo que se utilizará para realizar la codificación.
 - Format, donde se especifica el formato de salida del fichero (normalmente EXE, PY...)
 - Bad-chars, que indica un listado de bytes que no se deben generar en el proceso de obtención del payload (como por ejemplo, si se quieren evitar los bytes nulos '\x00' se añaden en la lista de este parámetro).
