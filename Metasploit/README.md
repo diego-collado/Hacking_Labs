@@ -53,13 +53,13 @@ Es un software de código abierto, originalmente escrito en Perl y posteriorment
 <br>
 
 > [!IMPORTANT]
+> Antes de arrancar el framework Metasploit, se hace necesario seguir una serie de pasos
 
 ### Pre-requisitos 📋
-Antes de arrancar el framework, se hace necesario el inicio del servicio de base de datos <b>PostgreSQL</b>:
-
-```
+ Iniciar del servicio de base de datos <b>PostgreSQL</b>:
+'''
 systemctl start postgresql
-```
+'''
 
 
 ## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
