@@ -25,7 +25,7 @@ Las funciones más destacadas son:
 
 ## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/monstruo.png" width="8%">Accede al contenido  :floppy_disk:
 
-- [Meterpreter](Meterpreter): LABORATORIO Nº 1 - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom)
+- [Meterpreter](Meterpreter): <b><u>LABORATORIO Nº 1</u></b> - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom)
 
 <br>
 
