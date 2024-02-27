@@ -8,7 +8,7 @@
 
 # :desktop_computer:	Metasploit 
 
-
+<p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="metasploit.png">
   <source media="(prefers-color-scheme: light)" srcset="metasploit.png">
@@ -103,6 +103,14 @@ Nuestra pantalla deberá ser similar a esta:
 </p>
 
 > A partir de este momento, tenemos plenamente funcional nuestro Metasploit Framework
+
+## Ejecutando las pruebas previas en busca de información: <b>INFORMATION GATHERING</b> ⚙️
+
+Antes de realizar un ataque, y para que este sea óptimo, es necesario el escaneo de la dirección IP del objetivo, donde se podrá adquirir información valiosa como servicios levantados, puertos abiertos, sistemas operativos y mucho más. Para ello, se ejecuta:
+
+```
+nmap -sS -sV -A [IP_del_objetivo]
+```
 
 <br>
 <br>
