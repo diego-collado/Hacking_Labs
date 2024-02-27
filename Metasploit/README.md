@@ -53,8 +53,14 @@ Es un software de código abierto, originalmente escrito en Perl y posteriorment
 <br>
 
 > [!IMPORTANT]
-> Laboratorios preparados con el <b>framework Metasploit</b> (<u>Kali Linux 2023.4</u>). En este laboratorio se trata de comprometer los sistemas utilizando cualquiera de sus más de 1600 exploits que, de una forma u otra, tratarán de aprovechar las vulnerabilidades que se hayan encontrado en las fases previas de analítica y OSINT.
-Es un software de código abierto, originalmente escrito en Perl y posteriormente traducido a Ruby para una mayor eficiencia. Está muy enfocada a  auditores de seguridad y equipos Red Team y Blue Team.
+> ### Pre-requisitos 📋
+
+_Antes de arrancar el framework, se hace necesario el inicio del servicio de base de datos <b>PostgreSQL</b>:
+
+```
+Da un ejemplo
+```
+
 
 ## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
 
