@@ -13,20 +13,19 @@
 Es un software de código abierto, originalmente escrito en Perl y posteriormente traducido a Ruby para una mayor eficiencia.
 
 Las funciones más destacadas son: 
-  - Escanear y recopilar información: Utilizando herramientas como Nmap, Metasploit realiza una recolección exhaustiva de datos sobre el objetivo del ataque.
-  - Identificar y explorar vulnerabilidades: La plataforma detecta vulnerabilidades conocidas en sistemas, analizando el sistema Common Vulnerabilities and Exposures (CVE) para encontrar los exploits correspondientes.
-  - Escalada de privilegios: Metasploit incorpora herramientas para conseguir privilegios de administrador en diversos sistemas operativos, desde Microsoft Windows hasta Linux.
-  - Instalar backdoors: A través de su módulo de payloads, Metasploit permite la instalación de backdoors, abriendo puertas traseras en el sistema objetivo para la extracción de información confidencial.
-  - Hacer fuzzing: Automatizando el ingreso de valores aleatorios, Metasploit busca activamente fallas informáticas que posibiliten la infiltración en dispositivos o redes.
-  - Evasión de antivirus: La plataforma incluye herramientas para la ofuscación de código, reescribiéndolo de manera que se vuelva indetectable para los sistemas de defensa.
-  - Eliminación de rastros: Metasploit ofrece métodos para borrar la huella digital del atacante, eliminando logs y archivos maliciosos utilizados durante el hackeo.
+  - <b>Escaneo y recopilación de información</b>: Utilizando herramientas como Nmap, Metasploit realiza una recolección exhaustiva de datos sobre el objetivo del ataque.
+  - <b>Identificación y exploración de vulnerabilidades</b>: La plataforma detecta vulnerabilidades conocidas en sistemas, analizando el sistema Common Vulnerabilities and Exposures (CVE) para encontrar los exploits correspondientes.
+  - <b>Escalada de privilegios</b>: Metasploit incorpora herramientas para conseguir privilegios de administrador en diversos sistemas operativos (Windows, Android, Linux...).
+  - <b>Instalación de backdoors</b>: A través de su módulo de payloads, Metasploit permite la instalación de backdoors (puertas traseras) en el sistema objetivo para la extracción de información confidencial, cifrado y un largo etcétera.
+  - <b>Realización de fuzzing</b>: Automatizando el ingreso de valores aleatorios, Metasploit busca activamente fallos que posibiliten la infiltración en dispositivos o redes.
+  - <b>Evasión de antivirus</b>: La plataforma incluye herramientas para la ofuscación de código, reescribiéndolo de manera que se vuelva indetectable para los sistemas de defensa.
+  - <b>Eliminación de rastros</b>: Metasploit ofrece métodos para borrar la huella digital del atacante, eliminando logs y archivos maliciosos utilizados durante el hackeo.
 
 <br>
 
 ## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/mal.png" width="8%">Accede al contenido 
 
-- [Metasploit](Metasploit): Eje
-- [CheatSheet Variadas](CheatSheets): MySQL, SQLite, PyCharm...
+- [Meterpreter](Meterpreter): LABORATORIO Nº 1 - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom)
 
 
 <br>
