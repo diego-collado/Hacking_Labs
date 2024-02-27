@@ -137,4 +137,4 @@ Veamos el porqué de esta codificación:
 
 # <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
 
-- [Meterpreter](Meterpreter): <b>LABORATORIO Nº 1</b> - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom)
+- <b>LABORATORIO Nº 1</b>: [Meterpreter] (Meterpreter)  - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom)
