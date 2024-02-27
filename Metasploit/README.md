@@ -51,7 +51,7 @@ Es un software de código abierto, originalmente escrito en Perl y posteriorment
 
 <br>
 
-## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="hack.png" width="4%"> Accede a los laboratorios  :floppy_disk:
+## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
 
 - [Meterpreter](Meterpreter): <b><u>LABORATORIO Nº 1</u></b> - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom)
 
