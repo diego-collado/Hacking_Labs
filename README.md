@@ -37,4 +37,4 @@ Ejemplos funcionales de cada tipos de ataque (últimas versiones), orientados a 
 </p>
 
 
-![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+![Badge en Constante Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
