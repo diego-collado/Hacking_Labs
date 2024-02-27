@@ -57,9 +57,11 @@ Es un software de código abierto, originalmente escrito en Perl y posteriorment
 
 ### Pre-requisitos 📋
  Iniciar del servicio de base de datos <b>PostgreSQL</b>:
-'''
+<b>
+```
 systemctl start postgresql
-'''
+```
+</b>
 
 
 ## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
