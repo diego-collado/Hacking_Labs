@@ -87,14 +87,14 @@ Nuestra pantalla deberá ser similar a esta:
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="metasploit_1.jpg">
-  <source media="(prefers-color-scheme: light)" srcset="metasploit_1.jpg">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="metasploit_1.jpg" width="50%">
+  <source media="(prefers-color-scheme: dark)" srcset="metasploit_1.png">
+  <source media="(prefers-color-scheme: light)" srcset="metasploit_1.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="metasploit_1.png" width="50%">
 </picture>
 </p>
 
 
-<img alt="Hacking_Labs, más allá de la Ciberseguridad" src="metasploit_1.jpg" width="50%">
+<img alt="Hacking_Labs, más allá de la Ciberseguridad" src="metasploit_1.png" width="50%">
 
 
 
