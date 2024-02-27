@@ -157,6 +157,11 @@ exploit
 - <b>reg command</b>: Interactua, crea, elimina, consulta, setea... y mucho más en el registro del destino.
 - <b>setdesktop number</b>: Cambia a una pantalla diferente en función de quién está conectado.
 - <b>screenshot</b>: Se graba una captura de pantalla de la pantalla del host objetivo en el host atacante.
+- <b>Record_mic</b>: Con este parámetro podremos activar el micrófono y grabar guardando en el host atacante en un archivo de audio indicado. Se ha de tener en cuenta que (por defecto) siempre grabará en segundos, a no ser que se indique con el parámetro d el número de segundos a grabar.
+- <b>Webcam_chat</b>: Se establece comunicación con la víctima, es decir, realizar un video chat.
+- <b>Webcam_list</b>: Proporciona una lista de las webcams que tenga el equipo.
+- <b>Webcam_snap</b>: Se puede activar la webcam y realizar una foto de lo que se esté viendo en ese instante.
+- <b>Webcam_stream</b>: Con esta instrucción se activa la webcam y se visualiza en tiempo real.
 - <b>upload file</b>: Subir un archivo al objetivo.
 - <b>download file</b>: Descargar los archivos desde el objetivo.
 - <b>keyscan_start</b>: Detección de las pulsaciones de teclado en el destino remoto.
