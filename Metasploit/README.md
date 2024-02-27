@@ -126,8 +126,8 @@ Veamos el porqué de esta codificación:
 
 <br>
 
-## :bricks:	CheatSheets de utilidad	::book
-- [CheatSheet](CheatSheet): CheatSheet (hoja de trucos) para Metasploit y Nmap.
+## :bricks:	CheatSheets de utilidad	:books:
+- [CheatSheet](CheatSheet): CheatSheet (hoja de trucos) para <b>Metasploit</b> y <b>Nmap</b>.
 
 
 <br>
