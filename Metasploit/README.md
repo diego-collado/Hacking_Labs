@@ -9,9 +9,17 @@
 # :desktop_computer:	Hacking_Labs 
 
 > [!CAUTION]
-> Laboratorios preparados para realizar cualquiera de los ataques más comunes que hay disponible en la red (XSS, Metasploit...), basados en el desarrollo natural de clases de Hacking Ético y Ciberseguridad (nivel básico, medio y avanzado), por lo que se incluirán muchos scripts, cheatsheet y programas que serán necesarios para el correcto desarrollo de cada fase.
+> Laboratorios preparados con el <b>framework Metasploit</b> (Kali Linux 2023.4). En este laboratorio se trata de comprometer los sistemas utilizando cualquiera de sus más de 900 exploits que, de una forma u otra, tratarán de aprovechar las vulnerabilidades que se hayan encontrado en las fases previas de analítica y OSINT.
+Es un software de código abierto, originalmente escrito en Perl y posteriormente traducido a Ruby para una mayor eficiencia.
 
-Ejemplos funcionales de cada tipos de ataque (últimas versiones), orientados a proporcionar conocimientos teórico-prácticos de Hacking Ético y Ciberseguridad.
+Las funciones más destacadas son: 
+  - Escanear y recopilar información: Utilizando herramientas como Nmap, Metasploit realiza una recolección exhaustiva de datos sobre el objetivo del ataque.
+  - Identificar y explorar vulnerabilidades: La plataforma detecta vulnerabilidades conocidas en sistemas, analizando el sistema Common Vulnerabilities and Exposures (CVE) para encontrar los exploits correspondientes.
+  - Escalada de privilegios: Metasploit incorpora herramientas para conseguir privilegios de administrador en diversos sistemas operativos, desde Microsoft Windows hasta Linux.
+  - Instalar backdoors: A través de su módulo de payloads, Metasploit permite la instalación de backdoors, abriendo puertas traseras en el sistema objetivo para la extracción de información confidencial.
+  - Hacer fuzzing: Automatizando el ingreso de valores aleatorios, Metasploit busca activamente fallas informáticas que posibiliten la infiltración en dispositivos o redes.
+  - Evasión de antivirus: La plataforma incluye herramientas para la ofuscación de código, reescribiéndolo de manera que se vuelva indetectable para los sistemas de defensa.
+  - Eliminación de rastros: Metasploit ofrece métodos para borrar la huella digital del atacante, eliminando logs y archivos maliciosos utilizados durante el hackeo.
 
 <br>
 
