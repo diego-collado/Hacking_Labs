@@ -23,7 +23,7 @@ Las funciones más destacadas son:
 
 <br>
 
-## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/mal.png" width="8%">Accede al contenido 
+## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/monstruo.png" width="8%">Accede al contenido 
 
 - [Meterpreter](Meterpreter): LABORATORIO Nº 1 - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom)
 
