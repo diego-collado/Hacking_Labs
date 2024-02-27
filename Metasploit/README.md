@@ -64,7 +64,7 @@ Es un software de código abierto, originalmente escrito en Perl y posteriorment
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="previo.png">
   <source media="(prefers-color-scheme: light)" srcset="previo.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="previo.png" width="50%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="previo.png" width="15%">
 </picture>
 </p>
 
