@@ -6,12 +6,13 @@
 > ### Trabajando con Meterpreter: MSFVenom y la generación de un Payload :computer:
 > Con MSFVenom se simplifica la generación de payloads y los intentos de codificación de éstos, entre cuyas opciones podemos destacar: 
 > - Payload, parámetro que especifica el payload que se utilizará.
-- Encoder, otro parámetro que especifica el algoritmo que se utilizará para realizar la codificación.
-- Format, donde se especifica el formato de salida del fichero (normalmente EXE, PY...)
-- Bad-chars, que indica un listado de bytes que no se deben generar en el proceso de obtención del payload (como por ejemplo, si se quieren evitar los bytes nulos '\x00' se añaden en la lista de este parámetro).
-- Iterations, que indica el número de iteraciones que se ejecutará el algoritmo del encoder (codificador)
-- Template, que permite elegir la plantilla de ejecutable que se utilizará.
-- Keep, que especifica que el payload se ejecutará en un thread (hilo) y no en el main del ejecutable, lo que produce un payload más sigiloso.
+> - Encoder, otro parámetro que especifica el algoritmo que se utilizará para realizar la codificación.
+> - Format, donde se especifica el formato de salida del fichero (normalmente EXE, PY...)
+> - Bad-chars, que indica un listado de bytes que no se deben generar en el proceso de obtención del payload (como por ejemplo, si se quieren evitar los bytes nulos '\x00' se añaden en la lista de este parámetro).
+> - Iterations, que indica el número de iteraciones que se ejecutará el algoritmo del encoder (codificador)
+> - Template, que permite elegir la plantilla de ejecutable que se utilizará.
+> - Keep, que especifica que el payload se ejecutará en un thread (hilo) y no en el main del ejecutable, lo que produce un payload más sigiloso.
+
 
 - <b>Paso 1</b>: Ya dentro de Metasploit Framework, se utilizará el exploit multi handler, payload que se utiliza para conectar con el objetivo. Dependiendo del tipo de payload, el handler queda a la espera (está en modo escucha) de una conexión por parte del payload cargado en el objetivo (reverse payload), llegando a iniciar una conexión contra el host y puertos objetivo en ciertos casos (bind payload). En la consola, se codifica:
 <b>
@@ -29,10 +30,17 @@ msfvenom -h
 ```
 </b>
 
-Si queremos disponer de un listado con los posibles payloads, podemos utilizar el siguiente código:
+Si queremos disponer de un listado con los posibles opciones y/o payloads, podemos utilizar el siguientes códigos:
 <b>
 
 ```
+# Listado de payloads
 msfvenom -l payloads
 ```
+
+```
+# Listado de opciones para payloads
+msfvenom -p [payload_elegido] --list-options
+```
+
 </b>
