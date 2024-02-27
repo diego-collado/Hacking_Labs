@@ -29,15 +29,15 @@ Es un software de código abierto, originalmente escrito en Perl y posteriorment
 
 > El funcionamiento se basa en las siguientes partes:
 - <b>Interfaces</b>, es decir, las diferentes plataformas través de las cuales los usuarios pueden acceder a Metasploit Framework:
-  · MSFConsole (Metasploit Framework Console): la interfaz Metasploit más utilizada, la consola Metasploit permite a los usuarios acceder a Metasploit Framework a través de una interfaz de línea de comandos interactiva.
-  · MSFWeb: una interfaz basada en navegador que permite a los usuarios acceder al marco de Metasploit.
-  · Armitage: desarrollado por Raphael Mudge en 2013, Armitage es una interfaz gráfica de usuario basada en Java que permite a los equipos de seguridad colaborar compartiendo su acceso a hosts comprometidos. 
-  · RPC (llamada a procedimiento remoto): permite a los usuarios manejar mediante programación Metasploit Framework utilizando servicios de llamada a procedimiento remoto (RPC) basados ​​en HTTP. Además del Ruby nativo de Metasploit, los servicios RPC pueden operar a través de otros lenguajes, como Java, Python y C.
+  - MSFConsole (Metasploit Framework Console): la interfaz Metasploit más utilizada, la consola Metasploit permite a los usuarios acceder a Metasploit Framework a través de una interfaz de línea de comandos interactiva.
+  - MSFWeb: una interfaz basada en navegador que permite a los usuarios acceder al marco de Metasploit.
+  - Armitage: desarrollado por Raphael Mudge en 2013, Armitage es una interfaz gráfica de usuario basada en Java que permite a los equipos de seguridad colaborar compartiendo su acceso a hosts comprometidos. 
+  - RPC (llamada a procedimiento remoto): permite a los usuarios manejar mediante programación Metasploit Framework utilizando servicios de llamada a procedimiento remoto (RPC) basados ​​en HTTP. Además del Ruby nativo de Metasploit, los servicios RPC pueden operar a través de otros lenguajes, como Java, Python y C.
 
 - <b>Bibliotecas</b>, que contienen las diferentes funciones de Metasploit Framework que permiten a los usuarios ejecutar exploits sin escribir código adicional:
-  · REX: habilita las tareas más básicas; contiene Base64, HTTP, SMB, SSL y Unicode.
-  · MSF Core: proporciona una API común y define Metasploit Framework.
-  · Base de MSF: proporciona una API fácil de usar.
+  - REX: habilita las tareas más básicas; contiene Base64, HTTP, SMB, SSL y Unicode.
+  - MSF Core: proporciona una API común y define Metasploit Framework.
+  - Base de MSF: proporciona una API fácil de usar.
 
 - <b>Módulos</b>, que se utilizan para realizar tareas como escaneos y explotación de objetivos:
   - Cargas útiles: las cargas útiles son códigos de shell que realizan las acciones previstas por el usuario una vez que un exploit ha comprometido un sistema objetivo. Se pueden usar para abrir Meterpreters o comandos de shells. Los Meterpreters son cargas útiles sofisticadas que se utilizan durante un ciberataque para ejecutar código y realizar más tareas exploratorias.
