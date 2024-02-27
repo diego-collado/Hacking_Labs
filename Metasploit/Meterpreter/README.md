@@ -143,7 +143,7 @@ exploit
 - <b>ps</b>: Muestra todos los procesos en ejecución y que cuentas están asociadas con cada proceso.
 - <b>migrate PID</b>: Migra específicamente el proceso de ID (PID es el objetivo del proceso ID obtenido desde el comandos PS)
 - <b>use incognito: Cargar funciones de incógnito, acciones que se utilizan para robar fichas ysuplantación de una máquina de destino.
-- <b>list_tokens -u:/<b> Lista los token disponibles en el objetivo por el usuario.
+- <b>list_tokens -u:</b> Lista los token disponibles en el objetivo por el usuario.
 - <b>list_tokens -g</b>: Lista los token disponibles en el objetivo por el grupo.
 - <b>impersonate_token DOMAIN_NAME\\USERNAME</b>: Se hace pasar por un token disponible en el objetivo.
 - <b>steal_token PID</b>: Roba los token disponibles para un determinado proceso y hacerse pasar por esa señal.
