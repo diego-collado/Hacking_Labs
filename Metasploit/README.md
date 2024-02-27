@@ -53,12 +53,12 @@ Es un software de código abierto, originalmente escrito en Perl y posteriorment
 <br>
 
 > [!IMPORTANT]
-> ### Pre-requisitos 📋
 
-_Antes de arrancar el framework, se hace necesario el inicio del servicio de base de datos <b>PostgreSQL</b>:
+### Pre-requisitos 📋
+Antes de arrancar el framework, se hace necesario el inicio del servicio de base de datos <b>PostgreSQL</b>:
 
 ```
-Da un ejemplo
+systemctl start postgresql
 ```
 
 
