@@ -6,6 +6,7 @@
 > ### Trabajando con Meterpreter :computer:
 
 - <b>Paso 1</b>: Ya dentro de Metasploit Framework, se utilizará el exploit multi handler, payload que se utiliza para conectar con el objetivo. Dependiendo del tipo de payload, el handler queda a la espera (está en modo escucha) de una conexión por parte del payload cargado en el objetivo (reverse payload), llegando a iniciar una conexión contra el host y puertos objetivo en ciertos casos (bind payload). En la consola, se codifica:
+
 <b>
 ```
 use exploit/multi/handler
@@ -13,6 +14,7 @@ use exploit/multi/handler
 </b>
 
 - <b>Paso 2</b>: Ahora, se procede a crear el payload como tal. La cuestión principal es para qué sistema operativo deberá estar preparado, tanto el tipo como la versión, arquitectura... ¡¡Todo con su máximo detalle!! Para ello, ejecutaremos <b>MSFVenom</b>, framework para Linux que combina la biblioteca de payloads y la de codificadores (encoders), de forma que permite generar un payload ofuscado (oculto a los sistemas antivirus y de protección) directamente. Para ello podemos consultar qué comandos tenemos disponibles:
+
 <b>
 ```
 msfvenom -h
