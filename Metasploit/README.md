@@ -56,10 +56,3 @@ Es un software de código abierto, originalmente escrito en Perl y posteriorment
 - [Meterpreter](Meterpreter): <b><u>LABORATORIO Nº 1</u></b> - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom)
 
 <br>
-
-#### ¿Hablamos?☕️
-> Para contactar conmigo, puedes dirigirte a: 
-
-<p align="center">
-<a href="https://linkedin.com/in/3wdiegocollado/" target="blank"><img align="center" src="images/linkedin.png" alt="Diego Collado Ramos"/> Diego Collado Ramos</a>        <a href="mailto:tresw.es@gmail.com " target="blank"><img align="center" src="images/email.png" alt="LinkedIn Diego Collado Ramos"/> tresw.es@gmail.com</a>
-</p>
