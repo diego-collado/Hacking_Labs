@@ -6,7 +6,7 @@
 </picture>
 </p>
 
-# :desktop_computer:	Python_Projects 
+# :desktop_computer:	Hacking_Labs 
 
 > [!CAUTION]
 > Laboratorios preparados para realizar cualquiera de los ataques más comunes que hay disponible en la red (XSS, Metasploit...), basados en el desarrollo natural de clases de Hacking Ético y Ciberseguridad (nivel básico, medio y avanzado), por lo que se incluirán muchos scripts, cheatsheet y programas que serán necesarios para el correcto desarrollo de cada fase.
