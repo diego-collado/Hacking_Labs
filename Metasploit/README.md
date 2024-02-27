@@ -53,13 +53,27 @@ Es un software de código abierto, originalmente escrito en Perl y posteriorment
 <br>
 
 > [!IMPORTANT]
-> Antes de arrancar el framework Metasploit, se hace necesario seguir una serie de pasos
+> Antes de arrancar el framework Metasploit, se hace necesario seguir una serie de pasos imprescindibles para que el sistema esté completamente preparado para la realización correcta del laboratorio.
 
 ### Pre-requisitos 📋
- Iniciar del servicio de base de datos <b>PostgreSQL</b>:
+Paso 1: Iniciar del servicio de base de datos <b>PostgreSQL</b>, ya que Metasploit Framework trabaja con un base de datos de este tipo para el almacenamiento de la información:
 <b>
 ```
 systemctl start postgresql
+```
+</b>
+
+Paso 2: <b>Solamente la 1ª vez que se vaya a iniciar Metasploit</b> debemos inicializar a 0 la base de datos:
+<b>
+```
+msfdb init
+```
+</b>
+
+Paso 3: Se arranca el framework:
+<b>
+```
+msfconsole
 ```
 </b>
 
