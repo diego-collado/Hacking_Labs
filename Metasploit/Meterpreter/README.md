@@ -5,8 +5,8 @@
 
 > ### Trabajando con Meterpreter :computer:
 Paso 1: Ya dentro de Metasploit Framework, se utilizará el exploit multi handler, payload que se utiliza para conectar con el objetivo. Dependiendo del tipo de payload, el handler queda a la espera (está en modo escucha) de una conexión por parte del payload cargado en el objetivo (reverse payload), llegando a iniciar una conexión contra el host y puertos objetivo en ciertos casos (bind payload). En la consola, se codifica:
-
 <b>
+
 ```
 use exploit/multi/handler
 ```
