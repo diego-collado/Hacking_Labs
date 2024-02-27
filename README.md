@@ -22,11 +22,6 @@ Ejemplos funcionales de cada tipos de ataque (últimas versiones), orientados a 
 
 
 <br>
-
-## :bricks:	Para dar clases: ejemplos resueltos :floppy_disk:	
-- [Ejemplos Resueltos para Clase](Ejercicios_para_clases): 40 ejemplos resueltos para el día a día en clase
-- [Ejemplos Resueltos para Clase: modo PRO](Ejercicios_para_clases_PRO): Ejemplos 
-
 <br>
 
 #### ¿Hablamos?☕️
