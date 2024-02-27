@@ -94,9 +94,19 @@ Nuestra pantalla deberá ser similar a esta:
 </picture>
 </p>
 
+A partir de este momento, tenemos plenamente funcional nuestro Metasploit Framework
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="metasploit.png">
+  <source media="(prefers-color-scheme: light)" srcset="metasploit.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="metasploit.png" width="100%">
+</picture>
+</p>
+
+
 <br>
 <br>
-<img alt="Hacking_Labs, más allá de la Ciberseguridad" src="fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
+
+## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
 
 - [Meterpreter](Meterpreter): <b>LABORATORIO Nº 1</b> - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom)
-
