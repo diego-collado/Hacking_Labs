@@ -60,7 +60,7 @@ Es un software de código abierto, originalmente escrito en Perl y posteriorment
 <br>
 <br>
 
-# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="previo.png" width="5%"> Antes de todo... 
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="previo.png" width="3%"> Antes de todo... 
 
 > [!IMPORTANT]
 > Antes de arrancar el framework Metasploit, se hace necesario seguir una serie de pasos imprescindibles para que el sistema esté completamente preparado para la realización correcta del laboratorio.
