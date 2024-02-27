@@ -12,10 +12,9 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="metasploit.png">
   <source media="(prefers-color-scheme: light)" srcset="metasploit.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="metasploit.png" width="75%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="metasploit.png" width="50%">
 </picture>
 </p>
-
 
 > [!CAUTION]
 > Laboratorios preparados con el <b>framework Metasploit</b> (<u>Kali Linux 2023.4</u>). En este laboratorio se trata de comprometer los sistemas utilizando cualquiera de sus más de 1600 exploits que, de una forma u otra, tratarán de aprovechar las vulnerabilidades que se hayan encontrado en las fases previas de analítica y OSINT.
@@ -64,7 +63,7 @@ Es un software de código abierto, originalmente escrito en Perl y posteriorment
 > [!IMPORTANT]
 > Antes de arrancar el framework Metasploit, se hace necesario seguir una serie de pasos imprescindibles para que el sistema esté completamente preparado para la realización correcta del laboratorio.
 
-### Pre-requisitos 📋
+> ### Pre-requisitos 📋
 Paso 1: Iniciar del servicio de base de datos <b>PostgreSQL</b>, ya que Metasploit Framework trabaja con un base de datos de este tipo para el almacenamiento de la información:
 <b>
 ```
@@ -103,7 +102,7 @@ Nuestra pantalla deberá ser similar a esta:
 </picture>
 </p>
 
-A partir de este momento, tenemos plenamente funcional nuestro Metasploit Framework
+> A partir de este momento, tenemos plenamente funcional nuestro Metasploit Framework
 
 <br>
 <br>
