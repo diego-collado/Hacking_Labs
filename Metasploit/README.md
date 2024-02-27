@@ -102,15 +102,19 @@ Nuestra pantalla deberá ser similar a esta:
 </picture>
 </p>
 
-> A partir de este momento, tenemos plenamente funcional nuestro Metasploit Framework
 
-## Ejecutando las pruebas previas en busca de información: <b>INFORMATION GATHERING</b> ⚙️
+> ### Ejecutando las pruebas previas en busca de información: <b>INFORMATION GATHERING</b> ⚙️
 
 Antes de realizar un ataque, y para que este sea óptimo, es necesario el escaneo de la dirección IP del objetivo, donde se podrá adquirir información valiosa como servicios levantados, puertos abiertos, sistemas operativos y mucho más. Para ello, se ejecuta:
 
 ```
 nmap -sS -sV -A [IP_del_objetivo]
 ```
+Pero ¿Qué significa?
+
+- -sS: sondeo TCP SYN, utilizado por omisión para el sondeo de miles de puertos por segundo en una red rápida en la que no existan cortafuegos. Este sondeo SYN es relativamente sigiloso y poco molesto, ya que no llega a completar las conexiones TCP, por lo que también funciona contra cualquier pila TCP en lugar de depender de una plataforma concreta. Su funcionamiento se basa en la casi apertura de una conexión TCP completa, ya que se envía un paquete SYN, como si se fuera a abrir una conexión real y después se espera una respuesta. Si se recibe un paquete SYN/ACK esto indica que el puerto está en escucha (abierto), mientras que si se recibe un RST (reset) indica que no hay nada escuchando en el puerto. Si no se recibe ninguna respuesta después de realizar algunas retransmisiones entonces el puerto se marca como filtrado. También se marca el puerto como filtrado si se recibe un error de tipo ICMP no alcanzable (tipo 3, códigos 1,2, 3, 9, 10, ó 13).
+- -sV: Detección de versiones, activa la detección de versiones de los servicios. 
+- -A: Se activa tanto la detección de versiones como la detección de sistema operativo.
 
 <br>
 <br>
