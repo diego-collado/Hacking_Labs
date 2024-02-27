@@ -2,18 +2,22 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="llaves.png">
   <source media="(prefers-color-scheme: light)" srcset="llaves.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="llaves.png" width="25%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="llaves.png" width="10%">
 </picture>
 </p>
 
-# :desktop_computer:	Metasploit 
+# :unlock:	Meterpreter 
 
-> [!CAUTION]
-> Laboratorios preparados con el <b>framework Metasploit</b> (<u>Kali Linux 2023.4</u>). En este laboratorio se trata de comprometer los sistemas utilizando cualquiera de sus más de 1600 exploits que, de una forma u otra, tratarán de aprovechar las vulnerabilidades que se hayan encontrado en las fases previas de analítica y OSINT.
-Es un software de código abierto, originalmente escrito en Perl y posteriormente traducido a Ruby para una mayor eficiencia. Está muy enfocada a  auditores de seguridad y equipos Red Team y Blue Team.
+> [!IMPORTANT]
+> Laboratorio Meterpreter en <b>framework Metasploit</b> (Kali Linux 2023.4). Meterpreter (Meterpreter es el diminutivo para meta-interprete) es un payload que permite ejecutar tareas de forma remota en una máquina que se ejecuta en un nivel muy bajo de la máquina, por lo que es bastante difícil de detectar y, por tanto, muy útil para evadir sistemas antivirus, IDS o IPS. Gracias al payload Meterpreter, es posible realizar multitud de acciones sobre el sistema vulnerado, si bien no tiene porqué comportarse de la misma forma en todos los sistemas operativos. Este Payload que se ejecuta después del proceso de explotación o abuso de una vulnerabilidad en un sistema operativo, siempre en memoria, lo que evitará ser detectado.
 
-> Metasploit incluye:
-- Cargas útiles del shell de comandos que permiten a los usuarios ejecutar scripts o comandos aleatorios en un host.
+> Funcionamiento:
+- se ejecuta el archivo en la máquina objetivo
+
+
+
+
+
 - Dinámicas que permiten a los evaluadores generar cargas útiles únicas para evadir el software antivirus.
 - Cargas útiles de Meterpreter que permiten a los usuarios controlar los monitores de dispositivos mediante VMC y hacerse cargo de las sesiones o cargar y descargar archivos.
 - Estáticas que permiten el reenvío de puertos y las comunicaciones entre redes.

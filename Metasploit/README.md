@@ -50,9 +50,13 @@ Es un software de código abierto, originalmente escrito en Perl y posteriorment
 - <b>Complementos</b>, los cuales amplian la funcionalidad de todo el framework
 
 <br>
+<br>
+
+> [!IMPORTANT]
+> Laboratorios preparados con el <b>framework Metasploit</b> (<u>Kali Linux 2023.4</u>). En este laboratorio se trata de comprometer los sistemas utilizando cualquiera de sus más de 1600 exploits que, de una forma u otra, tratarán de aprovechar las vulnerabilidades que se hayan encontrado en las fases previas de analítica y OSINT.
+Es un software de código abierto, originalmente escrito en Perl y posteriormente traducido a Ruby para una mayor eficiencia. Está muy enfocada a  auditores de seguridad y equipos Red Team y Blue Team.
 
 ## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
 
-- [Meterpreter](Meterpreter): <b><u>LABORATORIO Nº 1</u></b> - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom)
+- [Meterpreter](Meterpreter): <b>LABORATORIO Nº 1</b> - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom)
 
-<br>
