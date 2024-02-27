@@ -8,6 +8,15 @@
 
 # :desktop_computer:	Metasploit 
 
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="metasploit.png">
+  <source media="(prefers-color-scheme: light)" srcset="metasploit.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="metasploit.png" width="75%">
+</picture>
+</p>
+
+
 > [!CAUTION]
 > Laboratorios preparados con el <b>framework Metasploit</b> (<u>Kali Linux 2023.4</u>). En este laboratorio se trata de comprometer los sistemas utilizando cualquiera de sus más de 1600 exploits que, de una forma u otra, tratarán de aprovechar las vulnerabilidades que se hayan encontrado en las fases previas de analítica y OSINT.
 Es un software de código abierto, originalmente escrito en Perl y posteriormente traducido a Ruby para una mayor eficiencia. Está muy enfocada a  auditores de seguridad y equipos Red Team y Blue Team.
@@ -95,14 +104,6 @@ Nuestra pantalla deberá ser similar a esta:
 </p>
 
 A partir de este momento, tenemos plenamente funcional nuestro Metasploit Framework
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="metasploit.png">
-  <source media="(prefers-color-scheme: light)" srcset="metasploit.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="metasploit.png" width="100%">
-</picture>
-</p>
-
 
 <br>
 <br>
