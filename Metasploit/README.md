@@ -76,8 +76,22 @@ Paso 3: Se arranca el framework:
 msfconsole
 ```
 </b>
+O también se puede utilizar el arranque rápido (sin logotipos):
+<b>
+```
+msfconsole -q
+```
+</b>
+
+> Nuestra pantalla deberá ser similar a esta:
+
+<img alt="Hacking_Labs, más allá de la Ciberseguridad" src="metasploit_1.jpg" width="50%">
 
 
+
+
+<br>
+<br>
 ## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
 
 - [Meterpreter](Meterpreter): <b>LABORATORIO Nº 1</b> - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom)
