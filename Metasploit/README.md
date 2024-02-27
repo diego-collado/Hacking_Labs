@@ -124,7 +124,9 @@ Veamos el porqué de esta codificación:
 </picture>
 </p>
 
-## :bricks:	CheatSheets de utilidad	
+<br>
+
+## :bricks:	CheatSheets de utilidad	::book
 - [CheatSheet](CheatSheet): CheatSheet (hoja de trucos) para Metasploit y Nmap.
 
 
