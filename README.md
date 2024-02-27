@@ -15,15 +15,11 @@ Ejemplos funcionales de cada tipos de ataque (últimas versiones), orientados a 
 
 <br>
 
-## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/monstruo.png" width="3%">Accede al contenido 
+## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/mal.png" width="8%">Accede al contenido 
 
-- [Bases de Datos](BBDD): MySQL, SQLite con PyQt5, SQLite3
+- [Metasploit](Metasploit): Eje
 - [CheatSheet Variadas](CheatSheets): MySQL, SQLite, PyCharm...
-- [Hacking & Python](Hacking_Python): Scripts para realizar cada una de las fases de una auditoría Web y/o de sistemas (Black/Grey/White Box)
-- [Programación Orientada a Objetos](P.O.O): Herencias, clases, objetos y mucho más...
-- [Básico & Advanced](Python_basico_y_avanzado): Explicaciones básicas (operadores, casting, estructuras de control... ) y avanzadas (diccionarios, paquetes, ficheros, excepciones...)
-- [Tkinter (GUI)](Tkinter_(GUI)):Tkinter (GUI para Python) & Canvas
-- [Utilidades](Utilidades):Utilidades variadas: Texto a voz (Text-To-Speech), generadores de passwords, barras de progreso, utilidades PDF...
+
 
 <br>
 
