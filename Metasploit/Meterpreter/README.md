@@ -11,3 +11,12 @@ Paso 1: Ya dentro de Metasploit Framework, se utilizará el exploit multi handle
 use exploit/multi/handler
 ```
 </b>
+
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install foobar
+```
