@@ -110,15 +110,23 @@ Antes de realizar un ataque, y para que este sea óptimo, es necesario el escane
 ```
 nmap -sS -sV -A [IP_del_objetivo]
 ```
-Pero ¿Qué significa?
+Veamos el porqué de esta codificación:
 
-- -sS: sondeo TCP SYN, utilizado por omisión para el sondeo de miles de puertos por segundo en una red rápida en la que no existan cortafuegos. Este sondeo SYN es relativamente sigiloso y poco molesto, ya que no llega a completar las conexiones TCP, por lo que también funciona contra cualquier pila TCP en lugar de depender de una plataforma concreta. Su funcionamiento se basa en la casi apertura de una conexión TCP completa, ya que se envía un paquete SYN, como si se fuera a abrir una conexión real y después se espera una respuesta. Si se recibe un paquete SYN/ACK esto indica que el puerto está en escucha (abierto), mientras que si se recibe un RST (reset) indica que no hay nada escuchando en el puerto. Si no se recibe ninguna respuesta después de realizar algunas retransmisiones entonces el puerto se marca como filtrado. También se marca el puerto como filtrado si se recibe un error de tipo ICMP no alcanzable (tipo 3, códigos 1,2, 3, 9, 10, ó 13).
-- -sV: Detección de versiones, activa la detección de versiones de los servicios. 
-- -A: Se activa tanto la detección de versiones como la detección de sistema operativo.
+- <b>-sS</b>: sondeo TCP SYN, utilizado por omisión para el sondeo de miles de puertos por segundo en una red rápida en la que no existan cortafuegos. Este sondeo SYN es relativamente sigiloso y poco molesto, ya que no llega a completar las conexiones TCP, por lo que también funciona contra cualquier pila TCP en lugar de depender de una plataforma concreta. Su funcionamiento se basa en la casi apertura de una conexión TCP completa, ya que se envía un paquete SYN, como si se fuera a abrir una conexión real y después se espera una respuesta. Si se recibe un paquete SYN/ACK esto indica que el puerto está en escucha (abierto), mientras que si se recibe un RST (reset) indica que no hay nada escuchando en el puerto. Si no se recibe ninguna respuesta después de realizar algunas retransmisiones entonces el puerto se marca como filtrado. También se marca el puerto como filtrado si se recibe un error de tipo ICMP no alcanzable (tipo 3, códigos 1,2, 3, 9, 10, ó 13).
+- <b>-sV</b>: Detección de versiones, activa la detección de versiones de los servicios. 
+- <b>-A</b>: Se activa tanto la detección de versiones como la detección de sistema operativo.
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="metasploit_2.png">
+  <source media="(prefers-color-scheme: light)" srcset="metasploit_2.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="metasploit_2.png" width="50%">
+</picture>
+</p>
 
 <br>
 <br>
 
-## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
 
 - [Meterpreter](Meterpreter): <b>LABORATORIO Nº 1</b> - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom)
