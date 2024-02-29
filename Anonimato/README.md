@@ -17,16 +17,10 @@
 </p>
 
 > [!CAUTION]
-> Laboratorios preparados para el entorno de la <b>red TOR</b> (Kali Linux 2023.4). Este laboratorio trata de:
+> Laboratorios preparados para el entorno de la <b>red TOR</b> (Kali Linux 2023.4). Este laboratorio trata de realizar una redirección de todo el tráfico de red hacía la red TOR, o lo que es lo mismo, cualquier conexión del equipo que intente conectarse a Internet pasará por ella, evitando filtrar ping, forzando a las aplicaciones a derivar todo el tráfico por TOR (al contrario que ProxyChain, que es ignorado por algunas aplicaciones que tienden a una conexión más rápida ignorando los proxys). Asimismo, rechaza peticiones entrantes y salientes que puedan contener información sensible o pueda revelar la IP real y, por supuesto, realiza una protección de fuga de DNS, por lo que se puede utilizar un DNS remoto anónimo.
 
-1. realizar una redirección de todo el tráfico de red hacía la red TOR, o lo que es lo mismo, cualquier conexión del equipo que intente conectarse a Internet pasará por ella, evitando filtrar ping, forzando a las aplicaciones a derivar todo el tráfico por TOR (al contrario que ProxyChain, que es ignorado por algunas aplicaciones que tienden a una conexión más rápida ignorando los proxys), 
-
-4. Rechaza peticiones entrantes y salientes que puedan contener información sensible o pueda revelar nuestra IP real.
-
-5. Protección de fuga de DNS, podemos usar un DNS remoto anónimo.
-
-
-La red TOR es una de las mejores opciones a la hora de proteger nuestra identidad en la red, dado que sus métodos de transferencia de datos son altamente criptográficos y cada petición a un mismo servicio se envía por rutas diferentes utilizando múltiples nodos, algo que complica mucho trazar a un usuario dentro la red.
+> TOR, sí... ¿Pero porqué?
+>La red TOR es una de las mejores opciones a la hora de proteger nuestra identidad en la red, dado que sus métodos de transferencia de datos son altamente criptográficos y cada petición a un mismo servicio se envía por rutas diferentes utilizando múltiples nodos, algo que complica mucho trazar a un usuario dentro la red.
 
 con <b>framework Metasploit</b> (<u>Kali Linux 2023.4</u>). En este laboratorio se trata de comprometer los sistemas utilizando cualquiera de sus más de 1600 exploits que, de una forma u otra, tratarán de aprovechar las vulnerabilidades que se hayan encontrado en las fases previas de analítica y OSINT.
 Es un software de código abierto, originalmente escrito en Perl y posteriormente traducido a Ruby para una mayor eficiencia. Está muy enfocada a  auditores de seguridad y equipos Red Team y Blue Team.
