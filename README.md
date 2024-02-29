@@ -18,7 +18,7 @@ Ejemplos funcionales de cada tipos de ataque (últimas versiones), orientados a 
 ## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/mal.png" width="8%">Accede al contenido 
 
 - [Metasploit](Metasploit): Tipos de Ataque: <b>Framework METASPLOIT</b>
-
+- [Anonimato](Anonimato): Encubriendo nuestras huellas: <b>TOR y enrutadores ONION</b>
 
 
 <br>
