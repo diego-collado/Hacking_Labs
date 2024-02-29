@@ -10,9 +10,9 @@
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="hacker.png">
-  <source media="(prefers-color-scheme: light)" srcset="hacker.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="hacker.png" width="50%">
+  <source media="(prefers-color-scheme: dark)" srcset="tor.png">
+  <source media="(prefers-color-scheme: light)" srcset="tor.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="tor.png" width="50%">
 </picture>
 </p>
 
