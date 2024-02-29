@@ -22,22 +22,24 @@
 > TOR, sí... ¿Pero porqué?
 La red TOR es conocida por ser una de las mejores opciones a la hora de proteger la identidad en la red, dado que sus métodos de transferencia de datos están encriptados en varias capas, donde cada petición a un mismo servicio se envía por rutas diferentes utilizando múltiples nodos, lo que complica seguir una trazabilidad a un usuario o equipo dentro de una red.
 
-> Metasploit incluye:
-- Cargas útiles del shell de comandos que permiten a los usuarios ejecutar scripts o comandos aleatorios en un host.
-- Dinámicas que permiten a los evaluadores generar cargas útiles únicas para evadir el software antivirus.
-- Cargas útiles de Meterpreter que permiten a los usuarios controlar los monitores de dispositivos mediante VMC y hacerse cargo de las sesiones o cargar y descargar archivos.
-- Estáticas que permiten el reenvío de puertos y las comunicaciones entre redes.
+> Ventajas de la utilización de la red TOR:
+- Car
+- Di
+- Car
+- Est
 
->Las funciones de Metasploit más destacadas son: 
-  - <b>Escaneo y recopilación de información</b>: Utilizando herramientas como Nmap, Metasploit realiza una recolección exhaustiva de datos sobre el objetivo del ataque.
-  - <b>Identificación y exploración de vulnerabilidades</b>: La plataforma detecta vulnerabilidades conocidas en sistemas, analizando el sistema Common Vulnerabilities and Exposures (CVE) para encontrar los exploits correspondientes.
-  - <b>Escalada de privilegios</b>: Metasploit incorpora herramientas para conseguir privilegios de administrador en diversos sistemas operativos (Windows, Android, Linux...), lenguajes de programación y, por supuesto, sistema propios de Cisco y mucho más.
-  - <b>Instalación de backdoors</b>: A través de su módulo de payloads, Metasploit permite la instalación de backdoors (puertas traseras) en el sistema objetivo para la extracción de información confidencial, cifrado y un largo etcétera.
-  - <b>Realización de fuzzing</b>: Automatizando el ingreso de valores aleatorios, Metasploit busca activamente fallos que posibiliten la infiltración en dispositivos o redes.
-  - <b>Evasión de antivirus, IDS/IPS</b>: La plataforma incluye herramientas para la ofuscación de código, reescribiéndolo de manera que se vuelva indetectable para los sistemas de defensa.
-  - <b>Eliminación de rastros</b>: Metasploit ofrece métodos para borrar la huella digital del atacante, eliminando logs y archivos maliciosos utilizados durante el hackeo.
-
+> Deventajas de la utilización de la red TOR:
+  - Nmap
+  - lataforma
+  - Escalada 
+  - Instalación
+  - Realización 
+  
 > El funcionamiento se basa en las siguientes partes:
+
+
+
+
 - <b>Interfaces</b>, es decir, las diferentes plataformas través de las cuales los usuarios pueden acceder a Metasploit Framework:
   - MSFConsole (Metasploit Framework Console): la interfaz Metasploit más utilizada, la consola Metasploit permite a los usuarios acceder a Metasploit Framework a través de una interfaz de línea de comandos interactiva.
   - MSFWeb: una interfaz basada en navegador que permite a los usuarios acceder al marco de Metasploit.
