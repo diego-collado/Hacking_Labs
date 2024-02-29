@@ -37,9 +37,23 @@ La red TOR es conocida por ser una de las mejores opciones a la hora de proteger
   
 > El funcionamiento se basa en las siguientes partes:
 
+- <b>Tipo de comunicación</b>: la comunicación con la red Tor se establece mediante una ruta de comunicación más compleja que las conexiones normales a la hora de llegar al site al que se desea acceder, poniendo 3 nodos aleatorios de por medio.
+- <b>Manejo de la comunicación</b>: la comunicación se maneja por capas, de modo que cada nodo solo tiene información de la capa inferior y superior a la propia, sin tener acceso a las capas de otros niveles (podrían ser el origen o el destino de la conexión), un tipo de arquitectura que dificulta que un monitoreo la conexión para poder llegar a identificar y localizar la conexión.
 
 
 
+Además, nuestros datos viajan cifrados mientras están en el circuito de la red Tor, así que ningún nodo puede saber la ruta completa de la conexión. Por ejemplo, en el dibujo de arriba:
+
+El nodo de Francia solo sabe que recibe información de nuestra ubicación y que tiene que enviar la información al nodo de México. No sabe cuál es el contenido de la información.
+El nodo de México sabe que recibe información desde Francia y que debe enviarla hacia Japón, pero no puede saber que originalmente estamos realizando la petición desde nuestra ubicación real.
+A su vez, el nodo de Japón sabe que recibe información desde México y que debe enviarla al servidor que está en Estados Unidos, sin saber que antes la petición pasó por Francia y que se originó en nuestra ubicación.
+Finalmente, el servidor en Estados Unidos simplemente recibe una solicitud de información desde Japón, ignorando completamente el circuito que se realizó para completar esta solicitud. Solo el nodo final -o de salida- sabe hacia dónde se dirige la solicitud de información.
+Y al final del proceso solo quien hace la solicitud puede saber cuáles son todos los nodos del circuito que está utilizando. Esto aumenta drásticamente la seguridad y el anonimato en nuestras conexiones.
+
+Existen algunas maneras de utilizar la red Tor que igual pueden revelar quienes somos al servicio que queremos acceder. Si te interesa saber más sobre esto puedes ver la Parte 4: Modelo de amenazas y consideraciones legales.
+
+https://tor.derechosdigitales.org/torificate/p4/
+--------------------------------
 - <b>Interfaces</b>, es decir, las diferentes plataformas través de las cuales los usuarios pueden acceder a Metasploit Framework:
   - MSFConsole (Metasploit Framework Console): la interfaz Metasploit más utilizada, la consola Metasploit permite a los usuarios acceder a Metasploit Framework a través de una interfaz de línea de comandos interactiva.
   - MSFWeb: una interfaz basada en navegador que permite a los usuarios acceder al marco de Metasploit.
