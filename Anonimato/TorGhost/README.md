@@ -66,7 +66,8 @@ En este momento, aparecerá una pantalla similar a la siguiente imagen:
 python3 torghost.py -s
 ```
 </b>
-El script cargará y aparecerán los siguientes mensajes en nuestro shell:
+El script cargará y aparecerán los correspondientes mensajes de inicio de forzado, cambios de DNS y toda la carga para obtener un resultado óptimo: CURRENT IP: la nueva IP
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="torghost_2.png">
   <source media="(prefers-color-scheme: light)" srcset="torghost_2.png">
