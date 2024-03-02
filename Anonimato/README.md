@@ -61,6 +61,11 @@ Paso 1: Comprobación de la IP pública del nuestro propio sistema, para lo cual
   <source media="(prefers-color-scheme: light)" srcset="torghost_1.png">
   <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_1.png" width="50%">
 </picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="torghost_2.png">
+  <source media="(prefers-color-scheme: light)" srcset="torghost_2.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_2.png" width="50%">
+</picture>
 </p>
 
 
