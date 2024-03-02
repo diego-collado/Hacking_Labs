@@ -52,102 +52,28 @@ The Onion Router... La conocida como <b>red TOR</b> es una de las mejores opcion
 > Antes de navegar por la Deep Web o utilizar cualquier tipo de herramienta que necesite de una conexión con el exterior, es necesario seguir una serie de pasos imprescindibles para que el sistema esté completamente preparado para la realización correcta del laboratorio.
 
 > ### Pre-requisitos 📋
-Paso 1: Comprobación de la IP pública del nuestro propio sistema, para lo cual se utilizará el navegador de Kali Linux (Mozilla Firefox), donde se introducirá la URL: https://www.cual-es-mi-ip.net/. 
-
+Paso 1: Comprobación de la IP pública del nuestro propio sistema, para lo cual se utilizará el navegador de Kali Linux (Mozilla Firefox), donde se introducirá la URL: 
+<b>
+```
+https://www.cual-es-mi-ip.net/
+```
+</b>
 
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="torghost_1.png">
   <source media="(prefers-color-scheme: light)" srcset="torghost_1.png">
   <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_1.png" width="50%">
-</picture>
-<picture>
+
   <source media="(prefers-color-scheme: dark)" srcset="torghost_2.png">
   <source media="(prefers-color-scheme: light)" srcset="torghost_2.png">
   <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_2.png" width="50%">
 </picture>
 </p>
 
-
-
-
-<b>
-```
-systemctl start postgresql
-```
-</b>
-
-
-
-
-
-
-
-
-
-
-Paso 2: <b>Solamente la 1primera vez que se vaya a iniciar Metasploit</b> debemos inicializar a 0 la base de datos:
-<b>
-```
-msfdb init
-```
-</b>
-
-Paso 3: Se arranca el framework:
-<b>
-```
-msfconsole
-```
-</b>
-
-También se puede utilizar el arranque rápido (sin logotipos):
-<b>
-```
-msfconsole -q
-```
-</b>
-
-Nuestra pantalla deberá ser similar a esta:
-
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="metasploit_1.png">
-  <source media="(prefers-color-scheme: light)" srcset="metasploit_1.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="metasploit_1.png" width="50%">
-</picture>
-</p>
-
-
-> ### Ejecutando las pruebas previas en busca de información: <b>INFORMATION GATHERING</b> ⚙️
-
-Antes de realizar un ataque, y para que este sea óptimo, es necesario el escaneo de la dirección IP del objetivo, donde se podrá adquirir información valiosa como servicios levantados, puertos abiertos, sistemas operativos y mucho más. Para ello, se ejecuta:
-
-```
-nmap -sS -sV -A [IP_del_objetivo]
-```
-Veamos el porqué de esta codificación:
-
-- <b>-sS</b>: sondeo TCP SYN, utilizado por omisión para el sondeo de miles de puertos por segundo en una red rápida en la que no existan cortafuegos. Este sondeo SYN es relativamente sigiloso y poco molesto, ya que no llega a completar las conexiones TCP, por lo que también funciona contra cualquier pila TCP en lugar de depender de una plataforma concreta. Su funcionamiento se basa en la casi apertura de una conexión TCP completa, ya que se envía un paquete SYN, como si se fuera a abrir una conexión real y después se espera una respuesta. Si se recibe un paquete SYN/ACK esto indica que el puerto está en escucha (abierto), mientras que si se recibe un RST (reset) indica que no hay nada escuchando en el puerto. Si no se recibe ninguna respuesta después de realizar algunas retransmisiones entonces el puerto se marca como filtrado. 
-- <b>-sV</b>: Detección de versiones, activa la detección de versiones de los servicios. 
-- <b>-A</b>: Se activa tanto la detección de versiones como la detección de sistema operativo.
-
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="metasploit_2.png">
-  <source media="(prefers-color-scheme: light)" srcset="metasploit_2.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="metasploit_2.png" width="50%">
-</picture>
-</p>
-
-<br>
-
-## :bricks:	CheatSheets de utilidad	:books:
-- [CheatSheet](CheatSheet): CheatSheet (hoja de trucos) para <b>Metasploit</b> y <b>Nmap</b>.
-
-
 <br>
 <br>
 
 # <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
 
-- [LABORATORIO I](Meterpreter):  - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom)
+- [LABORATORIO I](TorGhost): - Instalación y configuración del script de anonimización <b>TorGhost</b>
