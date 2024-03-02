@@ -66,13 +66,14 @@ En este momento, aparecerá una pantalla similar a la siguiente imagen:
 python3 torghost.py -s
 ```
 </b>
-El script cargará y aparecerán los correspondientes mensajes de inicio de forzado, cambios de DNS y toda la carga para obtener un resultado óptimo: CURRENT IP: la nueva IP
+El script cargará y aparecerán los correspondientes mensajes de inicio de forzado, cambios de DNS y toda la carga para obtener un resultado óptimo, es decir, CURRENT IP: la nueva IP
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="torghost_2.png">
-  <source media="(prefers-color-scheme: light)" srcset="torghost_2.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_2.png" width="30%">
+  <source media="(prefers-color-scheme: dark)" srcset="torghost_1.png">
+  <source media="(prefers-color-scheme: light)" srcset="torghost_1.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_1.png" width="50%">
 </picture>
+
 
 - <b>Paso 5</b>: Posteriomente, se comprobará la dirección IP pública de la misma forma que hemos hecho la primera comprobación, ara lo cual se utilizará el navegador de Kali Linux (Mozilla Firefox), donde se introducirá la URL: 
 <b>
