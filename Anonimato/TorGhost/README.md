@@ -78,6 +78,7 @@ El script cargará y aparecerán los correspondientes mensajes de inicio de forz
 
 - <b>Paso 5</b>: Posteriomente, se comprobará la dirección IP pública de la misma forma que hemos hecho la primera comprobación, ara lo cual se utilizará el navegador de Kali Linux (Mozilla Firefox), donde se introducirá la URL: 
 <b>
+
 ```
 https://www.cualesmiip.com/
 ```
