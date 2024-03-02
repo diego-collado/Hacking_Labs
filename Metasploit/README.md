@@ -138,3 +138,4 @@ Veamos el porqué de esta codificación:
 # <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
 
 - [LABORATORIO I](Meterpreter):  - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom)
+- [LABORATORIO II](Indetectable):  - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom). Se utilizará un troyano NO detectable para Windows 10
