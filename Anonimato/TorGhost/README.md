@@ -71,7 +71,7 @@ El script cargará y aparecerán los correspondientes mensajes de inicio de forz
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="torghost_2.png">
   <source media="(prefers-color-scheme: light)" srcset="torghost_2.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_2.png" width="50%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_2.png" width="30%">
 </picture>
 
 - <b>Paso 5</b>: Posteriomente, se comprobará la dirección IP pública de la misma forma que hemos hecho la primera comprobación, ara lo cual se utilizará el navegador de Kali Linux (Mozilla Firefox), donde se introducirá la URL: 
@@ -80,6 +80,7 @@ El script cargará y aparecerán los correspondientes mensajes de inicio de forz
 https://www.cualesmiip.com/
 ```
 </b>
+
 Es posible que el cambio de IP motive la falta de carga de algunos sites... ¡¡Ya estamos en la red TOR!!
 
 Para detener el script:
