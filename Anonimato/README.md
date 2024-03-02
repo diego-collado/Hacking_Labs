@@ -69,7 +69,7 @@ Existen algunas maneras de utilizar la red Tor que igual pueden revelar quienes 
 <br>
 <br>
 
-# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="previo.png" width="4%"> Antes de todo... 
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="hacker.png" width="4%"> Antes de todo... 
 
 > [!IMPORTANT]
 > Antes de arrancar el framework Metasploit, se hace necesario seguir una serie de pasos imprescindibles para que el sistema esté completamente preparado para la realización correcta del laboratorio.
