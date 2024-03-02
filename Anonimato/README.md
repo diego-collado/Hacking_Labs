@@ -64,7 +64,8 @@ https://www.cual-es-mi-ip.net/
   <source media="(prefers-color-scheme: dark)" srcset="torghost_1.png">
   <source media="(prefers-color-scheme: light)" srcset="torghost_1.png">
   <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_1.png" width="50%">
-
+</picture>
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="torghost_2.png">
   <source media="(prefers-color-scheme: light)" srcset="torghost_2.png">
   <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_2.png" width="50%">
