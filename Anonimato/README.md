@@ -20,25 +20,39 @@
 > Laboratorios preparados para el entorno de la <b>red TOR</b> (Kali Linux 2023.4). Este laboratorio trata de realizar una redirección de todo el tráfico de red hacía la red TOR, o lo que es lo mismo, cualquier conexión del equipo que intente conectarse a Internet pasará por ella, evitando filtrar ping, forzando a las aplicaciones a derivar todo el tráfico por TOR (al contrario que ProxyChain, que es ignorado por algunas aplicaciones que tienden a una conexión más rápida ignorando los proxys). Asimismo, rechaza peticiones entrantes y salientes que puedan contener información sensible o pueda revelar la IP real y, por supuesto, realiza una protección de fuga de DNS, por lo que se puede utilizar un DNS remoto anónimo.
 
 > TOR, sí... ¿Pero porqué?
-La red TOR es conocida por ser una de las mejores opciones a la hora de proteger la identidad en la red, dado que sus métodos de transferencia de datos están encriptados en varias capas, donde cada petición a un mismo servicio se envía por rutas diferentes utilizando múltiples nodos, lo que complica seguir una trazabilidad a un usuario o equipo dentro de una red.
+The Onion Router... La conocida como <b>red TOR</b> es una de las mejores opciones a la hora de proteger la identidad en la red, dado que sus métodos de transferencia de datos están encriptados en varias capas, donde cada petición a un mismo servicio se envía por rutas diferentes utilizando múltiples nodos, lo que complica seguir una trazabilidad a un usuario o equipo dentro de una red. Su funcionamiento se basa en la red de servidores voluntarios.
 
 > Ventajas de la utilización de la red TOR:
-- Car
-- Di
-- Car
-- Est
+- Navegación Anónima: ocultación y cambio de IP ya que los nodos que TOR utiliza están encriptados bajo varias capas, además de tener una conexión de tipo HTTPS.
+- Acceso a la Web Profunda (Deep Web): la parte de Internet que no está indexada por los motores de búsqueda convencionales y requiere acceso mediante direcciones URL específicas. 
+- Acceso a la Dark Web: está oculta intencionalmente y requiere software especial para acceder a ella
+- Privacidad en la Comunicación: TOR se utiliza a menudo para comunicaciones en línea privadas y seguras (correo electrónico y la mensajería instantánea, incluyendo WhatsApp y Telegram).
+- Evitar la Censura en Internet: en aquellas regiones regiones del mundo donde (aún) existe una estricta censura en línea, ayudando a eludir filtros y restricciones impuestas por los gobiernos y otros actores. 
+- Investigación y Periodismo: Los periodistas y activistas utilizan TOR para proteger su privacidad y seguridad mientras investigan temas sensibles o se comunican con fuentes anónimas.
+- Protección contra la vigilancia: TOR encripta el tráfico de Internet y oculta la dirección IP del usuario, puede ayudar a proteger contra la vigilancia en línea realizada por gobiernos, proveedores de servicios de Internet y otros terceros.
 
 > Deventajas de la utilización de la red TOR:
-  - Nmap
-  - lataforma
-  - Escalada 
-  - Instalación
-  - Realización 
-  
-> El funcionamiento se basa en las siguientes partes:
+  - Bloqueo de scripts: algunos sitios web no funcionan, pueden cargar parcialmente o no cargar nada... Además, los mensajes de error no siempre aclaran las razones. En la mayor parte de los casos, el propio navegador de TOR bloquea ciertos scripts, donde se incluye muchos Javascript y scripts de seguimiento.
+  - Lentitud: debido a que TOR rebota la conexión en diferentes nodos, este tipo de sistema hace que la conexión viaje más lejos y durante más tiempo de lo habitual ya que los nodos pueden estar muy lejos unos de otros. 
+  - TOR es seguro, no invencible: como en la red indexada en los buscadores más conocidos, lo común y normal es que estén "pululando" diferentes tipos de malware, sitios falsos y miles de archivos de dudoso origen que podrían llegar a perjudicar gravemente a nuestros sistemas.
+  - Contenido no deseado: Acceder a la Deep Web y a la Dark Web puede exponer a los usuarios a contenido peligroso o ilegal.
+
+> El funcionamiento se basa en los siguientes elementos:
 
 - <b>Tipo de comunicación</b>: la comunicación con la red Tor se establece mediante una ruta de comunicación más compleja que las conexiones normales a la hora de llegar al site al que se desea acceder, poniendo 3 nodos aleatorios de por medio.
 - <b>Manejo de la comunicación</b>: la comunicación se maneja por capas, de modo que cada nodo solo tiene información de la capa inferior y superior a la propia, sin tener acceso a las capas de otros niveles (podrían ser el origen o el destino de la conexión), un tipo de arquitectura que dificulta que un monitoreo la conexión para poder llegar a identificar y localizar la conexión.
+
+
+
+
+El tráfico en la Red Tor pasa a través de una serie de servidores, conocidos como relés. Hay tres tipos principales de relés en la Red Tor: relé de entrada (o guardia), relé intermedio y relé de salida.
+
+Relé de Entrada: Este es el primer relé por el que pasa la información. Conoce la dirección IP del usuario, pero debido al cifrado de múltiples capas, no puede ver lo que el usuario está haciendo ni cuál es el destino final de los datos.
+Relé Intermedio: Este relé actúa como un puente entre el relé de entrada y el relé de salida. No tiene información sobre el usuario ni sobre el destino final de los datos.
+Relé de Salida: Este es el último relé en el proceso. Puede ver a qué destino se envían los datos, pero no sabe de dónde provienen.
+
+
+
 
 
 
