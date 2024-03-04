@@ -6,13 +6,13 @@
 </picture>
 </p>
 
-# :desktop_computer:	Red TOR 
+# :desktop_computer:	BlackStone Project 2.0 
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="tor.png">
-  <source media="(prefers-color-scheme: light)" srcset="tor.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="tor.png" width="30%">
+  <source media="(prefers-color-scheme: dark)" srcset="black.png">
+  <source media="(prefers-color-scheme: light)" srcset="black.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="black.png" width="30%">
 </picture>
 </p>
 
