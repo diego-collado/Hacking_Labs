@@ -30,35 +30,17 @@ La realización de un informe final de vulnerabilidades es un verdadero y autén
 <br>
 <br>
 
-# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="hacker.png" width="8%"> Antes de todo... 
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="virus.png" width="8%"> Antes de todo... 
 
 > [!IMPORTANT]
-> Antes de navegar por la Deep Web o utilizar cualquier tipo de herramienta que necesite de una conexión con el exterior, es necesario seguir una serie de pasos imprescindibles para que el sistema esté completamente preparado para la realización correcta del laboratorio.
+> Para la instalación de esta herramienta no es necesario realizar update/upgrade. Por otro lado, se ha de elegir una única herramienta para la generación de informes ya que, de lo contrario, pueden cruzarse los datos y llevarnos a un error en cadena, por lo que como consecuencia podría invalidarse nuestra auditoría.
 
 > ### Pre-requisitos 📋
-Paso 1: Comprobación de la IP pública del nuestro propio sistema, para lo cual se utilizará el navegador de Kali Linux (Mozilla Firefox), donde se introducirá la URL: 
-<b>
-```
-https://www.cual-es-mi-ip.net/
-```
-</b>
-
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="torghost_1.png">
-  <source media="(prefers-color-scheme: light)" srcset="torghost_1.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_1.png" width="50%">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="torghost_2.png">
-  <source media="(prefers-color-scheme: light)" srcset="torghost_2.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_2.png" width="50%">
-</picture>
-</p>
+Paso 1: La instalación requiere de Mozilla Firefox como navegador para acceder al entorno de <b>BlackStone Project</b> y la instalación de la herramienta en el terminal. 
 
 <br>
 <br>
 
 # <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
 
-- [LABORATORIO I](TorGhost): - Instalación y configuración del script de anonimización <b>TorGhost</b>
+- [LABORATORIO I](BlackStone): - Instalación y configuración del sistema de automatización para informes <b>BlackStone Project</b>
