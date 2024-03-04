@@ -19,6 +19,8 @@ Ejemplos funcionales de cada tipos de ataque (últimas versiones), orientados a 
 
 - [Metasploit](Metasploit): Tipos de Ataque: <b>Framework METASPLOIT</b>
 - [Anonimato](Anonimato): Encubriendo nuestras huellas: <b>TOR y enrutadores ONION</b>
+- [Vulnerabilidades](Vulnerabilidades): Encubriendo nuestras huellas: <b>TOR y enrutadores ONION</b>
+
 
 
 <br>
