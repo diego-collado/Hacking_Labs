@@ -1,4 +1,4 @@
-# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="black.png" width="4%">	TorGhost 
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="black.png" width="4%">	BlackStone Project 
 
 > [!IMPORTANT]
 > Laboratorio BlackStone Project (Kali Linux 2023.4). El proyecto es una herramienta creada con el fin de automatizar el trabajo de redacción y presentación de un informe de auditorías de hacking ético o pentesting, donde podemos registrar (en una base de datos propia) las vulnerabilidades encontradas en la auditoría, clasificándolas por internas, externas o WiFi, colocar la descripción y recomendación de las mismas, así como el nivel de severidad y el esfuerzo para su corrección. Esta información ayudará a generar en el informe una tabla de criticidad como resumen global de las vulnerabilidades encontradas, además de incluir información adicional como página web, subdominios, números de teléfono, redes sociales, correos electrónicos de los empleados…
@@ -27,16 +27,11 @@ git clone https://github.com/micro-joan/BlackStone
 ```
 </b>
 
-
-
-
-
-
-- <b>Paso 2</b>: Ahora, se procede entrar en la carpeta del sistema en la que se ha descargado TorGhost. Una vez dentro de la correspondiente carpeta, se dan los permisos de ejecución al archivo de instalación mediante el siguiente código:
+- <b>Paso 2</b>: Ahora, se procede entrar en la carpeta del sistema en la que se ha descargado BlackStone. Una vez dentro de la correspondiente carpeta, se dan los permisos de ejecución al archivo de instalación mediante el siguiente código:
 <b>
 
 ```
-chmod +x build.sh
+chmod +x installer.sh
 ```
 </b>
 
@@ -44,20 +39,24 @@ Se instalará el paquete completo en el sistema gracias al siguiente código:
 <b>
 
 ```
-./build.sh
+./installer.sh
 ```
 </b>
 
-Es posible que no funcione la construcción del archivo sh, por lo que se podrá optar por instalar los requerimientos que pide la aplicación al sistema utilizando el siguiente código:
+Es posible que no funcione la construcción del archivo sh. En este caso, la aplicación se iniciará automáticamente pero si se inicia la sesión, se obtendrá <b>error 500</b>, momento en el que es necesario reiniciar el sistema y ejecutar el instalador por segunda vez.
 <b>
 
 ```
-pip install -r requirements.txt
+#(rebooteo el sistema)
+
+cd /opt/blackstone
+
+./installer.sh
 ```
 </b>
 
 
-- <b>Paso 3</b>: Se arranca la aplicación TorGhost:
+- <b>Paso 3</b>: Se arranca la aplicación BlackStone Project:
 <b>
 
 ```
