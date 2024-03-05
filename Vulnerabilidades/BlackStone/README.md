@@ -56,19 +56,11 @@ cd /opt/blackstone
 </b>
 
 
-- <b>Paso 3</b>: Se arranca la aplicación BlackStone Project:
-<b>
-
-```
-python3 torghost.py
-```
-</b>
-
-En este momento, aparecerá una pantalla similar a la siguiente imagen:
+- <b>Paso 3</b>: Antes de instalar la aplicación como tal, se instalará la versión para Linux de XAMPP. En este momento, aparecerá una pantalla similar a la siguiente imagen:
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="torghost_1.png">
-  <source media="(prefers-color-scheme: light)" srcset="torghost_1.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_1.png" width="50%">
+  <source media="(prefers-color-scheme: dark)" srcset="bstone_1.png">
+  <source media="(prefers-color-scheme: light)" srcset="bstone_1.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_1.png" width="50%">
 </picture>
 
 - <b>Paso 4</b>: Para iniciar la redirección de todo el tráfico por la red TOR, utilizamos el siguiente comando:
