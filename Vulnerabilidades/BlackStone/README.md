@@ -5,11 +5,11 @@
 
 > ### Trabajando con BlacStone V2: Instalación y configuración :computer:
 > BlacStone V2 tiene las siguientes características:
-> - Inclusión de toda la información de una empresa, incluyendo la información personal de CEO, CTO y todos los empleados.
+> - Inclusión de toda la información de una empresa, incluyendo la información personal de CEO, CTO y todos los empleados, servidores (SMTP, POP3...), WhoIs.
 > - Selección y posibilidad de actualización de vulnerabilidades. Se pueden añadir nuevas o traducir/cambiar las existentes.
 > -  
 > - 
-> - 
+> - Generación de informes y posterior guardardado en formato .mht, se puede hacer modificaciones con cualquier editor de texto.
 
 - <b>Paso 0</b>: Accedemos a la carpeta <b>OPT</b> del sistema operativo de Kali, proporcionando una ubicación donde instalar aplicaciones opcionales (de 3º):
 <b>
@@ -83,7 +83,7 @@ cd /opt/blackstone
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/bstone_4.png">
   <source media="(prefers-color-scheme: light)" srcset="images/bstone_4.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_4.png" width="30%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_4.png" width="430%">
 </picture>
 </p>
 
@@ -93,7 +93,7 @@ cd /opt/blackstone
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/bstone_5.png">
   <source media="(prefers-color-scheme: light)" srcset="images/bstone_5.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_5.png" width="50%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_5.png" width="60%">
 </picture>
 </p>
 
@@ -106,7 +106,7 @@ cd /opt/blackstone
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/bstone_8.png">
   <source media="(prefers-color-scheme: light)" srcset="images/bstone_8.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_8.png" width="55%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_8.png" width="70%">
 </picture>
 </p>
 
