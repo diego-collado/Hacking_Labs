@@ -1,8 +1,8 @@
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="hacked.png">
-  <source media="(prefers-color-scheme: light)" srcset="hacked.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="hacked.png" width="25%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/hacked.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/hacked.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/hacked.png" width="25%">
 </picture>
 </p>
 
@@ -10,9 +10,9 @@
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="metasploit.png">
-  <source media="(prefers-color-scheme: light)" srcset="metasploit.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="metasploit.png" width="50%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/metasploit.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/metasploit.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/metasploit.png" width="50%">
 </picture>
 </p>
 
@@ -60,7 +60,7 @@ Es un software de código abierto, originalmente escrito en Perl y posteriorment
 <br>
 <br>
 
-# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="previo.png" width="4%"> Antes de todo... 
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/previo.png" width="4%"> Antes de todo... 
 
 > [!IMPORTANT]
 > Antes de arrancar el framework Metasploit, se hace necesario seguir una serie de pasos imprescindibles para que el sistema esté completamente preparado para la realización correcta del laboratorio.
@@ -98,9 +98,9 @@ Nuestra pantalla deberá ser similar a esta:
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="metasploit_1.png">
-  <source media="(prefers-color-scheme: light)" srcset="metasploit_1.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="metasploit_1.png" width="50%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/metasploit_1.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/metasploit_1.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/metasploit_1.png" width="50%">
 </picture>
 </p>
 
@@ -120,9 +120,9 @@ Veamos el porqué de esta codificación:
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="metasploit_2.png">
-  <source media="(prefers-color-scheme: light)" srcset="metasploit_2.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="metasploit_2.png" width="50%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/metasploit_2.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/metasploit_2.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/metasploit_2.png" width="50%">
 </picture>
 </p>
 
@@ -135,7 +135,7 @@ Veamos el porqué de esta codificación:
 <br>
 <br>
 
-# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
 
 - [LABORATORIO I](Meterpreter):  - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom). 
 - [LABORATORIO II](Indetectable):  - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom). Se utilizará un troyano NO detectable para Windows 10.
