@@ -53,11 +53,13 @@ python3 torghost.py
 </b>
 
 En este momento, aparecerá una pantalla similar a la siguiente imagen:
+<p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/torghost_1.png">
   <source media="(prefers-color-scheme: light)" srcset="images/torghost_1.png">
   <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/torghost_1.png" width="50%">
 </picture>
+</p>
 
 - <b>Paso 4</b>: Para iniciar la redirección de todo el tráfico por la red TOR, utilizamos el siguiente comando:
 <b>
@@ -68,13 +70,13 @@ python3 torghost.py -s
 </b>
 
 El script cargará y aparecerán los correspondientes mensajes de inicio de forzado, cambios de DNS y toda la carga para obtener un resultado óptimo, es decir, CURRENT IP: la nueva IP
-
+<p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/torghost_2.png">
   <source media="(prefers-color-scheme: light)" srcset="images/torghost_2.png">
   <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/torghost_2.png" width="30%">
 </picture>
-
+</p>
 
 - <b>Paso 5</b>: Posteriomente, se comprobará la dirección IP pública de la misma forma que hemos hecho la primera comprobación, ara lo cual se utilizará el navegador de Kali Linux (Mozilla Firefox), donde se introducirá la URL: 
 <b>
