@@ -75,50 +75,33 @@ cd /opt/blackstone
   <source media="(prefers-color-scheme: light)" srcset="bstone_3.png">
   <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_3.png" width="30%">
 </picture>
-
-
 </p>
 
-- <b>Paso 4</b>: Para iniciar la redirección de todo el tráfico por la red TOR, utilizamos el siguiente comando:
-<b>
+- <b>Paso 4</b>: Después de la instalación completa de XAMPP, la aplicación arrancará automáticamente, mostrando la pantalla de login. En esta pantalla podremos seleccionar el idioma en el que queremos que abra esta aplicación (inglés o español)
 
-```
-python3 torghost.py -s
-```
-</b>
-
-El script cargará y aparecerán los correspondientes mensajes de inicio de forzado, cambios de DNS y toda la carga para obtener un resultado óptimo, es decir, CURRENT IP: la nueva IP
-
+<p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="torghost_2.png">
-  <source media="(prefers-color-scheme: light)" srcset="torghost_2.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_2.png" width="30%">
+  <source media="(prefers-color-scheme: dark)" srcset="bstone_4.png">
+  <source media="(prefers-color-scheme: light)" srcset="bstone_4.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_4.png" width="30%">
 </picture>
+</p>
+
+> A partir de este momento, se podrá utilizar la aplicación normalmente. Para su uso, podremos introducir diferentes parámetros (información de la empresa, cliente...), tal y como podemos comprobar en la siguiente imagen:
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="bstone_5.png">
+  <source media="(prefers-color-scheme: light)" srcset="bstone_5.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_5.png" width="30%">
+</picture>
+</p>
+
+> Se podrán realizar las siguientes acciones:
+
+- En la configuración del perfil, cambiaremos la contraseña
+- En la opción <b>Cliente registrados</b>, se puede ir añadiendo los datos que correspondan, como el nombre, redes sociales, correo electrónico y número de teléfono del propietario de la empresa, (comprobar que la contraseña expuesta en la web profunda), añadir subdominios de la web así como información de interés encontrada en Google y, por supuesto, añadir los correos electrónicos de los trabajadores de la empresa.
+- En la opción <b>Informe</b> se creará un informe y se añadirá la empresa a auditar, además de añadir las posibles vulnerabilidades que se han encontrado en los sistemas. La generación del informe se podrá realizar en diversos 
 
 
-- <b>Paso 5</b>: Posteriomente, se comprobará la dirección IP pública de la misma forma que hemos hecho la primera comprobación, ara lo cual se utilizará el navegador de Kali Linux (Mozilla Firefox), donde se introducirá la URL: 
-<b>
 
-```
-https://www.cualesmiip.com/
-```
-</b>
-
-Es posible que el cambio de IP motive la falta de carga de algunos sites... ¡¡Ya estamos en la red TOR!!
-
-Para detener el script:
-<b>
-```
-python3 torghost.py -x
-```
-</b>
-
-
-Para cambiar el nodo de salida:
-<b>
-```
-python3 torghost.py -r
-```
-</b>
-
-> A partir de este momento, todo nuestro tráfico estará redirigido a través de la red TOR.
