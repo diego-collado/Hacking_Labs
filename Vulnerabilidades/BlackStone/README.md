@@ -101,6 +101,19 @@ cd /opt/blackstone
 
 - En la configuración del perfil, cambiaremos la contraseña
 - En la opción <b>Cliente registrados</b>, se puede ir añadiendo los datos que correspondan, como el nombre, redes sociales, correo electrónico y número de teléfono del propietario de la empresa, (comprobar que la contraseña expuesta en la web profunda), añadir subdominios de la web así como información de interés encontrada en Google y, por supuesto, añadir los correos electrónicos de los trabajadores de la empresa.
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="bstone_8.png">
+  <source media="(prefers-color-scheme: light)" srcset="bstone_8.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_8.png" width="20%">
+</picture>
+</p>
+
+
+
+
+
 - En la opción <b>Informe</b> se creará un informe y se añadirá la empresa a auditar, además de añadir las posibles vulnerabilidades que se han encontrado en los sistemas. La generación del informe se podrá realizar en diversos 
 
 
