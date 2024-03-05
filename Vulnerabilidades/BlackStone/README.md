@@ -61,19 +61,19 @@ cd /opt/blackstone
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="bstone_1.png">
   <source media="(prefers-color-scheme: light)" srcset="bstone_1.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_1.png" width="50%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_1.png" width="30%">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="bstone_2.png">
   <source media="(prefers-color-scheme: light)" srcset="bstone_2.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_2.png" width="50%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_2.png" width="30%">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="bstone_3.png">
   <source media="(prefers-color-scheme: light)" srcset="bstone_3.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_3.png" width="50%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_3.png" width="30%">
 </picture>
 
 
