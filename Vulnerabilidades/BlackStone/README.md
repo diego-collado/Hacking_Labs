@@ -99,7 +99,28 @@ cd /opt/blackstone
 > Se podrán realizar las siguientes acciones:
 
 - En la configuración del <b>Perfil</b>, cambiaremos la contraseña
-- En la opción <b>Cliente registrados</b>, se puede ir añadiendo los datos que correspondan, como el nombre, redes sociales, correo electrónico y número de teléfono del propietario de la empresa, (comprobar que la contraseña expuesta en la web profunda), añadir subdominios de la web así como información de interés encontrada en Google y, por supuesto, añadir los correos electrónicos de los trabajadores de la empresa.
+- En la opción <b>Vulnerabilidades</b>, se podrán seleccionar, editar o añadir las vulnerabilidades que se encuentren en los sistemas que están siendo auditados:
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/bstone_7.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/bstone_7.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_7.png" width="70%">
+</picture>
+</p>
+
+Evidentemente, se podrá actualizar cualquier tipo de información a las vulnerabilidades, incluyendo la posible mitigación de la misma:
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/bstone_10.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/bstone_10.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_10.png" width="70%">
+</picture>
+</p>
+
+
+- En la opción <b>Cliente registrados</b>, se puede ir añadiendo los datos que correspondan, como el nombre, redes sociales, correo electrónico y número de teléfono del propietario de la empresa, (comprobar que la contraseña expuesta en la web profunda), añadir subdominios de la web así como información de interés encontrada en Google y, por supuesto, añadir los correos electrónicos de los trabajadores de la empresa:
 
 <p align="center">
 <picture>
@@ -109,11 +130,47 @@ cd /opt/blackstone
 </picture>
 </p>
 
+- En la opción <b>Informe</b> se creará un informe y se añadirá la empresa a auditar, además de añadir las posibles vulnerabilidades que se han encontrado en los sistemas: 
 
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/bstone_11png">
+  <source media="(prefers-color-scheme: light)" srcset="images/bstone_11.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_11.png" width="70%">
+</picture>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/bstone_12png">
+  <source media="(prefers-color-scheme: light)" srcset="images/bstone_12.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_12.png" width="70%">
+</picture>
 
+</p>
 
-- En la opción <b>Informe</b> se creará un informe y se añadirá la empresa a auditar, además de añadir las posibles vulnerabilidades que se han encontrado en los sistemas. La generación del informe se podrá realizar en diversos 
+La generación del informe se podrá guardar en formato web, aunque cabe la posibilidad de poder posteriormente editarlo con cualquier editor de texto: 
 
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/bstone_14png">
+  <source media="(prefers-color-scheme: light)" srcset="images/bstone_14.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_14.png" width="70%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/bstone_15png">
+  <source media="(prefers-color-scheme: light)" srcset="images/bstone_15.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_15.png" width="70%">
+</picture>
+</p>
+
+Evidentemente, se le pueden añadir múltiples opciones:
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/bstone_13.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/bstone_13.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_13.png" width="70%">
+</picture>
+</p>
 
 
