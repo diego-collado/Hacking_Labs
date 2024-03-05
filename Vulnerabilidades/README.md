@@ -19,9 +19,9 @@
 > [!CAUTION]
 > Laboratorios preparados para escaneo de vulnerabilidades y la realización del posterior informe (Kali Linux 2023.4). En este laboratorio se aprender a utilizar la herramienta del proyecto BlackStone o <b>BlackStone Project</b>, herramienta creada con el objetivo de automatizar el trabajo de redacción y envío de un informe sobre auditorías de hacking ético o pentesting donde se puede registrar, incluyendo su página web, subdominios, números de teléfono, redes sociales, correos electrónicos de los empleados… Podremos, en resumen, tener un informe completo de:
 
-- vulnerabilidades encontradas
-- clasificación por auditoría interna, externa o wifi
-- añadir tipo de vulnerabilidad, descripción y recomendación, así como el nivel de gravedad y esfuerzo para su corrección 
+>- vulnerabilidades encontradas
+>- clasificación por auditoría interna, externa o wifi
+>- añadir tipo de vulnerabilidad, descripción y recomendación, así como el nivel de gravedad y esfuerzo para su corrección 
 
 
 > ¿Pero porqué utilizar este tipo de herramientas?
