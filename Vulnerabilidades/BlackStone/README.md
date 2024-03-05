@@ -1,15 +1,15 @@
-# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="black.png" width="4%">	BlackStone Project 
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/black.png" width="4%">	BlackStone Project 
 
 > [!IMPORTANT]
 > Laboratorio BlackStone Project (Kali Linux 2023.4). El proyecto es una herramienta creada con el fin de automatizar el trabajo de redacción y presentación de un informe de auditorías de hacking ético o pentesting, donde podemos registrar (en una base de datos propia) las vulnerabilidades encontradas en la auditoría, clasificándolas por internas, externas o WiFi, colocar la descripción y recomendación de las mismas, así como el nivel de severidad y el esfuerzo para su corrección. Esta información ayudará a generar en el informe una tabla de criticidad como resumen global de las vulnerabilidades encontradas, además de incluir información adicional como página web, subdominios, números de teléfono, redes sociales, correos electrónicos de los empleados…
 
-> ### Trabajando con TorGhost: Instalación y configuración :computer:
-> TorGhost tiene las siguientes características:
-> - Redirección de todo el tráfico de red hacía la red TOR, es decir, cualquier conexión del equipo que intente conectarse a Internet pasará por ella.
-> - No se filtrará ningún ping, lo que protege nuestra identidad.
-> - Fuerza a las aplicaciones a pasar por ella (al contrario que ProxyChain). 
-> - Rechaza peticiones entrantes y salientes que puedan contener información sensible o pueda revelar nuestra IP real.
-> - Protege de la fuga de DNS, permitiendo usar un DNS remoto anónimo.
+> ### Trabajando con BlacStone V2: Instalación y configuración :computer:
+> BlacStone V2 tiene las siguientes características:
+> - 
+> - 
+> -  
+> - 
+> - 
 
 - <b>Paso 0</b>: Accedemos a la carpeta <b>OPT</b> del sistema operativo de Kali, proporcionando una ubicación donde instalar aplicaciones opcionales (de 3º):
 <b>
@@ -59,21 +59,21 @@ cd /opt/blackstone
 - <b>Paso 3</b>: Antes de instalar la aplicación como tal, se instalará la versión para Linux de XAMPP. En este momento, aparecerán las siguientes pantallas, similares a la siguientes imágenes:
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="bstone_1.png">
-  <source media="(prefers-color-scheme: light)" srcset="bstone_1.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_1.png" width="30%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/bstone_1.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/bstone_1.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_1.png" width="30%">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="bstone_2.png">
-  <source media="(prefers-color-scheme: light)" srcset="bstone_2.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_2.png" width="30%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/bstone_2.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/bstone_2.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_2.png" width="30%">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="bstone_3.png">
-  <source media="(prefers-color-scheme: light)" srcset="bstone_3.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_3.png" width="30%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/bstone_3.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/bstone_3.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_3.png" width="30%">
 </picture>
 </p>
 
@@ -81,9 +81,9 @@ cd /opt/blackstone
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="bstone_4.png">
-  <source media="(prefers-color-scheme: light)" srcset="bstone_4.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_4.png" width="30%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/bstone_4.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/bstone_4.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_4.png" width="30%">
 </picture>
 </p>
 
@@ -91,9 +91,9 @@ cd /opt/blackstone
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="bstone_5.png">
-  <source media="(prefers-color-scheme: light)" srcset="bstone_5.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_5.png" width="50%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/bstone_5.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/bstone_5.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_5.png" width="50%">
 </picture>
 </p>
 
@@ -104,9 +104,9 @@ cd /opt/blackstone
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="bstone_8.png">
-  <source media="(prefers-color-scheme: light)" srcset="bstone_8.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_8.png" width="55%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/bstone_8.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/bstone_8.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_8.png" width="55%">
 </picture>
 </p>
 
