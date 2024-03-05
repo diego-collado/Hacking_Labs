@@ -5,8 +5,8 @@
 
 > ### Trabajando con BlacStone V2: Instalación y configuración :computer:
 > BlacStone V2 tiene las siguientes características:
-> - 
-> - 
+> - Inclusión de toda la información de una empresa, incluyendo la información personal de CEO, CTO y todos los empleados.
+> - Selección y posibilidad de actualización de vulnerabilidades. Se pueden añadir nuevas o traducir/cambiar las existentes.
 > -  
 > - 
 > - 
