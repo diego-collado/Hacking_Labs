@@ -82,7 +82,7 @@ cd /opt/blackstone
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/bstone_4.png">
   <source media="(prefers-color-scheme: light)" srcset="images/bstone_4.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_4.png" width="430%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_4.png" width="50%">
 </picture>
 </p>
 
@@ -153,13 +153,13 @@ La generación del informe se podrá guardar en formato web, aunque cabe la posi
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/bstone_14png">
   <source media="(prefers-color-scheme: light)" srcset="images/bstone_14.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_14.png" width="70%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_14.png" width="40%">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/bstone_15png">
   <source media="(prefers-color-scheme: light)" srcset="images/bstone_15.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_15.png" width="70%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_15.png" width="40%">
 </picture>
 </p>
 
@@ -169,7 +169,7 @@ Evidentemente, se le pueden añadir múltiples opciones:
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/bstone_13.png">
   <source media="(prefers-color-scheme: light)" srcset="images/bstone_13.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_13.png" width="70%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bstone_13.png" width="80%">
 </picture>
 </p>
 
