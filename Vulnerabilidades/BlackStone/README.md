@@ -5,10 +5,9 @@
 
 > ### Trabajando con BlacStone V2: Instalación y configuración :computer:
 > BlacStone V2 tiene las siguientes características:
-> - Inclusión de toda la información de una empresa, incluyendo la información personal de CEO, CTO y todos los empleados, servidores (SMTP, POP3...), WhoIs.
+> - Inclusión de toda la información de una empresa, incluyendo la información personal de CEO, CTO y todos los empleados, servidores (SMTP, POP3...), Whois...
 > - Selección y posibilidad de actualización de vulnerabilidades. Se pueden añadir nuevas o traducir/cambiar las existentes.
-> -  
-> - 
+> - Gestión de clientes, incluyendo sus posibles dominios, subdominios y demás información. Ha esta información se le añaden vulnerabilidades e informes de otras herramientas. 
 > - Generación de informes y posterior guardardado en formato .mht, se puede hacer modificaciones con cualquier editor de texto.
 
 - <b>Paso 0</b>: Accedemos a la carpeta <b>OPT</b> del sistema operativo de Kali, proporcionando una ubicación donde instalar aplicaciones opcionales (de 3º):
