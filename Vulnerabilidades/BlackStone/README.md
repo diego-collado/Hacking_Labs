@@ -56,12 +56,28 @@ cd /opt/blackstone
 </b>
 
 
-- <b>Paso 3</b>: Antes de instalar la aplicación como tal, se instalará la versión para Linux de XAMPP. En este momento, aparecerá una pantalla similar a la siguiente imagen:
+- <b>Paso 3</b>: Antes de instalar la aplicación como tal, se instalará la versión para Linux de XAMPP. En este momento, aparecerán las siguientes pantallas, similares a la siguientes imágenes:
+<p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="bstone_1.png">
   <source media="(prefers-color-scheme: light)" srcset="bstone_1.png">
   <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_1.png" width="50%">
 </picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="bstone_2.png">
+  <source media="(prefers-color-scheme: light)" srcset="bstone_2.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_2.png" width="50%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="bstone_3.png">
+  <source media="(prefers-color-scheme: light)" srcset="bstone_3.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="bstone_3.png" width="50%">
+</picture>
+
+
+</p>
 
 - <b>Paso 4</b>: Para iniciar la redirección de todo el tráfico por la red TOR, utilizamos el siguiente comando:
 <b>
