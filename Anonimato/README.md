@@ -1,8 +1,8 @@
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="dark-web.png">
-  <source media="(prefers-color-scheme: light)" srcset="dark-web.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="dark-web.png" width="25%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/dark-web.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/dark-web.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/dark-web.png" width="25%">
 </picture>
 </p>
 
@@ -10,9 +10,9 @@
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="tor.png">
-  <source media="(prefers-color-scheme: light)" srcset="tor.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="tor.png" width="30%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/tor.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/tor.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/tor.png" width="30%">
 </picture>
 </p>
 
@@ -46,7 +46,7 @@ The Onion Router... La conocida como <b>red TOR</b> es una de las mejores opcion
 <br>
 <br>
 
-# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="hacker.png" width="8%"> Antes de todo... 
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/hacker.png" width="8%"> Antes de todo... 
 
 > [!IMPORTANT]
 > Antes de navegar por la Deep Web o utilizar cualquier tipo de herramienta que necesite de una conexión con el exterior, es necesario seguir una serie de pasos imprescindibles para que el sistema esté completamente preparado para la realización correcta del laboratorio.
@@ -61,20 +61,20 @@ https://www.cual-es-mi-ip.net/
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="torghost_1.png">
-  <source media="(prefers-color-scheme: light)" srcset="torghost_1.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_1.png" width="50%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/torghost_1.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/torghost_1.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/torghost_1.png" width="50%">
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="torghost_2.png">
-  <source media="(prefers-color-scheme: light)" srcset="torghost_2.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_2.png" width="50%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/torghost_2.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/torghost_2.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/torghost_2.png" width="50%">
 </picture>
 </p>
 
 <br>
 <br>
 
-# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
 
 - [LABORATORIO I](TorGhost): - Instalación y configuración del script de anonimización <b>TorGhost</b>

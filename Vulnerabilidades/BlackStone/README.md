@@ -99,7 +99,7 @@ cd /opt/blackstone
 
 > Se podrán realizar las siguientes acciones:
 
-- En la configuración del perfil, cambiaremos la contraseña
+- En la configuración del <b>Perfil</b>, cambiaremos la contraseña
 - En la opción <b>Cliente registrados</b>, se puede ir añadiendo los datos que correspondan, como el nombre, redes sociales, correo electrónico y número de teléfono del propietario de la empresa, (comprobar que la contraseña expuesta en la web profunda), añadir subdominios de la web así como información de interés encontrada en Google y, por supuesto, añadir los correos electrónicos de los trabajadores de la empresa.
 
 <p align="center">

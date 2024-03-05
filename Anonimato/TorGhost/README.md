@@ -1,4 +1,4 @@
-# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="hacker.png" width="4%">	TorGhost 
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/hacker.png" width="4%">	TorGhost 
 
 > [!IMPORTANT]
 > Laboratorio TorGhost (Kali Linux 2023.4). TorGhost es un script de anonimización que redirige todo el tráfico de Internet a través de SOCKS5 TOR Proxy. Las solicitudes de DNS también se redirigen a través de Tor, evitando así DNSLeak, además de desactivar los paquetes inseguros que salen del sistema (solicitud de ping entre otros), los cuales pueden comprometer su identidad.
@@ -54,9 +54,9 @@ python3 torghost.py
 
 En este momento, aparecerá una pantalla similar a la siguiente imagen:
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="torghost_1.png">
-  <source media="(prefers-color-scheme: light)" srcset="torghost_1.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_1.png" width="50%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/torghost_1.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/torghost_1.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/torghost_1.png" width="50%">
 </picture>
 
 - <b>Paso 4</b>: Para iniciar la redirección de todo el tráfico por la red TOR, utilizamos el siguiente comando:
@@ -70,9 +70,9 @@ python3 torghost.py -s
 El script cargará y aparecerán los correspondientes mensajes de inicio de forzado, cambios de DNS y toda la carga para obtener un resultado óptimo, es decir, CURRENT IP: la nueva IP
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="torghost_2.png">
-  <source media="(prefers-color-scheme: light)" srcset="torghost_2.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="torghost_2.png" width="30%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/torghost_2.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/torghost_2.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/torghost_2.png" width="30%">
 </picture>
 
 
