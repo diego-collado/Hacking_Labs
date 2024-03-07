@@ -138,4 +138,5 @@ Veamos el porqué de esta codificación:
 # <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
 
 - [LABORATORIO I](Meterpreter):  - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom). 
-- [LABORATORIO II](Indetectable):  - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom). Se utilizará un troyano NO detectable para Windows 10.
+- [LABORATORIO II](TCPDoS):  - Ataque DoS (Denial Of Service) utilizando SYNFlood (inundación de peticiones al objetivo mediante paquetes SYN)
+- [LABORATORIO III](Indetectable):  - Creación, instalación y manejo de Meterpreter (Metasploit + MSFVenom). Se utilizará un troyano NO detectable para Windows 10.
