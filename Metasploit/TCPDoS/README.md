@@ -1,7 +1,12 @@
-# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/DoS.png" width="4%">	Meterpreter & Troyano Indetectable (reverse_tcp y reverse_https)
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/DoS.png" width="4%">	Ataque DoS (Denial Of Service) utilizando SYNFlood
 
 > [!IMPORTANT]
-> Laboratorio Meterpreter en <b>framework Metasploit</b> (Kali Linux 2023.4). Meterpreter (Meterpreter es el diminutivo para meta-interprete) es un payload que permite ejecutar tareas de forma remota en una máquina que se ejecuta en un nivel muy bajo de la máquina, por lo que es bastante difícil de detectar y, por tanto, muy útil para evadir sistemas antivirus, IDS o IPS. Gracias al payload Meterpreter, es posible realizar multitud de acciones sobre el sistema vulnerado, si bien no tiene porqué comportarse de la misma forma en todos los sistemas operativos. Este Payload que se ejecuta después del proceso de explotación o abuso de una vulnerabilidad en un sistema operativo, siempre en memoria, lo que evitará ser detectado.
+> Laboratorio SynFlood en <b>framework Metasploit</b> (Kali Linux 2023.4). Un ataque DoS o DDoS no es más que el envío de un número exageradamente elevado de peticiones a una dirección IP que, normalmente, suele ser un servidor o infraestructura, el cual llega a ser incapaz de gestionar dicho número de peticiones, causando un error o crasheo del sistema y la detención y/o reinicio de servicios, quedando inaccesible al resto de usuarios. 
+
+> Ahora bien, la diferencia entre un ataque <b>DoS (Denial of Service o Denegación de Servicio)</b> y un <b>ataque DDoS ( Distributed Denial of Service o Denegación de Servicio Distribuido)</b> es muy sencilla ya que en el ataque DoS, el atacante cuenta con un único equipo, mientras que para el ataque DDoS se usan múltiples máquinas simultáneamente. Estas máquinas suelen pertenecer a <b>botnets</b> (redes de equipos/servidores controlados por un único atacante).
+
+
+
 
 > ### Trabajando con Meterpreter: MSFVenom y la generación de un Payload :computer:
 > Con MSFVenom se simplifica la generación de payloads y los intentos de codificación de éstos, entre cuyas opciones podemos destacar: 
