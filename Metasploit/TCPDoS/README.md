@@ -5,6 +5,11 @@
 
 > Ahora bien, la diferencia entre un ataque <b>DoS (Denial of Service o Denegación de Servicio)</b> y un <b>ataque DDoS ( Distributed Denial of Service o Denegación de Servicio Distribuido)</b> es muy sencilla ya que en el ataque DoS, el atacante cuenta con un único equipo, mientras que para el ataque DDoS se usan múltiples máquinas simultáneamente. Estas máquinas suelen pertenecer a <b>botnets</b> (redes de equipos/servidores controlados por un único atacante).
 
+> En este caso, con el ataque de tipo <b>SYN flood</b>, constituye un abuso del <b>TCP Threeway Handshake</b>:
+- 1.- Se utiliza el <b>TCP (Transmission Control Protocol)</b>, un protocolo de red que, junto al IP, asegura un tráfico de datos sin pérdidas a través de Internet. Una conexión TCP siempre se establece con una autenticación completa de tres pasos. 
+- 2.- Para la conexión, el cliente envía un <b>paquete de sincronización (SYN)</b> al servidor, el cual, cuando es recibido por parte del servidor, responde con un <b>paquete de sincronización (SYN)</b> y una <b>confirmación (ACK)</b>. 
+- 3.- La conexión concluye con el <b>acuse de recibo (ACK)</b> se realizar por parte del cliente. 
+> En caso de que el último acuse no se produzca, los sistemas se pueden paralizar ya que el servidor no cuenta en su memoria con suficientes conexiones confirmadas... Por medio de una inundación SYN se reúne un gran número de conexiones incompletas, por lo que los recursos disponibles del servidor se ocupan por completo.
 
 > ### Primeros conceptos: MODELO TCP/IP :computer:
 > Como primer concepto, se ha de conocer el <b>modelo TCP/IP</b>, protocolo de red que permite la comunicación a través de Internet (abreviatura de <b>Protocolo de control de transmisión/Protocolo de Internet</b>), el cual es un protocolo estándar y un modelo (en la actualidad) de 4 capas que define cómo se transmiten los datos a través de una red y cómo se comunican los dispositivos. Su origen se da en la década de 1970 gracias al Departamento de Defensa de USA (DOD), ya que se pretendía crear una red que pudiera funcionar incluso si partes de ella resultaran dañadas o destruidas. Posteriormente, el modelo TCP/IP se publicó por primera vez en 1981 (versión 4) y luego se actualizó a la versión 6 en 1995. 
@@ -42,6 +47,7 @@
 - <b>Ataque directo</b>: en este caso, el atacante no oculta su dirección IP. Dado que para crear el ataque utiliza un único dispositivo de origen con una dirección IP real, el atacante es altamente vulnerable a ser descubierto y a las mitigaciones (blacklist y otros bloqueos). 
 - <b>Ataque con suplantación</b>: el atacante puede falsificar la dirección IP en cada paquete SYN que dr envíe para obstaculizar los esfuerzos de mitigación y dificultar que se descubra su identidad... Los paquetes pueden ser falsificados, aunque estos podrían llegar a rastrearse hasta su origen ya que, principalmente, dependemos de los <b>ISP (Internet Service Provider)</b>.
 - <b>Ataque distribuido (DDoS)</b>: si un ataque se crea usando una <b>red de bots (botnet)</b>, es muy difícil rastrear el ataque hasta su origen ya que, por añadidura, el atacante puede hacer que cada dispositivo distribuido también falsifique las direcciones IP desde las que envía los paquetes. 
+- <b>Ataques SYN flood por reflejo</b>: un servidor suele responder normalmente a un solo paquete SYN con varios paquetes SYN/ACK, por lo que se puede aprovechar esta circunstancia para lanzar un ataque SYN flood por reflejo donde el atacante falsifica la dirección IP de la víctima e inicia un ataque SYN flood DDoS contra uno o varios servidores de terceras partes... Así, cada uno de los servidores responde a cada paquete SYN entrante con varios paquetes SYN/ACK que se envían a la víctima, por lo que se produce una multiplicación del tráfico de red y, evidentemente, un bombardeo de paquetes SYN/ACK recibido en el PC de la víctima, el cual terminará colapsando.
 
 > En la realidad, al usar un ataque de inundación SYN, se intenta crear una denegación de servicio en un dispositivo o servicio atacado con bastante menos tráfico que otros tipos de ataques DDoS más agresivos, es decir, que en lugar de ataques volumétricos (que intentan saturar la infraestructura de la red que rodea al objetivo), los ataques SYN solo necesitan ser más grandes que el registro disponible dentro del sistema operativo del objetivo. Así, si se logra determinar el tamaño del registro y cuánto tiempo queda abierta una conexión antes de que finalice el tiempo de espera, entonces se podrán obtener los parámetros exactos necesarios para deshabilitar el sistema, reduciendo el tráfico total hasta el mínimo necesario para crear una denegación de servicio.
 
@@ -53,18 +59,14 @@
 </picture>
 </p>
 
+> ### Trabajando con TCP-SYN Flood / SYN-ACK: HPing3 :computer:
+> <b>Hping3</b> es una aplicación de Kali Linux que permite analizar y ensamblar paquetes TCP/IP, aunque se utiliza para enviar paquetes TCP, UDP y RAW-IP. Su uso va desde el simple análisis de los paquetes, hasta probar la eficacia de un firewall a través de diferentes protocolos, la detección de paquetes sospechosos o modificados e incluso la protección frente a ataques DoS de un sistema o de un firewall.
+> Veamos diversos tipos de ataque SYN Flooding:
 
-
-
-
-----------------------------
-
-
-- <b>Paso 1</b>: Ya dentro de Metasploit Framework, se utilizará el exploit multi handler, payload que se utiliza para conectar con el objetivo. Dependiendo del tipo de payload, el handler queda a la espera (está en modo escucha) de una conexión por parte del payload cargado en el objetivo (reverse payload), llegando a iniciar una conexión contra el host y puertos objetivo en ciertos casos (bind payload). En la consola, se codifica:
+- <b>Paso 1</b>: En la shell (con privilegios de administrador), lanzamos el comando o, si no está disponible, instalaremos el paquete mediante el código:
 <b>
 
 ```
-use exploit/multi/handler
+apt-get install hping3
 ```
 </b>
-
