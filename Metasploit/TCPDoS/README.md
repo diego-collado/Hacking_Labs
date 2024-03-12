@@ -40,8 +40,24 @@
 
 > Existen varios tipo de ataque:
 - <b>Ataque directo</b>: en este caso, el atacante no oculta su dirección IP. Dado que para crear el ataque utiliza un único dispositivo de origen con una dirección IP real, el atacante es altamente vulnerable a ser descubierto y a las mitigaciones (blacklist y otros bloqueos). 
-- <b>Ataque con suplantación</b>: el atacante puede falsificar la dirección IP en cada paquete SYN que dr envíe para obstaculizar los esfuerzos de mitigación y dificultar que se descubra su identidad... Los paquetes pueden ser falsificados, aunque estos podrían llegar a rastrearse hasta su origen. 
+- <b>Ataque con suplantación</b>: el atacante puede falsificar la dirección IP en cada paquete SYN que dr envíe para obstaculizar los esfuerzos de mitigación y dificultar que se descubra su identidad... Los paquetes pueden ser falsificados, aunque estos podrían llegar a rastrearse hasta su origen ya que, principalmente, dependemos de los <b>ISP (Internet Service Provider)</b>.
 - <b>Ataque distribuido (DDoS)</b>: si un ataque se crea usando una <b>red de bots (botnet)</b>, es muy difícil rastrear el ataque hasta su origen ya que, por añadidura, el atacante puede hacer que cada dispositivo distribuido también falsifique las direcciones IP desde las que envía los paquetes. 
+
+> En la realidad, al usar un ataque de inundación SYN, se intenta crear una denegación de servicio en un dispositivo o servicio atacado con bastante menos tráfico que otros tipos de ataques DDoS más agresivos, es decir, que en lugar de ataques volumétricos (que intentan saturar la infraestructura de la red que rodea al objetivo), los ataques SYN solo necesitan ser más grandes que el registro disponible dentro del sistema operativo del objetivo. Así, si se logra determinar el tamaño del registro y cuánto tiempo queda abierta una conexión antes de que finalice el tiempo de espera, entonces se podrán obtener los parámetros exactos necesarios para deshabilitar el sistema, reduciendo el tráfico total hasta el mínimo necesario para crear una denegación de servicio.
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/TCPSyn_3.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/TCPSyn_3.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/TCPSyn_3.png" width="50%">
+</picture>
+</p>
+
+
+
+
+
+----------------------------
 
 
 - <b>Paso 1</b>: Ya dentro de Metasploit Framework, se utilizará el exploit multi handler, payload que se utiliza para conectar con el objetivo. Dependiendo del tipo de payload, el handler queda a la espera (está en modo escucha) de una conexión por parte del payload cargado en el objetivo (reverse payload), llegando a iniciar una conexión contra el host y puertos objetivo en ciertos casos (bind payload). En la consola, se codifica:
