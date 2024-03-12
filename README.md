@@ -17,10 +17,10 @@ Ejemplos funcionales de cada tipos de ataque (últimas versiones), orientados a 
 
 ## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/mal.png" width="8%">Accede al contenido 
 
-- [Metasploit](Metasploit): Diversos tipos de ataque con el <b>Framework METASPLOIT</b>
+- [Metasploit](Metasploit): Diversos tipos de ataque con el <b>Framework METASPLOIT</b> y herramientas similares
 - [Anonimato](Anonimato): Encubriendo nuestras huellas mediante <b>TOR y enrutadores ONION</b>
-- [Vulnerabilidades](Vulnerabilidades): Realización de informes completos de vulnerabilidades (brechas de seguridad, aplicaciones antiguas/sin update...).
-
+- [Vulnerabilidades](Vulnerabilidades): Realización de informes completos de vulnerabilidades (brechas de seguridad, aplicaciones antiguas/sin update...)
+- [Mitigación](Mitigacion): Mitigación de diferentes ataques gracias a reconfiguraciones, updates o software de terceros configurado para evadir cualquier tipo de ataque
 
 <br>
 <br>

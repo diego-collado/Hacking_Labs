@@ -1,9 +1,23 @@
-# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/DoS.png" width="4%">	Ataque DoS (Denial Of Service) utilizando SYNFlood
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/DoS.png" width="4%">	Ataque DoS (Denial Of Service) utilizando HTTPFlood
 
 > [!IMPORTANT]
-> Laboratorio SynFlood en <b>framework Metasploit</b> (Kali Linux 2023.4) y otras herramientas (<b>HPing 3</b>). Un ataque DoS o DDoS no es más que el envío de un número exageradamente elevado de peticiones a una dirección IP que, normalmente, suele ser un servidor o infraestructura, el cual llega a ser incapaz de gestionar dicho número de peticiones, causando un error o crasheo del sistema y la detención y/o reinicio de servicios, quedando inaccesible al resto de usuarios. 
+> Laboratorio HTTPFlood (Kali Linux 2023.4) mediante la utiliación de scripts externos como <b>Slowloris</b>, <b>DoS-Tool</b> y <b>TCP-UDP-Flood</b>. Un ataque DoS o DDoS no es más que el envío de un número exageradamente elevado de peticiones a una dirección IP que, normalmente, suele ser un servidor o infraestructura, el cual llega a ser incapaz de gestionar dicho número de peticiones, causando un error o crasheo del sistema y la detención y/o reinicio de servicios, quedando inaccesible al resto de usuarios. 
 
 > Ahora bien, la diferencia entre un ataque <b>DoS (Denial of Service o Denegación de Servicio)</b> y un <b>ataque DDoS ( Distributed Denial of Service o Denegación de Servicio Distribuido)</b> es muy sencilla ya que en el ataque DoS, el atacante cuenta con un único equipo, mientras que para el ataque DDoS se usan múltiples máquinas simultáneamente. Estas máquinas suelen pertenecer a <b>botnets</b> (redes de equipos/servidores controlados por un único atacante).
+
+
+https://www.ionos.es/digitalguide/servidores/seguridad/ataque-http-flood/
+https://www.imperva.com/learn/ddos/http-flood/
+https://www.radware.com/cyberpedia/application-security/http-flood/
+https://forum.huawei.com/enterprise/es/http-flood-ataque-y-defensa/thread/667213259423498240-667212881550258176
+https://kalilinuxtutorials.com/wreckuests-ddos-atacks/
+https://www.kali.org/tools/slowhttptest/
+https://www.tutorialspoint.com/kali_linux/kali_linux_stressing_tools.htm
+https://linuxhint.com/hping3/
+https://www.geeksforgeeks.org/slowloris-ddos-attack-tool-in-kali-linux/
+https://kalilinuxtutorials.com/tag/http-flood/
+------------------------------------------------------------------------------
+
 
 > En este caso, con el ataque de tipo <b>SYN flood</b>, constituye un abuso del <b>TCP Threeway Handshake</b>:
 - 1.- Se utiliza el <b>TCP (Transmission Control Protocol)</b>, un protocolo de red que, junto al IP, asegura un tráfico de datos sin pérdidas a través de Internet. Una conexión TCP siempre se establece con una autenticación completa de tres pasos. 
