@@ -139,4 +139,4 @@ Veamos el porqué de esta codificación:
 
 - [LABORATORIO I](Meterpreter):  - Creación, instalación y manejo de Meterpreter (<b>Metasploit + MSFVenom</b>). 
 
-- [LABORATORIO II](TCPDoS):  - Ataque DoS <b>(Denial Of Service)</b> utilizando <b>SYNFlood</b> (inundación de peticiones al objetivo mediante paquetes SYN).
+- [LABORATORIO II](SYNFloodDoS):  - Ataque DoS <b>(Denial Of Service)</b> utilizando <b>SYNFlood</b> (inundación de peticiones al objetivo mediante paquetes SYN).
