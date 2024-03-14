@@ -1,15 +1,15 @@
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="/images/mitigacion.png">
-  <source media="(prefers-color-scheme: light)" srcset="/images/mitigacion.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/mitigacion.png" width="25%">
+  <source media="(prefers-color-scheme: dark)" srcset="/images/mit.png">
+  <source media="(prefers-color-scheme: light)" srcset="/images/mit.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/mit.png" width="25%">
 </picture>
 </p>
 
 # :desktop_computer:	Hacking_Labs 
 
 > [!CAUTION]
-> Laboratorios preparados para realizar cualquiera de los ataques más comunes que hay disponible en la red (XSS, Metasploit...), basados en el desarrollo natural de clases de Hacking Ético y Cibssss
+> Laboratorios preparados para
 
 
 http://www.securitybydefault.com/2010/02/syn-flood-que-es-y-como-mitigarlo.html
@@ -23,9 +23,9 @@ https://www.ionos.es/digitalguide/servidores/seguridad/syn-flood/
 
 ## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/mal.png" width="8%">Accede al contenido 
 
-- [Metasploit](Metasploit): Diversos tipos de ataque con el <b>Framework METASPLOIT</b>
-- [Anonimato](Anonimato): Encubriendo nuestras huellas mediante <b>TOR y enrutadores ONION</b>
-- [Vulnerabilidades](Vulnerabilidades): Realización de informes completos de vulnerabilidades (brechas de seguridad, aplicaciones antiguas/sin update...).
+- [xx](Metasploit): Diversos tipos de ataque con el <b>Framework METASPLOIT</b>
+- [xx](Anonimato): Encubriendo nuestras huellas mediante <b>TOR y enrutadores ONION</b>
+- [xx](Vulnerabilidades): Realización de informes completos de vulnerabilidades (brechas de seguridad, aplicaciones antiguas/sin update...).
 
 
 <br>
