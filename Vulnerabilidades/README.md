@@ -8,14 +8,6 @@
 
 # :desktop_computer:	Informes de vulnerabilidades 
 
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/reporte.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/reporte.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/reporte.png" width="30%">
-</picture>
-</p>
-
 > [!CAUTION]
 > Laboratorios preparados para escaneo de vulnerabilidades y la realización del posterior informe (Kali Linux 2023.4). En los laboratorios se pretender mostrar varias herramientas que nos permitan automatizar el trabajo de redacción y envío de un informe sobre auditorías de hacking ético o pentesting donde se puede registrar, incluyendo su página web, subdominios, números de teléfono, redes sociales, correos electrónicos de los empleados… Podremos, en resumen, tener un informe completo de:
 
