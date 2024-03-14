@@ -8,7 +8,7 @@
 
 # :desktop_computer:	Mitigación de ataques Web / App
 
-> [!NOTICE]
+> [!WARNING]
 > Laboratorios preparados para el aprendizaje de herramientas, medidas y técnicas diseñadas para reducir el impacto de los ataques dirigidos a aplicaciones web y servicios en línea, como pueden ser:
 > - SQLi 
 > - Cross-Site Scripting (XSS) 
