@@ -19,13 +19,7 @@
 > https://www.powerwaf.com/es/learning/ddos-attacks/syn-flood-attack/
 > https://www.ionos.es/digitalguide/servidores/seguridad/syn-flood/
 
-<br>
 
-## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/mal.png" width="8%">Accede al contenido 
-
-- [xx](Metasploit): Diversos tipos de ataque con el <b>Framework METASPLOIT</b>
-- [xx](Anonimato): Encubriendo nuestras huellas mediante <b>TOR y enrutadores ONION</b>
-- [xx](Vulnerabilidades): Realización de informes completos de vulnerabilidades (brechas de seguridad, aplicaciones antiguas/sin update...).
 
 
 <br>
