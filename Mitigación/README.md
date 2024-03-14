@@ -1,8 +1,8 @@
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/mit.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/mit.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/mit.png" width="25%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/mitigacion.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/mitigacion.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/mitigacion.png" width="25%">
 </picture>
 </p>
 
