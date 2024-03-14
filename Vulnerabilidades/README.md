@@ -15,7 +15,6 @@
 >- clasificación por auditoría interna, externa o wifi
 >- añadir tipo de vulnerabilidad, descripción y recomendación, así como el nivel de gravedad y esfuerzo para su corrección 
 
-
 > ¿Pero porqué utilizar este tipo de herramientas?
 La realización de un informe final de vulnerabilidades es un verdadero y auténtico caos si no se cuidan las herramientas con las que se están realizando estos escaneos... Debemos tener en cuenta que cada una de ellas genera un reporte que, al final, tendrá que ser resumido, explicado y filtrado debido a que, en la mayor parte de los casos, se listan cantidades muy grandes de información. Gracias a aplicaciones de este tipo, toda la información nos ayudará a generar en el informe una tabla de criticidad como resumen global de las vulnerabilidades encontradas en nuestros clientes.
 
