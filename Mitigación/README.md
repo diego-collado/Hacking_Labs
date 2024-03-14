@@ -11,16 +11,22 @@
 > [!CAUTION]
 > Laboratorios preparados para realizar cualquiera de los ataques más comunes que hay disponible en la red (XSS, Metasploit...), basados en el desarrollo natural de clases de Hacking Ético y Ciberseguridad (nivel básico, medio y avanzado), por lo que se incluirán muchos scripts, cheatsheet y programas que serán necesarios para el correcto desarrollo de cada fase.
 
-Ejemplos funcionales de cada tipos de ataque (últimas versiones), orientados a proporcionar conocimientos teórico-prácticos de Hacking Ético y Ciberseguridad.
+
+http://www.securitybydefault.com/2010/02/syn-flood-que-es-y-como-mitigarlo.html
+https://www.computerweekly.com/es/definicion/Inundacion-SYN
+https://www.cloudflare.com/es-es/learning/ddos/syn-flood-ddos-attack/
+https://www.ionos.es/digitalguide/servidores/know-how/dos-y-ddos-un-vistazo-a-ambos-patrones-de-ataque/
+https://www.powerwaf.com/es/learning/ddos-attacks/syn-flood-attack/
+https://www.ionos.es/digitalguide/servidores/seguridad/syn-flood/
 
 <br>
 
 ## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/mal.png" width="8%">Accede al contenido 
 
-- [Metasploit](Metasploit): Diversos tipos de ataque con el <b>Framework METASPLOIT</b> y herramientas similares
+- [Metasploit](Metasploit): Diversos tipos de ataque con el <b>Framework METASPLOIT</b>
 - [Anonimato](Anonimato): Encubriendo nuestras huellas mediante <b>TOR y enrutadores ONION</b>
-- [Vulnerabilidades](Vulnerabilidades): Realización de informes completos de vulnerabilidades (brechas de seguridad, aplicaciones antiguas/sin update...)
-- [Mitigación](Mitigacion): Mitigación de diferentes ataques gracias a reconfiguraciones, updates o software de terceros configurado para evadir cualquier tipo de ataque
+- [Vulnerabilidades](Vulnerabilidades): Realización de informes completos de vulnerabilidades (brechas de seguridad, aplicaciones antiguas/sin update...).
+
 
 <br>
 <br>

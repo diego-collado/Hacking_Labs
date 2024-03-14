@@ -139,6 +139,6 @@ Veamos el porqué de esta codificación:
 
 - [LABORATORIO I](Meterpreter):  - Creación, instalación y manejo de Meterpreter (<b>Metasploit + MSFVenom</b>). 
 
-- [LABORATORIO II](TCPDoS):  - Ataque DoS <b>(Denial Of Service)</b> utilizando <b>SYNFlood</b> (inundación de peticiones al objetivo mediante paquetes SYN).
+- [LABORATORIO II](SYNFloodDoS):  - Ataque DoS <b>(Denial Of Service)</b> utilizando <b>SYNFlood</b> (inundación de peticiones al objetivo mediante paquetes SYN).
 
-- [LABORATORIO III](Indetectable):  - Creación, instalación y manejo de Meterpreter.(<b>Metasploit + MSFVenom</b>) mediante la instalación de un troyano NO detectable en Windows 10.
+- [LABORATORIO III]():  - Ataque DoS <b>(Denial Of Service)</b> utilizando <b>HTTPlood</b> (inundación de peticiones al objetivo mediante peticiones GET o POST del cliente).
