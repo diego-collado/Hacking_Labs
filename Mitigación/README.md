@@ -6,10 +6,17 @@
 </picture>
 </p>
 
-# :desktop_computer:	Hacking_Labs 
+# :desktop_computer:	Mitigación de ataques Web / App
 
 > [!CAUTION]
-> Laboratorios preparados para
+> Laboratorios preparados para el aprendizaje de herramientas, medidas y técnicas diseñadas para reducir el impacto de los ataques dirigidos a aplicaciones web y servicios en línea, como pueden ser:
+> - SQLi 
+> - Cross-Site Scripting (XSS) 
+> - Denegación de servicio (DoS) 
+> - Denegación de servicio Distribuída (DDoS) 
+> - otros métodos de explotación de vulnerabilidades en aplicaciones web/servicio
+
+> Además de la identificación de posibles puntos débiles en una aplicación web o servicio, se deberán tomar medidas proactivas para proteger este tipo de activos, lo que incluye involucrar sistemas preparados para este tipo de ataques como puede ser la instalación y configuración de firewalls de aplicaciones web (WAF), sistemas de detección de intrusiones (IDS), sistemas de prevención de intrusiones (IPS) y otras soluciones de seguridad para monitorear y filtrar el tráfico web entrante y saliente como los SIEM.
 
 
 > http://www.securitybydefault.com/2010/02/syn-flood-que-es-y-como-mitigarlo.html
