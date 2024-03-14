@@ -12,12 +12,12 @@
 > Laboratorios preparados para
 
 
-http://www.securitybydefault.com/2010/02/syn-flood-que-es-y-como-mitigarlo.html
-https://www.computerweekly.com/es/definicion/Inundacion-SYN
-https://www.cloudflare.com/es-es/learning/ddos/syn-flood-ddos-attack/
-https://www.ionos.es/digitalguide/servidores/know-how/dos-y-ddos-un-vistazo-a-ambos-patrones-de-ataque/
-https://www.powerwaf.com/es/learning/ddos-attacks/syn-flood-attack/
-https://www.ionos.es/digitalguide/servidores/seguridad/syn-flood/
+> http://www.securitybydefault.com/2010/02/syn-flood-que-es-y-como-mitigarlo.html
+> https://www.computerweekly.com/es/definicion/Inundacion-SYN
+> https://www.cloudflare.com/es-es/learning/ddos/syn-flood-ddos-attack/
+> https://www.ionos.es/digitalguide/servidores/know-how/dos-y-ddos-un-vistazo-a-ambos-patrones-de-ataque/
+> https://www.powerwaf.com/es/learning/ddos-attacks/syn-flood-attack/
+> https://www.ionos.es/digitalguide/servidores/seguridad/syn-flood/
 
 <br>
 
