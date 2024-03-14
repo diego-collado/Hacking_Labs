@@ -1,7 +1,20 @@
 # <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/hacker.png" width="4%">	TorGhost 
 
 > [!IMPORTANT]
-> Laboratorio TorGhost (Kali Linux 2023.4). TorGhost es un script de anonimización que redirige todo el tráfico de Internet a través de SOCKS5 TOR Proxy. Las solicitudes de DNS también se redirigen a través de Tor, evitando así DNSLeak, además de desactivar los paquetes inseguros que salen del sistema (solicitud de ping entre otros), los cuales pueden comprometer su identidad.
+> Como ya se ha comentado, un ataque por inundación SYN (SYN flooding) es un método que el atacante realiza un ataque de denegación de servicio (DoS) a un servidor remoto mediante el envío repetido de paquetes SYN (sincronización) a cada puerto en el servidor, usando direcciones IP falsas, cuyo último resultado es la sobrecarga de información en el sistema, algo que ralentizará las respuestas o, incluso, dejará completam
+
+
+ su respuesta al tráfico legítimo o deje de responder por completo..
+
+> http://www.securitybydefault.com/2010/02/syn-flood-que-es-y-como-mitigarlo.html
+> https://www.computerweekly.com/es/definicion/Inundacion-SYN
+> https://www.cloudflare.com/es-es/learning/ddos/syn-flood-ddos-attack/
+> https://www.ionos.es/digitalguide/servidores/know-how/dos-y-ddos-un-vistazo-a-ambos-patrones-de-ataque/
+> https://www.powerwaf.com/es/learning/ddos-attacks/syn-flood-attack/
+> https://www.ionos.es/digitalguide/servidores/seguridad/syn-flood/
+
+
+
 
 > ### Trabajando con TorGhost: Instalación y configuración :computer:
 > TorGhost tiene las siguientes características:
