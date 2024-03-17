@@ -2,7 +2,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/bicho.png">
   <source media="(prefers-color-scheme: light)" srcset="images/bicho.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bicho.png" width=55%>
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bicho.png" width="25%">
 </picture>
 </p>
 
