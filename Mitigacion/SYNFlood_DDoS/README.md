@@ -1,23 +1,23 @@
 # <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/hacker.png" width="4%">	TorGhost 
 
 > [!IMPORTANT]
-> Como ya se ha comentado, un ataque por inundación SYN (SYN flooding) es un método que el atacante realiza un ataque de denegación de servicio (DoS) a un servidor remoto mediante el envío repetido de paquetes SYN (sincronización) a cada puerto en el servidor, usando direcciones IP falsas, cuyo último resultado es la sobrecarga de información en el sistema, algo que ralentizará las respuestas o, incluso, dejará completam
+> Como ya se ha comentado, un <b>ataque por inundación SYN (SYN flooding)</b> es un método que el atacante realiza un ataque de denegación de servicio (DoS) a un servidor remoto mediante el envío repetido de <b>paquetes SYN (sincronización)</b> a cada puerto en el servidor, usando direcciones IP falsas, cuyo último resultado es la sobrecarga de información en el sistema, algo que ralentizará las respuestas o, incluso, dejará completamente caído el servidor completo, deteniendo el acceso del tráfico legítimo al mismo.
+
+> ### Funcionamiento :globe_with_meridians:
+> Veamos un esquema de conexión real:
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/images/SYNFlood_DDoS_1">
+  <source media="(prefers-color-scheme: light)" srcset="/images/SYNFlood_DDoS_1.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/SYNFlood_DDoS_1.png" width="25%">
+</picture>
+</p>
 
 
- su respuesta al tráfico legítimo o deje de responder por completo..
-
-> http://www.securitybydefault.com/2010/02/syn-flood-que-es-y-como-mitigarlo.html
-> https://www.computerweekly.com/es/definicion/Inundacion-SYN
-> https://www.cloudflare.com/es-es/learning/ddos/syn-flood-ddos-attack/
-> https://www.ionos.es/digitalguide/servidores/know-how/dos-y-ddos-un-vistazo-a-ambos-patrones-de-ataque/
-> https://www.powerwaf.com/es/learning/ddos-attacks/syn-flood-attack/
-> https://www.ionos.es/digitalguide/servidores/seguridad/syn-flood/
 
 
 
-
-> ### Trabajando con TorGhost: Instalación y configuración :computer:
-> TorGhost tiene las siguientes características:
 > - Redirección de todo el tráfico de red hacía la red TOR, es decir, cualquier conexión del equipo que intente conectarse a Internet pasará por ella.
 > - No se filtrará ningún ping, lo que protege nuestra identidad.
 > - Fuerza a las aplicaciones a pasar por ella (al contrario que ProxyChain). 
