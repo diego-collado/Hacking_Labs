@@ -11,10 +11,10 @@
 > [!CAUTION]
 > Laboratorios preparados para la realización de <b>ataques Cross-Site Scripting (XSS)</b> (Kali Linux 2023.4). Este laboratorio trata de realizar un ataque de inyección de código en el lado cliente, es decir, el atacante pretende ejecutar scripts (maliciosos) en el navegador web de la víctima, así como incluir código maligno en una página o aplicación web legítima de modo que al conectar se ejecute ese código, infectando o robando cierta información al browser de la víctima. Este tipo de ataques se realizan mediante scripts programados en VBScript, ActiveX, Flash e incluso CSS, aunque lo más común es la utilización de JavaScript.
 
-> XSS... ¿No es un problema del usuario?
+## XSS... ¿No es un problema del usuario?
 En realidad <b>NO</b>, no es un problema del usuario, como cualquiera de las otras vulnerabilidades conocidas... XSS aprovecha vulnerabilidades para poder cambiar el contenido del site, redirigir al browser a otro website y muchas acciones más.
 
-> Utilizando JavaScript (JS) por parte del atacante...
+## Utilizando JavaScript (JS) por parte del atacante...
 Es cierto que si buscamos por Internet, las vulnerabilidades XSS son percibidas como menos peligrosas que, por ejemplo, las vulnerabilidades de inyección SQL... Nada más lejos de la realidad ya que las consecuencias de la capacidad de ejecutar JavaScript por parte de los navegadores web (aunque en un entorno muy controlado), proporcionan un acceso limitado al sistema operativo del usuario y a sus archivos, lo que lo convierte en un peligroso ataque: 
 - El código JS malicioso tiene acceso a todos los objetos a los que tiene acceso el resto de la página web, lo que incluye el acceso a las cookies del usuario, utilizadas para almacenar la sesión. Si se obtiene la cookie de sesión de un usuario, puede hacerse pasar por este, realizando acciones en su nombre y obteniendo acceso a los datos confidenciales o controles del usuario "robado".
 - JS puede leer el <b>DOM</b> del navegador, lo que le permite realizar modificaciones arbitrarias en él, algo sólo posible dentro de la página en la que se está ejecutando ese código JavaScript.
