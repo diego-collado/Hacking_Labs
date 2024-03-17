@@ -64,9 +64,21 @@ Así, el propio servidor donde se aloja la web, proporciona el siguiente código
 </b>
 De este modo, cuando la página se carga en el navegador de la víctima, se ejecuta el script malicioso.
 
+Otro ejemplo que suele conllevar el robo de <b>cookies mediante XSS</b>, otro de los ataques XSS más comunes en el que el atacante se hace pasar por la víctima enviando la cookie a su propio servidor de diferentes maneras, como por ejemplo ejecutar un script similar al siguiente del lado del cliente en el navegador de la víctima:
 
 
 
+
+
+
+La siguiente figura ilustra paso a paso un ataque XSS sencillo.
+El atacante inyecta una carga útil en la base de datos del sitio web enviando un formulario vulnerable con contenido JavaScript malicioso.
+La víctima solicita la página web al servidor web.
+El servidor web sirve al navegador de la víctima la página con la carga útil del atacante como parte del cuerpo HTML.
+El navegador de la víctima ejecuta el script malicioso contenido en el cuerpo HTML. En este caso, envía la cookie de la víctima al servidor del atacante.
+El atacante sólo tiene que extraer la cookie de la víctima cuando la petición HTTP llega al servidor.
+El atacante puede ahora utilizar la cookie robada de la víctima para suplantar su identidad.
+Para saber más sobre cómo se llevan a cabo los ataques XSS, puede consultar un artículo titulado A comprehensive tutorial on cross-site scripting.
 
 
 ----------------------------------------------------
