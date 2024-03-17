@@ -3,7 +3,7 @@
 > [!IMPORTANT]
 > Como ya se ha comentado, un <b>ataque por inundación SYN (SYN flooding)</b> es un método que el atacante realiza un ataque de denegación de servicio (DoS) a un servidor remoto mediante el envío repetido de <b>paquetes SYN (sincronización)</b> a cada puerto en el servidor, usando direcciones IP falsas, cuyo último resultado es la sobrecarga de información en el sistema, algo que ralentizará las respuestas o, incluso, dejará completamente caído el servidor completo, deteniendo el acceso del tráfico legítimo al mismo.
 
-> ### Funcionamiento :globe_with_meridians:
+> ### Funcionamiento de este ataque :globe_with_meridians:
 > Veamos un esquema de conexión real:
 
 <p align="center">
@@ -14,15 +14,36 @@
 </picture>
 </p>
 
+> De entre todos los ataques que utilizan la saturación de sistema, SYN flood sigue un patrón de ataque que constituye un abuso del TCP Threeway Handshake.
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/SYNFlood_DDoS_2">
+  <source media="(prefers-color-scheme: light)" srcset="images/SYNFlood_DDoS_2.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/SYNFlood_DDoS_2.png" width="25%">
+</picture>
+</p>
+
+> Así, como hemos comentado anteriormente, el cliente (atacante) envía un paquete de sincronización (SYN) al servidor, el cual, al recibir este paquete, responde con un paquete de sincronización (SYN) y una confirmación (ACK). La conexión concluye con el acuse de recibo (ACK) por parte del cliente pero, en caso de que esta no se produzca, los sistemas se pueden paralizar, ya que el servidor no cuenta en su memoria con suficientes conexiones confirmadas. 
+
+
+> ### ¿Cómo detectar un ataque de inundación SYN? :shield:
+> La detección como tal puede llegar a ser muy dificil debido a que no se puede distinguir de los picos de tráfico legítimo, y más cuando el posible atacante está enmascarando y ocultando su IP real o si utiliza puertos aleatorios de origen. Así, se pueden utilizar múltiples técnicas que permiten identificar este tipo de ataques:
+> - <b>Monitoreo del tráfico de red en busca de actividad sospechosa<b>:Se podrían utilizar herramientas de captura y análisis de paquetes de red (Paessler PRTG Network Monitor, ManageEngine Netflow Analyzer, Scrutinizer, NetflowAuditor, nTop, Pandora NTA, Wireshark, sflowtool, Nfsen, Intermapper Flows, FlowViewer o ManageEngine Flow Analyzer)para inspeccionar el tráfico entrante y saliente del server en búsqued de anomalías como pueden ser niveles inusualmente altos de tráfico, tráfico proveniente de ubicaciones o fuentes poco comunes o un gran número de paquetes SYN sin paquetes ACK correspondientes. 
+
+> - Verificar el estado de los recursos del server</b>: Se podrían utilizar comandos como <b>netstat</b>, <b>ss</b> o <b>iptraf</b> para verificar el estado de las conexiones TCP y comprobar si hay muchas conexiones tipo <b>SYN_RECV</b> o solicitudes de conexión <b>SYN_SENT</b> que no se completan. 
+
+> - <b>Comprobación de uso de CPU</b>: donde se podría comprobar parámetros como el consumo de memoria, ancho de banda de la red del servidor y otros tantos. 
+
+
+Utiliza SYN COOKIES u otros mecanismos de protección contra inundaciones SYN. Las SYN COOKIES son una técnica que permite al servidor manejar paquetes SYN sin asignar recursos hasta que se reciba el paquete ACK final. De esta manera, el servidor puede evitar mantener conexiones a medio abrir y desperdiciar recursos. Otros mecanismos de protección contra inundaciones SYN incluyen firewalls, balanceadores de carga, proxies o servicios de mitigación de DDoS que pueden filtrar el tráfico malicioso y bloquear paquetes SYN provenientes de direcciones IP enmascaradas.
+> - 
+> - 
+> - 
 
 
 
 
-> - Redirección de todo el tráfico de red hacía la red TOR, es decir, cualquier conexión del equipo que intente conectarse a Internet pasará por ella.
-> - No se filtrará ningún ping, lo que protege nuestra identidad.
-> - Fuerza a las aplicaciones a pasar por ella (al contrario que ProxyChain). 
-> - Rechaza peticiones entrantes y salientes que puedan contener información sensible o pueda revelar nuestra IP real.
-> - Protege de la fuga de DNS, permitiendo usar un DNS remoto anónimo.
 
 - <b>Paso 1</b>: Se deberá clonar el repositorio en el equipo, para cual se codifica:
 <b>
