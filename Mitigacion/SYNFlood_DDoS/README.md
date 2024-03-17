@@ -1,4 +1,4 @@
-# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/hacker.png" width="4%">	TorGhost 
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/warning.png" width="4%">	TCP-Syn Flood 
 
 > [!IMPORTANT]
 > Como ya se ha comentado, un <b>ataque por inundación SYN (SYN flooding)</b> es un método que el atacante realiza un ataque de denegación de servicio (DoS) a un servidor remoto mediante el envío repetido de <b>paquetes SYN (sincronización)</b> a cada puerto en el servidor, usando direcciones IP falsas, cuyo último resultado es la sobrecarga de información en el sistema, algo que ralentizará las respuestas o, incluso, dejará completamente caído el servidor completo, deteniendo el acceso del tráfico legítimo al mismo.
