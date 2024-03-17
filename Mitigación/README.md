@@ -23,4 +23,4 @@
 
 # <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
 
-- [SYNFlood_DDoS](SYNFlood_DDoS): - Mitigación de ataques DoS y DDoS: TCP SYN Flood
+- [SYNFlood_DDoS](SYNFlood_DDoS): - Mitigación de ataques DoS y DDoS: TCP SYN Flood.
