@@ -132,7 +132,7 @@ C:\>reg add HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters /v TcpMaxCon
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/SYNFlood_DDoS_3.png">
   <source media="(prefers-color-scheme: light)" srcset="images/SYNFlood_DDoS_3.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/SYNFlood_DDoS_3.png" width="35%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/SYNFlood_DDoS_3.png" width="55%">
 </picture>
 </p>
 
@@ -146,6 +146,6 @@ C:\>reg add HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters /v TcpMaxCon
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/SYNFlood_DDoS_4.png">
   <source media="(prefers-color-scheme: light)" srcset="images/SYNFlood_DDoS_4.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/SYNFlood_DDoS_4.png" width="35%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/SYNFlood_DDoS_4.png" width="55%">
 </picture>
 </p>
