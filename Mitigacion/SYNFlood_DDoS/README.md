@@ -18,9 +18,9 @@
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/SYNFlood_DDoS_2">
+  <source media="(prefers-color-scheme: dark)" srcset="images/SYNFlood_DDoS_2.png">
   <source media="(prefers-color-scheme: light)" srcset="images/SYNFlood_DDoS_2.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/SYNFlood_DDoS_2.png" width="25%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/SYNFlood_DDoS_2.png">
 </picture>
 </p>
 
@@ -31,110 +31,47 @@
 > La detección como tal puede llegar a ser muy dificil debido a que no se puede distinguir de los picos de tráfico legítimo, y más cuando el posible atacante está enmascarando y ocultando su IP real o si utiliza puertos aleatorios de origen. Así, se pueden utilizar múltiples técnicas que permiten identificar este tipo de ataques:
 > - <b>Monitoreo del tráfico de red en busca de actividad sospechosa<b>:Se podrían utilizar herramientas de captura y análisis de paquetes de red (Paessler PRTG Network Monitor, ManageEngine Netflow Analyzer, Scrutinizer, NetflowAuditor, nTop, Pandora NTA, Wireshark, sflowtool, Nfsen, Intermapper Flows, FlowViewer o ManageEngine Flow Analyzer)para inspeccionar el tráfico entrante y saliente del server en búsqued de anomalías como pueden ser niveles inusualmente altos de tráfico, tráfico proveniente de ubicaciones o fuentes poco comunes o un gran número de paquetes SYN sin paquetes ACK correspondientes. 
 
-> - Verificar el estado de los recursos del server</b>: Se podrían utilizar comandos como <b>netstat</b>, <b>ss</b> o <b>iptraf</b> para verificar el estado de las conexiones TCP y comprobar si hay muchas conexiones tipo <b>SYN_RECV</b> o solicitudes de conexión <b>SYN_SENT</b> que no se completan. 
+> - Verificar el estado de los recursos del server</b>: Se podrían utilizar comandos como <b>netstat</b>, <b>ss</b> o <b>iptraf</b> para verificar el estado de las conexiones TCP y comprobar si hay muchas conexiones tipo <b>SYN_RECV</b> o solicitudes de conexión <b>SYN_SENT</b> que no se completan.  Así, se podría utilizar alguno de los siguientes comandos en el shell: 
+<b>
+
+```
+#mostrar las conexiones TCP en estado <b>SYN_RECV</b>, es decir, que el server está a la espera del paquete ACK de confirmación
+netstat -ant | grep SYN_RECV
+```
+</b>
+
+<b>
+
+```
+#muestra de estadísticas (número de aperturas TCP activas, aperturas TCP pasivas - paquetes SYN recibidos, intentos de conexión fallidos de los paquetes SYN-ACK enviados, pero no ACK recibidos y conexiones reiniciadas por los paquetes RST enviados o recibidos) 
+netstat -s
+```
+</b>
 
 > - <b>Comprobación de uso de CPU</b>: donde se podría comprobar parámetros como el consumo de memoria, ancho de banda de la red del servidor y otros tantos. 
 
+> - <b>Utilizar SYN COOKIES u otros mecanismos de protección contra inundaciones SYN</b>: Las <b>SYN COOKIES</b> son una técnica que permite al servidor manejar paquetes SYN sin asignar recursos hasta que se reciba el paquete ACK final de manera que, como podríamos comprobar, el servidor puede evitar mantener conexiones medio abiertas y desperdiciar recursos.
 
-Utiliza SYN COOKIES u otros mecanismos de protección contra inundaciones SYN. Las SYN COOKIES son una técnica que permite al servidor manejar paquetes SYN sin asignar recursos hasta que se reciba el paquete ACK final. De esta manera, el servidor puede evitar mantener conexiones a medio abrir y desperdiciar recursos. Otros mecanismos de protección contra inundaciones SYN incluyen firewalls, balanceadores de carga, proxies o servicios de mitigación de DDoS que pueden filtrar el tráfico malicioso y bloquear paquetes SYN provenientes de direcciones IP enmascaradas.
-> - 
-> - 
-> - 
+> - <b>Otros mecanismos de protección</b>: Se incluyen firewalls, balanceadores de carga, proxies o servicios de mitigación de DDoS que pueden filtrar el tráfico malicioso y bloquear paquetes SYN provenientes de direcciones IP enmascaradas.
 
+> - <b>Limitación de velocidad</b>: Consiste en limitar el número de peticiones SYN que pueden enviarse a su servidor en un momento dado, lo que evita en gran medida que el server se vea desbordado, preservando algunos recursos para el tráfico legítimo.
 
+> - <b>Firewall de Aplicaciones Web de Nueva Generación (NGWAF)</b>: <b>NGWAF</b> es un dispositivo o servicio que puede proteger las aplicaciones web de varios tipos de ciberataques, incluidos los ataques SYN Flood ya que se encarga de analizar y filtrar el tráfico entrante en la capa de aplicación y bloquear las peticiones maliciosas antes de que lleguen al servidor. 
 
+> - <b>Segmentación de red</b>: Esta técnica consiste en dividir su red en subredes más pequeñas y seguras para limitar el daño potencial de un ataque de inundación SYN, de manera que se aislan los servidores o aplicaciones críticas del resto de la red, aunque se deben proteger con medidas de seguridad adicionales.
 
+> - <b>Equilibrio de la carga</b>: Consiste en distribuir el tráfico entrante entre varios servidores, reduciendo así el riesgo de que un solo servidor se vea sobrecargado por un ataque de inundación SYN gracias a dispositivos o servicios de balanceo de carga que pueden equilibrar la carga entre los servidores y redirigir el tráfico lejos de los afectados.
 
-- <b>Paso 1</b>: Se deberá clonar el repositorio en el equipo, para cual se codifica:
-<b>
+> - <b>Aumentar la cola de registros</b>: Conocida como <b>backlog máximo</b>, lo que puede garantizar espacio para el tráfico de usuarios legítimos en medio de un ataque.
 
-```
-git clone https://github.com/susmithHCK/torghost.git
-```
-</b>
+> - <b>Reciclaje de la conexión TCP</b>: Que pretende sobrescribir la conexión medio abierta más antigua una vez se haya completado el backlog, con el fin de establecer conexiones con usuarios legítimos en un tiempo menor del que necesitaría el backlog para llenarse de paquetes SYN.
 
-- <b>Paso 2</b>: Ahora, se procede entrar en la carpeta del sistema en la que se ha descargado TorGhost. Una vez dentro de la correspondiente carpeta, se dan los permisos de ejecución al archivo de instalación mediante el siguiente código:
-<b>
-
-```
-chmod +x build.sh
-```
-</b>
-
-Se instalará el paquete completo en el sistema gracias al siguiente código:
-<b>
-
-```
-./build.sh
-```
-</b>
-
-Es posible que no funcione la construcción del archivo sh, por lo que se podrá optar por instalar los requerimientos que pide la aplicación al sistema utilizando el siguiente código:
-<b>
-
-```
-pip install -r requirements.txt
-```
-</b>
-
-
-- <b>Paso 3</b>: Se arranca la aplicación TorGhost:
-<b>
-
-```
-python3 torghost.py
-```
-</b>
-
-En este momento, aparecerá una pantalla similar a la siguiente imagen:
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/torghost_1.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/torghost_1.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/torghost_1.png" width="50%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/SYNFlood_DDoS_3.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/SYNFlood_DDoS_3.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/SYNFlood_DDoS_.png" width="30%">
 </picture>
 </p>
 
-- <b>Paso 4</b>: Para iniciar la redirección de todo el tráfico por la red TOR, utilizamos el siguiente comando:
-<b>
 
-```
-python3 torghost.py -s
-```
-</b>
-
-El script cargará y aparecerán los correspondientes mensajes de inicio de forzado, cambios de DNS y toda la carga para obtener un resultado óptimo, es decir, CURRENT IP: la nueva IP
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/torghost_2.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/torghost_2.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/torghost_2.png" width="30%">
-</picture>
-</p>
-
-- <b>Paso 5</b>: Posteriomente, se comprobará la dirección IP pública de la misma forma que hemos hecho la primera comprobación, ara lo cual se utilizará el navegador de Kali Linux (Mozilla Firefox), donde se introducirá la URL: 
-<b>
-
-```
-https://www.cualesmiip.com/
-```
-</b>
-
-Es posible que el cambio de IP motive la falta de carga de algunos sites... ¡¡Ya estamos en la red TOR!!
-
-Para detener el script:
-<b>
-```
-python3 torghost.py -x
-```
-</b>
-
-
-Para cambiar el nodo de salida:
-<b>
-```
-python3 torghost.py -r
-```
-</b>
-
-> A partir de este momento, todo nuestro tráfico estará redirigido a través de la red TOR.
