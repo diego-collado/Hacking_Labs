@@ -8,9 +8,9 @@
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="/images/SYNFlood_DDoS_1">
-  <source media="(prefers-color-scheme: light)" srcset="/images/SYNFlood_DDoS_1.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/SYNFlood_DDoS_1.png" width="25%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/SYNFlood_DDoS_1">
+  <source media="(prefers-color-scheme: light)" srcset="images/SYNFlood_DDoS_1.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/SYNFlood_DDoS_1.png" width="25%">
 </picture>
 </p>
 
