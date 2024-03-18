@@ -9,7 +9,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/redes_1.png">
   <source media="(prefers-color-scheme: light)" srcset="images/redes_1.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_1.png" width="7s5%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_1.png" width="75%">
 </picture>
 </p>
 
