@@ -1,7 +1,19 @@
 # <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes.png" width="4%">	Conceptos básicos sobre Redes y Protocolos 
 
 > [!IMPORTANT]
-> Las redes de computadoras son un componente fundamental en el mundo moderno de las TICs ya que nos permiten la comunicación y el intercambio de datos entre dispositivos (PCs, smartphones, tablets y otros dispositivos) conectados a Internet. Si bien es cierto que existen diferentes tipos de redes, cada una con sus propias características y aplicaciones, podemos clasificarlas según su localización y magnitud:
+> Las redes de computadoras son un componente fundamental en el mundo moderno de las TICs ya que nos permiten la comunicación y el intercambio de datos entre dispositivos (PCs, smartphones, tablets y otros dispositivos) conectados a Internet. Si bien es cierto que existen diferentes tipos de redes, cada una con sus propias características y aplicaciones.
+
+En la actualiddad, utilizamos la <b>arquitectura cliente-servidor</b>, donde la red de comunicaciones está dispuesta de manera que todos los clientes están conectados a un servidor en el que se centralizan los recursos y aplicaciones con que se cuenta, los cuales pone a disposición de los clientes cada vez que estos son solicitados. Esto, realmente, significa que todas las gestiones que se realizan se concentran en el servidor, de manera que en él se disponen los requerimientos provenientes de los clientes que tienen prioridad, los archivos que son de uso público y los que son de uso restringido... La principal característica es que en este tipo de redes los roles están bien definidos y no se intercambian, es decir, los clientes en ningún momento pueden tener el rol de servidores y viceversa, manteniendo un control centralizado de la información, aportando con esto mayor seguridad y mayor rendimiento a menores costes. 
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/redes_1.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/redes_1.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_1.png" width="50%">
+</picture>
+</p>
+
+Ahora bien, las redes podríamos clasificarlas según su localización y magnitud:
 
  - <b>Redes de área local (LAN)</b>: redes que conectan dispositivos en un área geográfica limitada (oficina, edificio o campus universitario), siendo de propiedad privada y utilizando tecnologías como Ethernet para la transmisión de datos. La velocidad de transmisión debe ser relativamente elevada, debe ser privada, es decir, perteneciente a una misma organización y con una tasa de error debe ser muy baja. 
 
@@ -24,12 +36,17 @@
 </picture>
 </p>
 
- 
- 
- - <b>Redes de área extensa (WAN)</b>: Son redes que conectan dispositivos en áreas geográficas más amplias, como ciudades, países o continentes. Las WAN suelen utilizar infraestructuras de telecomunicaciones públicas, como líneas telefónicas o cables submarinos, y tecnologías como el Protocolo de Internet (IP) para la transmisión de datos.
+ - <b>Redes de área extensa (WAN)</b>: Son redes que conectan dispositivos en áreas geográficas más amplias (ciudades, países o continentes), donde se suelen utilizar infraestructuras de telecomunicaciones públicas (líneas telefónicas o cables submarinos) y tecnologías como el Protocolo de Internet (IP) para la transmisión de datos, aunque la capacidad de transmisión suele ser menor que las de las redes locales ya que las líneas son compartidas por muchos usuarios, siendo mucho menos seguras que sus versiones conectadas físicamente. Para evitar problemas de rendimiento pueden interconectarse varias LAN entre sí, sin importar la distancia.
 
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/redes_3.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/redes_3.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_3.png" width="65%">
+</picture>
+</p>
 
-
+El rango IP es de clase A.
 
 
 
