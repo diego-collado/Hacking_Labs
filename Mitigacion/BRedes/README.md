@@ -3,9 +3,24 @@
 > [!IMPORTANT]
 > Las redes de computadoras son un componente fundamental en el mundo moderno de las TICs ya que nos permiten la comunicación y el intercambio de datos entre dispositivos (PCs, smartphones, tablets y otros dispositivos) conectados a Internet. Si bien es cierto que existen diferentes tipos de redes, cada una con sus propias características y aplicaciones, podemos clasificarlas según su localización y magnitud:
 
- - <b>Redes de área local (LAN)</b>: redes que conectan dispositivos en un área geográfica limitada (oficina, edificio o campus universitario), siendo de propiedad privada y utilizando tecnologías como Ethernet para la transmisión de datos. Sus IP suelen ser de clase C.
+ - <b>Redes de área local (LAN)</b>: redes que conectan dispositivos en un área geográfica limitada (oficina, edificio o campus universitario), siendo de propiedad privada y utilizando tecnologías como Ethernet para la transmisión de datos. La velocidad de transmisión debe ser relativamente elevada, debe ser privada, es decir, perteneciente a una misma organización y con una tasa de error debe ser muy baja. El rango IP es de clase C, cuyas topologías, dependiendo de la forma física como se interconectan las computadoras y las redes informáticas entre sí suelen ser de tipo Bus (un solo cable principal al que todos los terminales están conectados), Anillo (donde los nodos se conectan uno a otro, el último cierra el anillo conectándose con el primero. Ventajas: Sin problemas de tráfico. Desventajas: A menos que se trate de un anillo doble, si se rompe un enlace se produce un fallo general), Estrella (aquí los nodos se conectan a un nodo central de modo que, si falla un nodo no se interrumpe el flujo de información, aunque si falla un nodo central las transmisiones se interrumpen) y la topología de Malla (donde cada nodo tiene conexión directa con los demás nodos).
 
+ <p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/redes_1.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/redes_1.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_1.png" width="25%">
+</picture>
+</p>
+
+ 
+ 
  - <b>Redes de área extensa (WAN)</b>: Son redes que conectan dispositivos en áreas geográficas más amplias, como ciudades, países o continentes. Las WAN suelen utilizar infraestructuras de telecomunicaciones públicas, como líneas telefónicas o cables submarinos, y tecnologías como el Protocolo de Internet (IP) para la transmisión de datos.
+
+
+
+
+
 
 - <b>Redes inalámbricas</b>: Estas redes utilizan ondas de radio en lugar de cables para la comunicación entre dispositivos. Son especialmente útiles en entornos donde la instalación de cables es difícil o poco práctica, como en hogares, cafeterías, aeropuertos y centros comerciales.
 
@@ -27,13 +42,6 @@ En resumen, las redes de computadoras son la columna vertebral de la era digital
 > ### Funcionamiento de este ataque :globe_with_meridians:
 > Veamos un esquema de conexión real:
 
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/SYNFlood_DDoS_1">
-  <source media="(prefers-color-scheme: light)" srcset="images/SYNFlood_DDoS_1.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/SYNFlood_DDoS_1.png" width="25%">
-</picture>
-</p>
 
 > De entre todos los ataques que utilizan la saturación de sistema, SYN flood sigue un patrón de ataque que constituye un abuso del TCP Threeway Handshake.
 
