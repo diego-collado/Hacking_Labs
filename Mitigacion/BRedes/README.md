@@ -7,9 +7,9 @@ En la actualiddad, utilizamos la <b>arquitectura cliente-servidor</b>, donde la 
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/redes_1.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/redes_1.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_1.png" width="50%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/redes_0.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/redes_0.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_0.png" width="50%">
 </picture>
 </p>
 
