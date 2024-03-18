@@ -25,8 +25,7 @@ Ahora bien, las redes podríamos clasificarlas según su localización y magnitu
 </picture>
 </p>
 
- 
- El rango IP es de clase C, cuyas topologías, dependiendo de la forma física como se interconectan las computadoras y las redes informáticas entre sí suelen ser de tipo Bus (un solo cable principal al que todos los terminales están conectados), Anillo (donde los nodos se conectan uno a otro, el último cierra el anillo conectándose con el primero), Estrella (aquí los nodos se conectan a un nodo central de modo que, si falla un nodo no se interrumpe el flujo de información, aunque si falla un nodo central las transmisiones se interrumpen) y la topología de Malla (donde cada nodo tiene conexión directa con los demás nodos).
+El rango IP es de clase C, cuyas topologías, dependiendo de la forma física como se interconectan las computadoras y las redes informáticas entre sí suelen ser de tipo Bus (un solo cable principal al que todos los terminales están conectados), Anillo (donde los nodos se conectan uno a otro, el último cierra el anillo conectándose con el primero), Estrella (aquí los nodos se conectan a un nodo central de modo que, si falla un nodo no se interrumpe el flujo de información, aunque si falla un nodo central las transmisiones se interrumpen) y la topología de Malla (donde cada nodo tiene conexión directa con los demás nodos).
 
 <p align="center">
 <picture>
@@ -36,7 +35,19 @@ Ahora bien, las redes podríamos clasificarlas según su localización y magnitu
 </picture>
 </p>
 
- - <b>Redes de área extensa (WAN)</b>: Son redes que conectan dispositivos en áreas geográficas más amplias (ciudades, países o continentes), donde se suelen utilizar infraestructuras de telecomunicaciones públicas (líneas telefónicas o cables submarinos) y tecnologías como el Protocolo de Internet (IP) para la transmisión de datos, aunque la capacidad de transmisión suele ser menor que las de las redes locales ya que las líneas son compartidas por muchos usuarios, siendo mucho menos seguras que sus versiones conectadas físicamente. Para evitar problemas de rendimiento pueden interconectarse varias LAN entre sí, sin importar la distancia.
+- <b>Redes de área metropolitana (MAN)</b>: consiste en computadoras compartiendo recursos entre sí en áreas de cobertura de mayor tamaño que una LAN, pero menor que una WAN. En realidad, funcionan de forma muy parecida a una LAN, pero cumpliendo estándares tecnológicos diferentes y subsanando los problemas de latencia (retardo en la entrega de información) y pérdida de calidad de la señal en interconexiones que abarcan largas distancias. Su rango IP abarca la clase B (de forma común)
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/redes_4.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/redes_4.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_4.png" width="65%">
+</picture>
+</p>
+
+En general se utiliza un bus doble (ida y vuelta de fibra óptica) para interconectar las diferentes LAN a la red, aunque también se consiguen redes MAN usando pares de cobre o microondas, ofreciendo estabilidad y menor latencia para portar servicios multimedia y videovigilancia en grandes ciudades, entre otras ventajas. Como el resto de las redes cableadas, tiene su versión inalámbrica llamada <b>WMAN (Wireless Metropolitan Area Network)</b>, aunque este tipo de red utiliza tecnologías de telefonía celular (LTE y WiMax) para interconectar sus miembros.
+
+- <b>Redes de área extensa (WAN)</b>: Son redes que conectan dispositivos en áreas geográficas más amplias (ciudades, países o continentes), donde se suelen utilizar infraestructuras de telecomunicaciones públicas (líneas telefónicas o cables submarinos) y tecnologías como el Protocolo de Internet (IP) para la transmisión de datos, aunque la capacidad de transmisión suele ser menor que las de las redes locales ya que las líneas son compartidas por muchos usuarios, siendo mucho menos seguras que sus versiones conectadas físicamente. Para evitar problemas de rendimiento pueden interconectarse varias LAN entre sí, sin importar la distancia.
 
 <p align="center">
 <picture>
@@ -46,20 +57,30 @@ Ahora bien, las redes podríamos clasificarlas según su localización y magnitu
 </picture>
 </p>
 
-El rango IP es de clase A.
+El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, superando los 100km.
+
+- <b>Redes inalámbricas</b>: Estas redes utilizan ondas de radio en lugar de cables para la comunicación entre dispositivos. Son especialmente útiles en entornos donde la instalación de cables es difícil o poco práctica (hogar, cafeterías, aeropuertos y centros comerciales).
 
 
 
-- <b>Redes inalámbricas</b>: Estas redes utilizan ondas de radio en lugar de cables para la comunicación entre dispositivos. Son especialmente útiles en entornos donde la instalación de cables es difícil o poco práctica, como en hogares, cafeterías, aeropuertos y centros comerciales.
+
+
+https://www.ionos.es/digitalguide/servidores/know-how/los-tipos-de-redes-mas-conocidos/
+https://sipsbarcelona.com/lan-wam-man-wlan-wman-wwman-san-pan-significan/
+https://www.tecnologia-informatica.com/tipos-de-redes-informaticas-lan-wan-man-wlan-wman-wwman-san-pan/#Red_SAN_(Storage_Area_Network)%C2%A0
+
+
+
 
 - <b>Redes de área personal (PAN)</b>: Son redes diseñadas para la comunicación entre dispositivos personales cercanos, como teléfonos inteligentes, tabletas y computadoras portátiles. Ejemplos de tecnologías de PAN incluyen Bluetooth y Near Field Communication (NFC).
 
 
+PAN (Personal Area Network): Se denomina red de área personal la que abarca los diferentes dispositivos de uso cercano de un usuario. Teléfono celular, laptop, cámaras de fotos, tabletas, etc, son los más comunes. Permite el intercambio de archivos de manera sencilla entre los aparatos. Su versión inalámbrica hace uso de la red WiFi, el Bluetooth o los rayos infrarrojos para intercambiar información.
 
+VLAN (Virtual Local Area Network): Funciona como una VPN dentro de una red local. Permite la creación de una conexión privada entre dos o más nodos dentro del universo de una LAN. Ideal, por ejemplo, para separar el acceso a la red de diferentes departamentos de una empresa. Son creadas vía software, por lo que sus nodos no necesitan estar interconectados directamente entre sí.
 
-La seguridad es un aspecto crítico en el diseño y la implementación de redes. Con el aumento de las amenazas cibernéticas, es fundamental proteger los datos y los dispositivos de accesos no autorizados y ataques maliciosos. Para ello, se utilizan técnicas como firewalls, encriptación de datos, autenticación de usuarios y detección de intrusiones.
+SAN (Storage Area Network): Las redes de área de almacenamiento (SAN) son una tecnología usada para enlazar unidades de almacenamiento (básicamente discos duros) a una red local, de manera de compartir su uso en todas las áreas de una empresa. Este sistema puede crecer casi ilimitadamente sin afectar el rendimiento de la red ya que el tráfico de almacenamiento se mantiene separado del tráfico de los usuarios.
 
-En resumen, las redes de computadoras son la columna vertebral de la era digital, permitiendo la comunicación y el intercambio de información a escala global. Su comprensión y gestión efectivas son esenciales para el funcionamiento eficiente de organizaciones, empresas e incluso para la vida cotidiana de las personas en la sociedad moderna.
 
 
 
