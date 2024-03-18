@@ -3,13 +3,24 @@
 > [!IMPORTANT]
 > Las redes de computadoras son un componente fundamental en el mundo moderno de las TICs ya que nos permiten la comunicación y el intercambio de datos entre dispositivos (PCs, smartphones, tablets y otros dispositivos) conectados a Internet. Si bien es cierto que existen diferentes tipos de redes, cada una con sus propias características y aplicaciones, podemos clasificarlas según su localización y magnitud:
 
- - <b>Redes de área local (LAN)</b>: redes que conectan dispositivos en un área geográfica limitada (oficina, edificio o campus universitario), siendo de propiedad privada y utilizando tecnologías como Ethernet para la transmisión de datos. La velocidad de transmisión debe ser relativamente elevada, debe ser privada, es decir, perteneciente a una misma organización y con una tasa de error debe ser muy baja. El rango IP es de clase C, cuyas topologías, dependiendo de la forma física como se interconectan las computadoras y las redes informáticas entre sí suelen ser de tipo Bus (un solo cable principal al que todos los terminales están conectados), Anillo (donde los nodos se conectan uno a otro, el último cierra el anillo conectándose con el primero. Ventajas: Sin problemas de tráfico. Desventajas: A menos que se trate de un anillo doble, si se rompe un enlace se produce un fallo general), Estrella (aquí los nodos se conectan a un nodo central de modo que, si falla un nodo no se interrumpe el flujo de información, aunque si falla un nodo central las transmisiones se interrumpen) y la topología de Malla (donde cada nodo tiene conexión directa con los demás nodos).
+ - <b>Redes de área local (LAN)</b>: redes que conectan dispositivos en un área geográfica limitada (oficina, edificio o campus universitario), siendo de propiedad privada y utilizando tecnologías como Ethernet para la transmisión de datos. La velocidad de transmisión debe ser relativamente elevada, debe ser privada, es decir, perteneciente a una misma organización y con una tasa de error debe ser muy baja. 
 
- <p align="center">
+<p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/redes_1.png">
   <source media="(prefers-color-scheme: light)" srcset="images/redes_1.png">
   <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_1.png" width="65%">
+</picture>
+</p>
+
+ 
+ El rango IP es de clase C, cuyas topologías, dependiendo de la forma física como se interconectan las computadoras y las redes informáticas entre sí suelen ser de tipo Bus (un solo cable principal al que todos los terminales están conectados), Anillo (donde los nodos se conectan uno a otro, el último cierra el anillo conectándose con el primero), Estrella (aquí los nodos se conectan a un nodo central de modo que, si falla un nodo no se interrumpe el flujo de información, aunque si falla un nodo central las transmisiones se interrumpen) y la topología de Malla (donde cada nodo tiene conexión directa con los demás nodos).
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/redes_2.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/redes_2.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_2.png" width="65%">
 </picture>
 </p>
 
