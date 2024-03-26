@@ -1,21 +1,25 @@
 # <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/DoS.png" width="4%">	Ataque DoS (Denial Of Service) utilizando HTTPFlood
 
 > [!IMPORTANT]
-> Laboratorio HTTPFlood (Kali Linux 2023.4) mediante la utiliación de scripts externos como <b>Slowloris</b>, <b>DoS-Tool</b> y <b>TCP-UDP-Flood</b>. Un ataque DoS o DDoS no es más que el envío de un número exageradamente elevado de peticiones a una dirección IP que, normalmente, suele ser un servidor o infraestructura, el cual llega a ser incapaz de gestionar dicho número de peticiones, causando un error o crasheo del sistema y la detención y/o reinicio de servicios, quedando inaccesible al resto de usuarios. 
+> Laboratorio HTTPFlood (Kali Linux 2023.4) mediante la utilización de scripts externos como <b>Slowloris</b>, <b>DoS-Tool</b> y <b>TCP-UDP-Flood</b>. Un ataque DoS o DDoS no es más que el envío de un número exageradamente elevado de peticiones a una dirección IP que, normalmente, suele ser un servidor o infraestructura, el cual llega a ser incapaz de gestionar dicho número de peticiones, causando un error o crasheo del sistema y la detención y/o reinicio de servicios, quedando inaccesible al resto de usuarios. 
 
-> Ahora bien, la diferencia entre un ataque <b>DoS (Denial of Service o Denegación de Servicio)</b> y un <b>ataque DDoS ( Distributed Denial of Service o Denegación de Servicio Distribuido)</b> es muy sencilla ya que en el ataque DoS, el atacante cuenta con un único equipo, mientras que para el ataque DDoS se usan múltiples máquinas simultáneamente. Estas máquinas suelen pertenecer a <b>botnets</b> (redes de equipos/servidores controlados por un único atacante).
+> En la más cruda realidad, los ataques <b>HTTP flood</b> se basan en las peticiones <b>GET</b> o <b>POST</b> del cliente, es decir, el navegador que quiere acceder al sitio web, el cual envía una de estas solicitudes que, posteriormente, procesa el servidor y, a su vez, envía la respuesta de vuelta al cliente. Como en todo, siempre hay un pero:
+
+- <b>Peticiones GET</b>: recuperan contenido estático (imágenes o bloques de texto), es decir, recibe datos del servidor
+- <b>Peticiones POST</b>: se utilizan para acceder a recursos dinámicos, es decir, se envían datos al servidor. 
+
+Ambos pueden utilizarse para efectuar este ataque HTTP Flood, aunque el método POST se emplea con más frecuencia, porque requiere un procesamiento complejo por parte del servidor. Así, en el momento que se ejecuta un <b>ataque HTTP flood</b>, se realizan muchas de estas peticiones simultáneamente y durante un período de tiempo prolongado.
 
 
-https://www.ionos.es/digitalguide/servidores/seguridad/ataque-http-flood/
-https://www.imperva.com/learn/ddos/http-flood/
-https://www.radware.com/cyberpedia/application-security/http-flood/
-https://forum.huawei.com/enterprise/es/http-flood-ataque-y-defensa/thread/667213259423498240-667212881550258176
-https://kalilinuxtutorials.com/wreckuests-ddos-atacks/
-https://www.kali.org/tools/slowhttptest/
-https://www.tutorialspoint.com/kali_linux/kali_linux_stressing_tools.htm
-https://linuxhint.com/hping3/
-https://www.geeksforgeeks.org/slowloris-ddos-attack-tool-in-kali-linux/
-https://kalilinuxtutorials.com/tag/http-flood/
+
+ Por lo general, se usa una botnet para aumentar la cantidad de solicitudes. El ataque HTTP flood se diseña de tal manera que el servidor dedica el mayor volumen de recursos posible a cada petición. En una situación normal, esto es deseable, porque el servidor no recibe miles o cientos de miles de solicitudes por minuto, como sucede en este caso. Así, en este caso, el atacante no tiene más que esperar a que el servidor se desborde, con la consiguiente caída de la aplicación o del sitio web.
+
+
+
+
+
+
+
 ------------------------------------------------------------------------------
 
 
