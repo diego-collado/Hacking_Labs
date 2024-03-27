@@ -59,6 +59,17 @@ En general se utiliza un bus doble (ida y vuelta de fibra óptica) para intercon
 
 El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, superando los 100km.
 
+- <b> Red de área global (GAN)</b>: es muy utilizado para vincular redes WAN, ya que la distancia que abarca este tipo de red es global. A nivel internacional, las empresas mantienen redes aisladas que comprenden varias redes WAN propias, logrando la comunicación entre los ordenadores de los mismos grupos de empresa a nivel mundial. Las redes GAN utilizan la infraestructura de fibra de vidrio de las redes de área amplia (WAN) y las agrupan mediante cables submarinos internacionales o transmisión por satélite.
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/redes_10.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/redes_10.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_10.png" width="65%">
+</picture>
+</p>
+
+
 - <b>Redes inalámbricas locales (WLAN)</b>: Estas redes utilizan ondas de radio en lugar de cables para la comunicación entre dispositivos. Son especialmente útiles en entornos donde la instalación de cables es difícil o poco práctica (hogar, cafeterías, aeropuertos y centros comerciales), aunque es cierto que suelen tener muchos problemas con las zonas de cobertura ya que los elementos constructivos suelen hacer de escudo ante la señal WiFi. La conexión se realiza en 3 fases (exploración, auntenticación y asociación), utilizando un proceso de transmisión en el que se utiliza la <b>capa física (PHY)</b> para convertir la información en ondas de radio, gestionando los datos para que puedan ser transmitidos a través de radiofrecuencia, la <b>subcapa MAC (Control de Acceso al Medio)</b> para coordinar y regular la distribución de red y así evitar la transmisión simultánea y la recepción, donde la información se convierte nuevamente en información comprensible para el dispositivo receptor.
 
 <p align="center">
@@ -79,7 +90,7 @@ El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, s
 </picture>
 </p>
 
-- <b>Red de Area de Almacenamiento (Storage Area Network)</b>: realmente es una tecnología muy usada por grandes corporaciones para mayor flexibilidad en la obtención y manipulación de datos que necesita para el desarrollo normal del su negocio. Así, una SAN es una red compuesta por unidades de almacenamiento que se conectan a las redes de área local de las compañías, capaces de crecer de forma ilimitada. En redes de área de almacenamiento típicas, los servidores se conectan a través de <b>adaptadores de bus de host (HBA)</b> o <b>controladores de interfaz de red (NIC)</b> especializados.Una vez que los dispositivos de almacenamiento están conectados a la red SAN, se pueden configurar para formar grupos de almacenamiento lógico conocidos como <b>volúmenes lógicos</b>. La arquitectura se basa en centralizción, donde los dispositivos de almacenamiento están conectados a un sistema centralizado, lo que permite mayor eficiencia en la gestión de los recursos de almacenamiento, incluyendo que se separa la LAN de la red dedicada a la transferencia de datos de almacenamiento para evitar problemas de congestión. Si sumamos, además, la utilización de protocolos especializados (<b>Fibre Channel</b> e <b>iSCSI</b>), para la transferencia de datos, proporciona una mayor velocidad y eficiencia que los protocolos utilizados en la LAN. Por otro lado, se utilizan herramientas que permiten la monitorización, la configuración y el mantenimiento de la red y sus componentes, lo que mejora la eficiencia de la red y simplifica los procesos de gestión, así como la utilización de medidas de seguridad avanzadas, como la autenticación y el cifrado de datos entre otras.
+- <b>Red de Area de Almacenamiento (Storage Area Network)</b>: realmente es una tecnología muy usada por grandes corporaciones para mayor flexibilidad en la obtención y manipulación de datos que necesita para el desarrollo normal del su negocio. Así, una SAN es una red compuesta por unidades de almacenamiento que se conectan a las redes de área local de las compañías, capaces de crecer de forma ilimitada. En redes de área de almacenamiento típicas, los servidores se conectan a través de <b>adaptadores de bus de host (HBA)</b> o <b>controladores de interfaz de red (NIC)</b> especializados.Una vez que los dispositivos de almacenamiento están conectados a la red SAN, se pueden configurar para formar grupos de almacenamiento lógico conocidos como <b>volúmenes lógicos</b>. La arquitectura se basa en centralizción, donde los dispositivos de almacenamiento están conectados a un sistema centralizado, lo que permite mayor eficiencia en la gestión de los recursos de almacenamiento, incluyendo que se separa la LAN de la red dedicada a la transferencia de datos de almacenamiento para evitar problemas de congestión. Si sumamos, además, la utilización de protocolos especializados (<b>Fibre Channel</b> e <b>iSCSI</b>), para la transferencia de datos, proporciona una mayor velocidad y eficiencia que los protocolos utilizados en la LAN. Por otro lado, se utilizan herramientas que permiten la monitorización, la configuración y el mantenimiento de la red y sus componentes, lo que mejora la eficiencia de la red y simplifica los procesos de gestión, así como la utilización de medidas de seguridad avanzadas (autenticación y cifrado).
 
 <p align="center">
 <picture>
@@ -95,19 +106,11 @@ El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, s
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/redes_9.png">
   <source media="(prefers-color-scheme: light)" srcset="images/redes_9.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_9.png" width="60%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_9.png" width="45%">
 </picture>
 </p>
 
-
-----------------
-
-
-
-
-VLAN (Virtual Local Area Network): Funciona como una VPN dentro de una red local. Permite la creación de una conexión privada entre dos o más nodos dentro del universo de una LAN. Ideal, por ejemplo, para separar el acceso a la red de diferentes departamentos de una empresa. Son creadas vía software, por lo que sus nodos no necesitan estar interconectados directamente entre sí.
-
-SAN (Storage Area Network): Las redes de área de almacenamiento (SAN) son una tecnología usada para enlazar unidades de almacenamiento (básicamente discos duros) a una red local, de manera de compartir su uso en todas las áreas de una empresa. Este sistema puede crecer casi ilimitadamente sin afectar el rendimiento de la red ya que el tráfico de almacenamiento se mantiene separado del tráfico de los usuarios.
+- <b>Red virtual de área local</b>: su funcionamiento es relativamente parecido a una VPN montada sobre una red LAN ya que permite la creación de una conexión privada entre dos o más nodos dentro de una misma LAN. Este tipo de redes es ideal para separar el acceso a la red de diferentes departamentos de una empresa aunque si bien son creadas basándonos en software, por lo que sus nodos no necesitan estar interconectados directamente entre sí... ¡¡También es un problema de seguridad!!
 
 
 
