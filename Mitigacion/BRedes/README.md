@@ -75,17 +75,14 @@ El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, s
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/redes_7.png">
   <source media="(prefers-color-scheme: light)" srcset="images/redes_7.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_7.png" width="55%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_7.png" width="35%">
 </picture>
 </p>
 
+- <b>Red de Area de Almacenamiento (Storage Area Network)</b>: realmente es una tecnología muy usada por grandes corporaciones para mayor flexibilidad en la obtención y manipulación de datos que necesita para el desarrollo normal del su negocio. Así, una SAN es una red compuesta por unidades de almacenamiento que se conectan a las redes de área local de las compañías, capaces de crecer de forma ilimitada. En redes de área de almacenamiento típicas, los servidores se conectan a través de <b>adaptadores de bus de host (HBA)</b> o <b>controladores de interfaz de red (NIC)</b> especializados.Una vez que los dispositivos de almacenamiento están conectados a la red SAN, se pueden configurar para formar grupos de almacenamiento lógico conocidos como <b>volúmenes lógicos</b>. La arquitectura se basa en centralizción, donde los dispositivos de almacenamiento están conectados a un sistema centralizado, lo que permite mayor eficiencia en la gestión de los recursos de almacenamiento, incluyendo que se separa la LAN de la red dedicada a la transferencia de datos de almacenamiento para evitar problemas de congestión. Si sumamos, además, la utilización de protocolos especializados (<b>Fibre Channel</b> e <b>iSCSI</b>), para la transferencia de datos, proporciona una mayor velocidad y eficiencia que los protocolos utilizados en la LAN. Por otro lado, se utilizan herramientas que permiten la monitorización, la configuración y el mantenimiento de la red y sus componentes, lo que mejora la eficiencia de la red y simplifica los procesos de gestión, así como la utilización de medidas de seguridad avanzadas, como la autenticación y el cifrado de datos entre otras.
 
 
 
-
-SAN (Storage Area Network)
-
-Una red SAN o Storage Area Network, que traducido al español significa Red de Area de Almacenamiento, es una tecnología muy usada por grandes empresas para obtener mayor flexibilidad en la obtención y manipulación de los datos que necesita para su desenvolvimiento. Básicamente, una SAN es una red compuesta por unidades de almacenamiento que se conectan a las redes de área local de las compañías, y la principal característica, sin entrar en tecnicismos demasiado complicados, es que son capaces de crecer de forma ilimitada, por lo que le puede ofrecer a quien la opera increíbles capacidades de almacenamiento de hasta miles de TB.
 
 - <b>Redes de área personal (PAN)</b>: Son redes diseñadas para la comunicación entre dispositivos personales cercanos, como teléfonos inteligentes, tabletas y computadoras portátiles. Ejemplos de tecnologías de PAN incluyen Bluetooth y Near Field Communication (NFC).
 
