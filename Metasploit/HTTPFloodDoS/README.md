@@ -27,18 +27,36 @@
 </p>
 
 > ### Abriendo mi propia tienda virtual: BadStore como objetivo :computer:
-> <b>BadStore</b> es una aplicación web pre-montada sobre la distribución de Linux ligera (<b>Trinux</b>), la cual permite simular un servidor con todos los servicios activos y una tienda de libros instalada que contiene varios fallos de seguridad, lo que permite realizar laboratorios de hacking y pentesting relativamente reales. Esta distro pesa no más de 10MB, pudiendola montar de forma virtual con VirtualBox, Hyper-V o VMWare. En realidad, esta "web" se ejecuta con Perl, Apache y MySQL, por lo que es muy fácil de configurar y acceder (en realidad parece un VPS).
-
-<b>DESCARGA</b> https://www.vulnhub.com/entry/badstore-123,41/ :floppy_disk:
 
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/HTTP_Flood_2.png">
   <source media="(prefers-color-scheme: light)" srcset="images/HTTP_Flood_2.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/HTTP_Flood_2.png" width="50%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/HTTP_Flood_2.png" width="25%">
 </picture>
 </p>
 
+> <b>BadStore</b> es una aplicación web pre-montada sobre la distribución de Linux ligera (<b>Trinux</b>), la cual permite simular un servidor con todos los servicios activos y una tienda de libros instalada que contiene varios fallos de seguridad, lo que permite realizar laboratorios de hacking y pentesting relativamente reales. Esta distro pesa no más de 10MB, pudiendola montar de forma virtual con VirtualBox, Hyper-V o VMWare. En realidad, esta "web" se ejecuta con Perl, Apache y MySQL, por lo que es muy fácil de configurar y acceder (en realidad parece un VPS).
+
+<b>DESCARGA</b> https://www.vulnhub.com/entry/badstore-123,41/ :floppy_disk:
+
+> Tan solo hay que montar la VM y dejarla arrancar. Una vez que cargue toda la mínima configuración, pulsaremos ENTER para poder dejar el shell completamente activo. Se hace necesario saber la IP de la máquina, la cual logramos saberla mediante el comando: 
+<b>
+
+```
+ipconfig
+```
+</b>
+
+Obtenemos los siguientes resultados:
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/HTTP_Flood_3.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/HTTP_Flood_3.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/HTTP_Flood_3.png" width="25%">
+</picture>
+</p>
 ------------------------------------------------------------------------------
 > Veamos todas las capas TCP/IP: 
 
