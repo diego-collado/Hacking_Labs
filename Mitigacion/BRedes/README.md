@@ -59,13 +59,23 @@ En general se utiliza un bus doble (ida y vuelta de fibra óptica) para intercon
 
 El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, superando los 100km.
 
-- <b>Redes inalámbricas locales (WLAN)</b>: Estas redes utilizan ondas de radio en lugar de cables para la comunicación entre dispositivos. Son especialmente útiles en entornos donde la instalación de cables es difícil o poco práctica (hogar, cafeterías, aeropuertos y centros comerciales), aunque es cierto que suelen tener muchos problemas con las zonas de cobertura ya que los elementos constructivos suelen hacer de escudo ante la señal WiFi.
+- <b>Redes inalámbricas locales (WLAN)</b>: Estas redes utilizan ondas de radio en lugar de cables para la comunicación entre dispositivos. Son especialmente útiles en entornos donde la instalación de cables es difícil o poco práctica (hogar, cafeterías, aeropuertos y centros comerciales), aunque es cierto que suelen tener muchos problemas con las zonas de cobertura ya que los elementos constructivos suelen hacer de escudo ante la señal WiFi. La conexión se realiza en 3 fases (exploración, auntenticación y asociación), utilizando un proceso de transmisión en el que se utiliza la <b>capa física (PHY)</b> para convertir la información en ondas de radio, gestionando los datos para que puedan ser transmitidos a través de radiofrecuencia, la <b>subcapa MAC (Control de Acceso al Medio)</b> para coordinar y regular la distribución de red y así evitar la transmisión simultánea y la recepción, donde la información se convierte nuevamente en información comprensible para el dispositivo receptor.
 
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/redes_6.png">
   <source media="(prefers-color-scheme: light)" srcset="images/redes_6.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_6.png" width="65%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_6.png" width="55%">
+</picture>
+</p>
+
+- <b>Red Inalámbrica de Area Amplia (WMAN)</b>: es la versión inalámbrica de MAN, la cual puede llegar a tener un rango de alcance de decenas de kilómetros ya que está basada en el estándar de comunicaciones <b>WiMAX (Worldwide Interoperability for Microwave Access)</b>, UMTS, GPRS, EDGE, CDMA2000, GSM, CDPD, Mobitex, HSPA y 3G para realizar la transferencia de los datos entre los nodos que componen la red, logrando cobertura inalámbrica a un área geográfica relativamente grande. 
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/redes_7.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/redes_7.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_7.png" width="55%">
 </picture>
 </p>
 
@@ -73,6 +83,9 @@ El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, s
 
 
 
+SAN (Storage Area Network)
+
+Una red SAN o Storage Area Network, que traducido al español significa Red de Area de Almacenamiento, es una tecnología muy usada por grandes empresas para obtener mayor flexibilidad en la obtención y manipulación de los datos que necesita para su desenvolvimiento. Básicamente, una SAN es una red compuesta por unidades de almacenamiento que se conectan a las redes de área local de las compañías, y la principal característica, sin entrar en tecnicismos demasiado complicados, es que son capaces de crecer de forma ilimitada, por lo que le puede ofrecer a quien la opera increíbles capacidades de almacenamiento de hasta miles de TB.
 
 - <b>Redes de área personal (PAN)</b>: Son redes diseñadas para la comunicación entre dispositivos personales cercanos, como teléfonos inteligentes, tabletas y computadoras portátiles. Ejemplos de tecnologías de PAN incluyen Bluetooth y Near Field Communication (NFC).
 
