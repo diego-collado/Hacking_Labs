@@ -85,15 +85,25 @@ El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, s
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/redes_8.png">
   <source media="(prefers-color-scheme: light)" srcset="images/redes_8.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_8.png" width="35%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_8.png" width="55%">
+</picture>
+</p>
+
+- <b>Redes de área personal (PAN)</b>: Son redes diseñadas para la comunicación entre dispositivos personales cercanos (smartphones, tablets, smartTVs, portátiles), utilizando tecnologías como <b>Bluetooth</b>, infrarrojos y <b>Near Field Communication (NFC)</b> para intercambiar información entre los mismos.
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/redes_9.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/redes_9.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_9.png" width="60%">
 </picture>
 </p>
 
 
-- <b>Redes de área personal (PAN)</b>: Son redes diseñadas para la comunicación entre dispositivos personales cercanos, como teléfonos inteligentes, tabletas y computadoras portátiles. Ejemplos de tecnologías de PAN incluyen Bluetooth y Near Field Communication (NFC).
+----------------
 
 
-PAN (Personal Area Network): Se denomina red de área personal la que abarca los diferentes dispositivos de uso cercano de un usuario. Teléfono celular, laptop, cámaras de fotos, tabletas, etc, son los más comunes. Permite el intercambio de archivos de manera sencilla entre los aparatos. Su versión inalámbrica hace uso de la red WiFi, el Bluetooth o los rayos infrarrojos para intercambiar información.
+
 
 VLAN (Virtual Local Area Network): Funciona como una VPN dentro de una red local. Permite la creación de una conexión privada entre dos o más nodos dentro del universo de una LAN. Ideal, por ejemplo, para separar el acceso a la red de diferentes departamentos de una empresa. Son creadas vía software, por lo que sus nodos no necesitan estar interconectados directamente entre sí.
 
