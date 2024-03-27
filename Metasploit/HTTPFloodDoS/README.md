@@ -8,11 +8,7 @@
 - <b>Peticiones GET</b>: recuperan contenido estático (imágenes o bloques de texto), es decir, recibe datos del servidor
 - <b>Peticiones POST</b>: se utilizan para acceder a recursos dinámicos, es decir, se envían datos al servidor. 
 
-Ambos pueden utilizarse para efectuar este ataque HTTP Flood, aunque el método POST se emplea con más frecuencia, porque requiere un procesamiento complejo por parte del servidor. Así, en el momento que se ejecuta un <b>ataque HTTP flood</b>, se realizan muchas de estas peticiones simultáneamente y durante un período de tiempo prolongado.
-
-
-
- Por lo general, se usa una botnet para aumentar la cantidad de solicitudes. El ataque HTTP flood se diseña de tal manera que el servidor dedica el mayor volumen de recursos posible a cada petición. En una situación normal, esto es deseable, porque el servidor no recibe miles o cientos de miles de solicitudes por minuto, como sucede en este caso. Así, en este caso, el atacante no tiene más que esperar a que el servidor se desborde, con la consiguiente caída de la aplicación o del sitio web.
+> Ambos pueden utilizarse para efectuar el <b>ataque HTTP Flood</b>, aunque el método POST se emplea con más frecuencia (requiere un procesamiento complejo por parte del servidor), ya que se realizan muchas de estas peticiones simultáneamente y durante un período de tiempo prolongado. A modo general, se usa una <b>botnet</b> para aumentar la cantidad de solicitudes de tal manera que el servidor dedique el mayor volumen de recursos posible a cada petición. 
 
 
 
