@@ -64,7 +64,7 @@ Ya está disponible la dirección IP: <b>192.168.0.109</b>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/HTTP_Flood_4.png">
   <source media="(prefers-color-scheme: light)" srcset="images/HTTP_Flood_4.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/HTTP_Flood_4.png" width="80%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/HTTP_Flood_4.png" width="50%">
 </picture>
 </p>
 
@@ -94,6 +94,10 @@ cd Slowloris
 ```
 service apache2 start
 ```
+```
+service apache2 status
+```
+
 </b>
 
 
