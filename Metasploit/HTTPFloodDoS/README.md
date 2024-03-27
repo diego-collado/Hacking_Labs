@@ -12,7 +12,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/HTTP_Flood_0.gif">
   <source media="(prefers-color-scheme: light)" srcset="images/HTTP_Flood_0.gif">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/HTTP_Flood_0.gif" width="50%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/HTTP_Flood_0.gif" width="65%">
 </picture>
 </p>
 
@@ -26,31 +26,20 @@
 </picture>
 </p>
 
+> ### Abriendo mi propia tienda virtual: BadStore como objetivo :computer:
+> <b>BadStore</b> es una aplicación web pre-montada sobre la distribución de Linux ligera (<b>Trinux</b>), la cual permite simular un servidor con todos los servicios activos y una tienda de libros instalada que contiene varios fallos de seguridad, lo que permite realizar laboratorios de hacking y pentesting relativamente reales. Esta distro pesa no más de 10MB, pudiendola montar de forma virtual con VirtualBox, Hyper-V o VMWare. En realidad, esta "web" se ejecuta con Perl, Apache y MySQL, por lo que es muy fácil de configurar y acceder (en realidad parece un VPS).
 
-
-
-
-------------------------------------------------------------------------------
-
-
-> En este caso, con el ataque de tipo <b>SYN flood</b>, constituye un abuso del <b>TCP Threeway Handshake</b>:
-- 1.- Se utiliza el <b>TCP (Transmission Control Protocol)</b>, un protocolo de red que, junto al IP, asegura un tráfico de datos sin pérdidas a través de Internet. Una conexión TCP siempre se establece con una autenticación completa de tres pasos. 
-- 2.- Para la conexión, el cliente envía un <b>paquete de sincronización (SYN)</b> al servidor, el cual, cuando es recibido por parte del servidor, responde con un <b>paquete de sincronización (SYN)</b> y una <b>confirmación (ACK)</b>. 
-- 3.- La conexión concluye con el <b>acuse de recibo (ACK)</b> se realizar por parte del cliente. 
-> En caso de que el último acuse no se produzca, los sistemas se pueden paralizar ya que el servidor no cuenta en su memoria con suficientes conexiones confirmadas... Por medio de una inundación SYN se reúne un gran número de conexiones incompletas, por lo que los recursos disponibles del servidor se ocupan por completo.
-
-> ### Primeros conceptos: MODELO TCP/IP :computer:
-> Como primer concepto, se ha de conocer el <b>modelo TCP/IP</b>, protocolo de red que permite la comunicación a través de Internet (abreviatura de <b>Protocolo de control de transmisión/Protocolo de Internet</b>), el cual es un protocolo estándar y un modelo (en la actualidad) de 4 capas que define cómo se transmiten los datos a través de una red y cómo se comunican los dispositivos. Su origen se da en la década de 1970 gracias al Departamento de Defensa de USA (DOD), ya que se pretendía crear una red que pudiera funcionar incluso si partes de ella resultaran dañadas o destruidas. Posteriormente, el modelo TCP/IP se publicó por primera vez en 1981 (versión 4) y luego se actualizó a la versión 6 en 1995. 
+<b>DESCARGA</b> https://www.vulnhub.com/entry/badstore-123,41/ :floppy_disk:
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/TCPSyn_1.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/TCPSyn_1.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/TCPSyn_1.png" width="50%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/HTTP_Flood_2.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/HTTP_Flood_2.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/HTTP_Flood_2.png" width="50%">
 </picture>
 </p>
 
-
+------------------------------------------------------------------------------
 > Veamos todas las capas TCP/IP: 
 
 > <b>1.- Capa de aplicación</b>: es la capa más alta del modelo TCP/IP, un marco que define cómo se comunican los dispositivos a través de una red, es decir, es la capa más cercana al usuario final y representa las aplicaciones que se ejecutan en el dispositivo y utilizan la red para comunicarse y cuya función principal es proporcionar un medio para que las aplicaciones accedan a la red y se comuniquen con otros dispositivos. Así, se presentan un conjunto de protocolos que permiten a las distintas aplicaciones enviar y recibir datos a través de la red, como por ejemplo los protocolos <b>HTTP (Protocolo de transferencia de hipertexto)</b>, <b>SMTP (Protocolo Simple de Transferencia de Correo)</b>, <b>DNS (Sistema de Nombres de Dominio)</b>, <b>RDP (Protocolo de Escritorio Remoto)</b>, <b>SNMP (Protocolo simple de gestión de red)</b>, <b>FTP (Protocolo de Transferencia de Archivos)</b> o <b>HTTPS (Protocolo Seguro de Transferencia de Hipertexto)</b>
