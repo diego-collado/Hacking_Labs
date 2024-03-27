@@ -100,6 +100,27 @@ El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, s
 </picture>
 </p>
 
+-  <b>Red de área local óptica pasiva (POLAN)</b>: es una alternativa a las típica LAN basada en conmutadores, ya que la tecnología <b>POLAN</b> se integra en el cableado para superar las preocupaciones sobre la compatibilidad con los protocolos Ethernet tradicionales mediante una arquitectura de LAN de punto a multipunto que emplea divisores ópticos para multiplicar la señal de una hebra de fibra óptica para repartirla entre usuarios y dispositivos.
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/redes_14.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/redes_14.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_14.png" width="50%">
+</picture>
+</p>
+
+- <b>Red privada empresarial (EPN)</b>: este tipo de redes están construidas (y son propiedad) por parte de las propias empresas que desean conectar de forma segura sus diversas ubicaciones para compartir recursos. Así, se pueden encontrar distintos tipos de redes EPN y usos específicos para cada una de ellas ya que se debería tener en cuenta que son las propias empresas las que las crean mantienen y dan permisos de acceso. Estos accesos pueden ser temporales para un uso concreto o permanentes en caso de ser necesario.
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/redes_15.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/redes_15.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_15.png" width="50%">
+</picture>
+</p>
+
+
 - <b>Redes de área personal (PAN)</b>: Son redes diseñadas para la comunicación entre dispositivos personales cercanos (smartphones, tablets, smartTVs, portátiles), utilizando tecnologías como <b>Bluetooth</b>, infrarrojos y <b>Near Field Communication (NFC)</b> para intercambiar información entre los mismos.
 
 <p align="center">
