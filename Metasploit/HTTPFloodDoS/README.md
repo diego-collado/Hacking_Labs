@@ -54,7 +54,7 @@ Obtenemos los siguientes resultados:
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/HTTP_Flood_3.png">
   <source media="(prefers-color-scheme: light)" srcset="images/HTTP_Flood_3.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/HTTP_Flood_3.png" width="25%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/HTTP_Flood_3.png" width="80%">
 </picture>
 </p>
 ------------------------------------------------------------------------------
