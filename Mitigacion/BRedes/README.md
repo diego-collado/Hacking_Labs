@@ -65,7 +65,7 @@ El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, s
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/redes_10.png">
   <source media="(prefers-color-scheme: light)" srcset="images/redes_10.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_10.png" width="65%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_10.png" width="45%">
 </picture>
 </p>
 
@@ -110,8 +110,15 @@ El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, s
 </picture>
 </p>
 
-- <b>Red virtual de área local</b>: su funcionamiento es relativamente parecido a una VPN montada sobre una red LAN ya que permite la creación de una conexión privada entre dos o más nodos dentro de una misma LAN. Este tipo de redes es ideal para separar el acceso a la red de diferentes departamentos de una empresa aunque si bien son creadas basándonos en software, por lo que sus nodos no necesitan estar interconectados directamente entre sí... ¡¡También es un problema de seguridad!!
+- <b>Red virtual de área local (VLAN)</b>: su funcionamiento es relativamente parecido a una VPN montada sobre una red LAN ya que permite la creación de una conexión privada entre dos o más nodos dentro de una misma LAN. Este tipo de redes es ideal para separar el acceso a la red de diferentes departamentos de una empresa aunque si bien son creadas basándonos en software, por lo que sus nodos no necesitan estar interconectados directamente entre sí... ¡¡También es un problema de seguridad!!
 
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/redes_13.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/redes_13.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_13.png" width="45%">
+</picture>
+</p>
 
 
 
