@@ -59,15 +59,17 @@ En general se utiliza un bus doble (ida y vuelta de fibra óptica) para intercon
 
 El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, superando los 100km.
 
-- <b>Redes inalámbricas</b>: Estas redes utilizan ondas de radio en lugar de cables para la comunicación entre dispositivos. Son especialmente útiles en entornos donde la instalación de cables es difícil o poco práctica (hogar, cafeterías, aeropuertos y centros comerciales).
+- <b>Redes inalámbricas locales (WLAN)</b>: Estas redes utilizan ondas de radio en lugar de cables para la comunicación entre dispositivos. Son especialmente útiles en entornos donde la instalación de cables es difícil o poco práctica (hogar, cafeterías, aeropuertos y centros comerciales), aunque es cierto que suelen tener muchos problemas con las zonas de cobertura ya que los elementos constructivos suelen hacer de escudo ante la señal WiFi.
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/redes_6.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/redes_6.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_6.png" width="65%">
+</picture>
+</p>
 
 
-
-
-
-https://www.ionos.es/digitalguide/servidores/know-how/los-tipos-de-redes-mas-conocidos/
-https://sipsbarcelona.com/lan-wam-man-wlan-wman-wwman-san-pan-significan/
-https://www.tecnologia-informatica.com/tipos-de-redes-informaticas-lan-wan-man-wlan-wman-wwman-san-pan/#Red_SAN_(Storage_Area_Network)%C2%A0
 
 
 
