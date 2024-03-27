@@ -126,14 +126,6 @@ python3 slowloris.py [ip_victima] -s 500
 
 - <b>Paso 4</b>: Poco a poco se irá comprobando que el resultado está produciéndose en tiempo real en la VM. Además, podemos introducir multitud de modificadores al script de SlowLoris, lo que potenciará nuestro ataques:
 
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/HTTP_Flood_6.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/HTTP_Flood_6.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/HTTP_Flood_6.png" width="50%">
-</picture>
-</p>
-
   - <b>-p</b>: puerto del webserver, puerto 80 por defecto
   - <b>-s</b>: número de sockets creados para usar en el test
   - <b>-v</b>: aumenta la información en la salida (terminal de Kali Linux)
@@ -141,3 +133,11 @@ python3 slowloris.py [ip_victima] -s 500
   - <b>-x</b>: utiliza proxy de tipo SOCK5 para la conexión
   - <b>-https</b>: utiliza el protocolo HTTPS para cada petición
   - <b>-sleeptime</b>: tiempo de "descanso" entre envíos
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/HTTP_Flood_6.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/HTTP_Flood_6.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/HTTP_Flood_6.png" width="50%">
+</picture>
+</p>
