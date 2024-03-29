@@ -20,7 +20,11 @@
 > Laboratorios preparados para la realización de diversos ataques (Kali Linux 2023.4) mediante la utilización de la herramienta <b>Burp Suite</b>, una herramienta de seguridad de software creada con código abierto que se utiliza para hacer pruebas de pentesting y descubrir vulnerabilidades en aplicaciones web desarrollada por <b>PortSwigger Web Security</b> que incluye funciones de seguridad, además de una gran cantidad de recursos y documentación en línea para ayudar a comprender todas las propias funcionalidades de la herramienta.
 
 ## NO es una herramienta más...
-<b>Burp Suite</b> se ejecuta básicamente como proxy y se puede abrir directamente desde Kali Linux como una aplicación independiente en su versión <b>Community Edition</b> que, evidentemente, dispone de las opciones básicas de creación de proyectos temporales, etc.
+> <b>Burp Suite</b> se ejecuta básicamente como proxy y se puede abrir directamente desde Kali Linux como una aplicación independiente en su versión <b>Community Edition</b> que, evidentemente, dispone de las opciones básicas de creación de proyectos temporales... Todo lo imprescindible en la versión gratuita de la plataforma, que está pre-instalada por defecto en el sistema operativo. Su función principal es la de actuar como <b>proxy HTTP</b> de la aplicación para hacer el pentesting.
+
+> Un <b>proxy HTTP</b> es una herramienta usada en Hacking Ético y Pentesting con el fin de interceptar el tráfico de red, lo que permite analizar, modificar, aceptar o rechazar todas las solicitudes y respuestas de la aplicación.
+
+
 
 <p align="center">
 <picture>
@@ -29,6 +33,9 @@
   <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/burpsuite_0.png" width="25%">
 </picture>
 </p>
+
+
+
 
 
 
