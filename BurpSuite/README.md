@@ -19,9 +19,20 @@
 > [!CAUTION]
 > Laboratorios preparados para la realización de diversos ataques (Kali Linux 2023.4) mediante la utilización de la herramienta <b>Burp Suite</b>, una herramienta de seguridad de software creada con código abierto que se utiliza para hacer pruebas de pentesting y descubrir vulnerabilidades en aplicaciones web desarrollada por <b>PortSwigger Web Security</b> que incluye funciones de seguridad, además de una gran cantidad de recursos y documentación en línea para ayudar a comprender todas las propias funcionalidades de la herramienta.
 
------------------------------------------------
-## XSS... ¿No es un problema del usuario?
-En realidad <b>NO</b>, no es un problema del usuario, como cualquiera de las otras vulnerabilidades conocidas... XSS aprovecha vulnerabilidades para poder cambiar el contenido del site, redirigir al browser a otro website y muchas acciones más.
+## NO es una herramienta más...
+<b>Burp Suite</b> se ejecuta básicamente como proxy y se puede abrir directamente desde Kali Linux como una aplicación independiente en su versión <b>Community Edition</b> que, evidentemente, dispone de las opciones básicas de creación de proyectos temporales, etc.
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/burpsuite_0.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/burpsuite_0.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/burpsuite_0.png" width="25%">
+</picture>
+</p>
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
 
 ## Utilizando JavaScript (JS) por parte del atacante...
 Es cierto que si buscamos por Internet, las vulnerabilidades XSS son percibidas como menos peligrosas que, por ejemplo, las vulnerabilidades de inyección SQL... Nada más lejos de la realidad ya que las consecuencias de la capacidad de ejecutar JavaScript por parte de los navegadores web (aunque en un entorno muy controlado), proporcionan un acceso limitado al sistema operativo del usuario y a sus archivos, lo que lo convierte en un peligroso ataque: 
