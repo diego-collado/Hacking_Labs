@@ -12,7 +12,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/burpsuite_1.png">
   <source media="(prefers-color-scheme: light)" srcset="images/burpsuite_1.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/burpsuite_1.png" width="60%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/burpsuite_1.png">
 </picture>
 </p>
 
