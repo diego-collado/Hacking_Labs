@@ -20,7 +20,7 @@
 > Laboratorios preparados herramientas y técnicas de suma utilizar gracias a las distro por excelencia <b>Kali Linux 2023.4</b>, una de las más utilizadas en el mundo del pentesting, el hacking ético y la ciberseguridad en general. Cada laboratorio trata de comprometer sistemas, servicios y websites completos utilizando cualquiera de sus más de 1600 exploits y funcionalidades que, de una forma u otra, tratarán de aprovechar las vulnerabilidades que se hayan encontrado en las fases previas de analítica y OSINT. Está muy enfocada a  auditores de seguridad y equipos Red Team y Blue Team.
 
 
-# :desktop_computer:	Metasploit 
+# :desktop_computer:	Metasploit: un FrameWork diferente... 
 
 <p align="center">
 <picture>
