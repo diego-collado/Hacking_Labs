@@ -3,7 +3,7 @@
 > [!IMPORTANT]
 > Las redes de computadoras son un componente fundamental en el mundo moderno de las TICs ya que nos permiten la comunicación y el intercambio de datos entre dispositivos (PCs, smartphones, tablets y otros dispositivos) conectados a Internet. Si bien es cierto que existen diferentes tipos de redes, cada una con sus propias características y aplicaciones.
 
-En la actualiddad, utilizamos la <b>arquitectura cliente-servidor</b>, donde la red de comunicaciones está dispuesta de manera que todos los clientes están conectados a un servidor en el que se centralizan los recursos y aplicaciones con que se cuenta, los cuales pone a disposición de los clientes cada vez que estos son solicitados. Esto, realmente, significa que todas las gestiones que se realizan se concentran en el servidor, de manera que en él se disponen los requerimientos provenientes de los clientes que tienen prioridad, los archivos que son de uso público y los que son de uso restringido... La principal característica es que en este tipo de redes los roles están bien definidos y no se intercambian, es decir, los clientes en ningún momento pueden tener el rol de servidores y viceversa, manteniendo un control centralizado de la información, aportando con esto mayor seguridad y mayor rendimiento a menores costes. 
+> En la actualiddad, utilizamos la <b>arquitectura cliente-servidor</b>, donde la red de comunicaciones está dispuesta de manera que todos los clientes están conectados a un servidor en el que se centralizan los recursos y aplicaciones con que se cuenta, los cuales pone a disposición de los clientes cada vez que estos son solicitados. Esto, realmente, significa que todas las gestiones que se realizan se concentran en el servidor, de manera que en él se disponen los requerimientos provenientes de los clientes que tienen prioridad, los archivos que son de uso público y los que son de uso restringido... La principal característica es que en este tipo de redes los roles están bien definidos y no se intercambian, es decir, los clientes en ningún momento pueden tener el rol de servidores y viceversa, manteniendo un control centralizado de la información, aportando con esto mayor seguridad y mayor rendimiento a menores costes. 
 
 <p align="center">
 <picture>
@@ -12,6 +12,14 @@ En la actualiddad, utilizamos la <b>arquitectura cliente-servidor</b>, donde la 
   <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_0.png" width="50%">
 </picture>
 </p>
+
+> Una <b>red informática</b> está compuesta por varios componentes que trabajan juntos para permitir la comunicación y el intercambio de datos entre dispositivos. Los componentes principales de las redes son:
+
+> - <b>Dispositivos de red</b>: los componentes principales son las computadoras (servidores, estaciones de trabajo/clientes, portátiles, tabletas o dispositivos móviles) las cuales se conectan a la red para enviar, recibir y procesar datos y los <b>dispositivos de red (routers, switches, hubs y puntos de acceso inalámbrico o wireless access points, más conocidos como APs), que tienen como tarea principal ayudar a dirigir el tráfico de datos dentro de la red.
+> - <b>Medios de transmisión</b>: son los <b>cables</b> (de cobre para Ethernet, cables de fibra óptica o cables coaxiales), los cuales transmiten los datos entre los dispositivos de red y, por supuesto, las <b>conexiones inalámbricas</b> (WiFi, Bluetooth y tecnologías GSM, incluyendo los infrarrojos), los cuales se basan en la utilización de las ondas electromagnéticas para transmitir datos sin cables.
+
+
+
 
 Ahora bien, las redes podríamos clasificarlas según su localización y magnitud:
 
@@ -59,6 +67,19 @@ En general se utiliza un bus doble (ida y vuelta de fibra óptica) para intercon
 
 El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, superando los 100km.
 
+- <b>Redes de área personal (PAN)</b>: Son redes diseñadas para la comunicación entre dispositivos personales cercanos (smartphones, tablets y portátiles), cuyas tecnologías más típicas suelen ser Bluetooth, infrarojos, WiFi y Near Field Communication (NFC). En este tipo de redes se permite el intercambio de archivos de manera sencilla entre dispositivos. 
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/redes_6.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/redes_6.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_6.png" width="65%">
+</picture>
+</p>
+
+
+
+
 - <b>Redes inalámbricas</b>: Estas redes utilizan ondas de radio en lugar de cables para la comunicación entre dispositivos. Son especialmente útiles en entornos donde la instalación de cables es difícil o poco práctica (hogar, cafeterías, aeropuertos y centros comerciales).
 
 
@@ -72,10 +93,7 @@ https://www.tecnologia-informatica.com/tipos-de-redes-informaticas-lan-wan-man-w
 
 
 
-- <b>Redes de área personal (PAN)</b>: Son redes diseñadas para la comunicación entre dispositivos personales cercanos, como teléfonos inteligentes, tabletas y computadoras portátiles. Ejemplos de tecnologías de PAN incluyen Bluetooth y Near Field Communication (NFC).
 
-
-PAN (Personal Area Network): Se denomina red de área personal la que abarca los diferentes dispositivos de uso cercano de un usuario. Teléfono celular, laptop, cámaras de fotos, tabletas, etc, son los más comunes. Permite el intercambio de archivos de manera sencilla entre los aparatos. Su versión inalámbrica hace uso de la red WiFi, el Bluetooth o los rayos infrarrojos para intercambiar información.
 
 VLAN (Virtual Local Area Network): Funciona como una VPN dentro de una red local. Permite la creación de una conexión privada entre dos o más nodos dentro del universo de una LAN. Ideal, por ejemplo, para separar el acceso a la red de diferentes departamentos de una empresa. Son creadas vía software, por lo que sus nodos no necesitan estar interconectados directamente entre sí.
 
