@@ -24,7 +24,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/redes_16.png">
   <source media="(prefers-color-scheme: light)" srcset="images/redes_16.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_16.png" width="50%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_16.png">
 </picture>
 </p>
 
@@ -36,7 +36,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/redes_17.png">
   <source media="(prefers-color-scheme: light)" srcset="images/redes_17.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_17.png" width="50%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_17.png">
 </picture>
 </p>
 
