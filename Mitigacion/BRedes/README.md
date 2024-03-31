@@ -3,7 +3,7 @@
 > [!IMPORTANT]
 > Las redes de computadoras son un componente fundamental en el mundo moderno de las TICs ya que nos permiten la comunicación y el intercambio de datos entre dispositivos (PCs, smartphones, tablets y otros dispositivos) conectados a Internet. Si bien es cierto que existen diferentes tipos de redes, cada una con sus propias características y aplicaciones.
 
-# :closed_lock:	Modelos OSI y TCP/IP en protocolos de red: Cómo funcionan las redes
+# :satellite:	Modelos OSI y TCP/IP en protocolos de red: Cómo funcionan las redes
 
 > Pero como en todo,, lo primero que debemos ver es el concepto fundamental: <b>¿Qué es un protocolo de red?</b> Como tal, realmente es un estándar de comunicaciones que contiene las reglas e información necesaria de cómo las computadoras intercambian datos entre sí, por lo que podemos resumir en que cada uno de los protocolos de comunicación de redes asume entonces una tarea específica en el medio que se requiera, el cual puede abarcar múltiples sectores, siendo desarrollados por entidades, organizaciones y personas que trabajan en la industria, institutos de investigación, y muchas entidades más que, posteriormente, publican y aceptan en conferencias internacionales para marcar estándares de comunicaciones, como en el caso de la <b>ISO (International Standars Organization)</b>, por medio de la <b>arquitectura OSI (Open Systems Interconnect)</b>, dos de las más importantes. De manera general, los protocolos de red llevan a cabo las siguientes tareas:
 
