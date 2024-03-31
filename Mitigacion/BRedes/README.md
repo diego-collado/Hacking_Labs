@@ -18,7 +18,7 @@
 
 > Para definir los modelos de red aparecen:
 
-- <b>Modelo OSI</b>: sistema normativo conformado por 7 niveles que define la interconexión de los sistemas en las distintas fases (capas), por las cuales deben atravesar los datos para viajar de un dispositivo a otro en una red de telecomunicaciones.
+> - <b>Modelo OSI</b>: sistema normativo conformado por 7 niveles que define la interconexión de los sistemas en las distintas fases (capas), por las cuales deben atravesar los datos para viajar de un dispositivo a otro en una red de telecomunicaciones.
 
 <p align="center">
 <picture>
@@ -30,7 +30,7 @@
 
 > En este caso, es necesaria la <b>IP</b> ya que, cuando los usuarios envían o reciben datos de un dispositivo, los datos se dividen en paquetes con dos direcciones IP: una para el remitente y otra para el destinatario ya que, después que el remitente envía el paquete, se dirige a una puerta de enlace, la cual reenvía el paquete en la dirección correcta para, finalmente, llegar a su destino.
 
-- <b>Modelo TCP/IP</b>: con el se divide la información en pequeños <b>paquetes de información</b> que viajan de forma independiente y se ensamblan de nuevo al final del proceso, mientras que IP es el encargado de encontrar la ruta al destino.
+> - <b>Modelo TCP/IP</b>: con el se divide la información en pequeños <b>paquetes de información</b> que viajan de forma independiente y se ensamblan de nuevo al final del proceso, mientras que IP es el encargado de encontrar la ruta al destino.
 
 <p align="center">
 <picture>
@@ -39,7 +39,6 @@
   <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_17.png">
 </picture>
 </p>
-
 
 
 # :mailbox: Tipos de redes en informática
@@ -109,7 +108,6 @@ El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, s
   <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_10.png" width="45%">
 </picture>
 </p>
-
 
 > - <b>Redes inalámbricas locales (WLAN)</b>: Estas redes utilizan ondas de radio en lugar de cables para la comunicación entre dispositivos. Son especialmente útiles en entornos donde la instalación de cables es difícil o poco práctica (hogar, cafeterías, aeropuertos y centros comerciales), aunque es cierto que suelen tener muchos problemas con las zonas de cobertura ya que los elementos constructivos suelen hacer de escudo ante la señal WiFi. La conexión se realiza en 3 fases (exploración, auntenticación y asociación), utilizando un proceso de transmisión en el que se utiliza la <b>capa física (PHY)</b> para convertir la información en ondas de radio, gestionando los datos para que puedan ser transmitidos a través de radiofrecuencia, la <b>subcapa MAC (Control de Acceso al Medio)</b> para coordinar y regular la distribución de red y así evitar la transmisión simultánea y la recepción, donde la información se convierte nuevamente en información comprensible para el dispositivo receptor.
 
@@ -181,3 +179,45 @@ El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, s
   <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_13.png" width="45%">
 </picture>
 </p>
+
+## :pencil: Tipos de protocolos de red
+
+- <b>IPv6</b>: <b>Protocolo de Internet Versión 6</b>, el futuro formato de direccionamiento ya que, una vez que se agoten las direcciones IPv4 y las IP públicas pasen a la versión 6, se permitirán combinaciones únicas en las que se podrá hacer el direccionamiento y, por lo tanto, representarán un gran número de máquinas conectadas a Internet, llegando hasta las 340 sextillones de direcciones IP totalmente únicas.
+
+- <b>IPv4</b>: En el direccionamiento IPv4, tenemos IP públicas y privadas
+
+
+> Los protocolos basados en <b>TCP/IP</b> se dividen en las siguientes áreas:
+
+<b>Protocolos de la web</b>
+
+- <b>HTTP</b>: <b>Protocolo de transferencia de hipertexto</b>. El formato de los mensajes, su transmisión y las acciones web asociadas en el lado del cliente y del servidor son gestionados por este protocolo. La www (World Wide Web) lo utiliza. Se ejecuta en el puerto 80.
+- <b>HTTPS</b>: significa <b>Hyper Text Transfer Protocol Secure</b>, por lo que parece ser solo una mejora con respecto a HTTP, muy usado en la comunicación segura cuando se está fuera del host local.
+- <b>TLS</b>: significa <b>seguridad de la capa de transporte</b>, un protocolo criptográfico que proporciona seguridad de comunicación de extremo a extremo a través de redes comúnmente utilizadas en transacciones. 
+- <b>SSL</b>: conocido como <b>Secure Sockets Layer</b>, establece una conexión cifrada entre el navegador y el servidor, el servidor web requiere un certificado SSL. Una clave pública y una privada se crean criptográficamente.
+
+<b>Protocolos de transferencia de archivos</b>
+
+- <b>FTP</b>: el protocolo de transferencia de archivos se utiliza para la transferencia de archivos entre el cliente y el servidor en una red informática.
+- <b>TFTP</b>: se refiere a un sistema normativo trivial de transferencia de archivos es un método que permite al cliente obtener un archivo y colocarlo en un host remoto. Se usan los nodos de LAN.
+- <b>SFTP</b>: protocolo de transferencia de archivos SSH que nos proporciona una conexión segura para transferir archivos y atravesar el sistema de archivos en sistemas locales y remotos.
+- <b>FTPS</b>: protocolo seguro de transferencia de archivos, por lo que el soporte TLS y SSL se agregan aquí. No se emplea un protocolo seguro basado en shell.
+<b>SMB</b>: bloque de mensajes del servidor, utilizado por Windows y permite que las computadoras en la misma red compartan archivos.
+<b>NFS</b>: sistema de archivos de red es un sistema de archivos distribuidos comúnmente utilizado en UNIX para acceder a archivos entre computadoras en la misma red.
+
+<b>Protocolos de correo electrónico</b>
+
+- <b>SMTP</b>: <b>Protocolo simple de transferencia de correo</b>, un protocolo de inserción para enviar un correo electrónico y el Protocolo de oficina de correos o el Protocolo de acceso a mensajes de Internet se utiliza para recuperarlo en el extremo receptor. Se implementa a nivel de aplicación.
+
+<b>Protocolos de gestión</b>
+
+- <b>Telnet</b>: se utiliza en Internet y LAN para la comunicación de texto bilateral, utilizandouna conexión de terminal virtual.
+- <b>SSH</b>: este es un inicio de sesión remoto seguro basado en shell de una computadora a otra computadora. También se puede cuidar la autenticación y la seguridad.
+- <b>SNMP</b>: protocolo simple de administración de red, utilizado para recopilar y organizar información sobre dispositivos en la red y para cambiar la información.
+
+<b>Protocolos de medios</b>
+
+- <b>RTP</b>: Transporte en tiempo real, utilizado para la comunicación de audio y video a través de la red.
+- <b>RTSP</b>: Protocolo de transmisión en tiempo real, es un protocolo de transmisión que establece sesiones de medios entre puntos finales.
+
+> Así, de manera general hablamos sobre qué son los protocolos de red para las IT y cómo se usan. Más adelante explicaremos los diferentes estándares en los procedimientos industriales.
