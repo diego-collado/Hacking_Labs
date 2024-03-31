@@ -3,7 +3,7 @@
 > [!IMPORTANT]
 > Las redes de computadoras son un componente fundamental en el mundo moderno de las TICs ya que nos permiten la comunicación y el intercambio de datos entre dispositivos (PCs, smartphones, tablets y otros dispositivos) conectados a Internet. Si bien es cierto que existen diferentes tipos de redes, cada una con sus propias características y aplicaciones.
 
-# :satellite: Cómo funcionan los protocoles en redes: Modelos OSI y TCP/IP
+# :satellite: Cómo funcionan los protocolos en redes: Modelos OSI y TCP/IP
 
 > Pero como en todo,, lo primero que debemos ver es el concepto fundamental: <b>¿Qué es un protocolo de red?</b> Como tal, realmente es un estándar de comunicaciones que contiene las reglas e información necesaria de cómo las computadoras intercambian datos entre sí, por lo que podemos resumir en que cada uno de los protocolos de comunicación de redes asume entonces una tarea específica en el medio que se requiera, el cual puede abarcar múltiples sectores, siendo desarrollados por entidades, organizaciones y personas que trabajan en la industria, institutos de investigación, y muchas entidades más que, posteriormente, publican y aceptan en conferencias internacionales para marcar estándares de comunicaciones, como en el caso de la <b>ISO (International Standars Organization)</b>, por medio de la <b>arquitectura OSI (Open Systems Interconnect)</b>, dos de las más importantes. De manera general, los protocolos de red llevan a cabo las siguientes tareas:
 
@@ -16,9 +16,33 @@
 
 > Así, podemos decir que los protocolos de red se definen como <b>lineamientos</b>, <b>normas</b> o <b>reglas</b> bien definidas mediante las cuales un usuario se comunica a través de Internet o Intranet, por lo que existen diversos tipos como el <b>IP</b> o <b>Protocolo de Internet</b>, los protocolos de red como <b>IMAP (Protocolo de acceso a mensajes de Internet)</b>, <b>SMTP (Protocolo simple de transferencia de correo)</b> y POP3 (Protocolo de oficina de correos, emails entrantes), entre los más conocidos. 
 
+> Para definir los modelos de red aparecen:
+
+- <b>Modelo OSI</b>: sistema normativo conformado por 7 niveles que define la interconexión de los sistemas en las distintas fases (capas), por las cuales deben atravesar los datos para viajar de un dispositivo a otro en una red de telecomunicaciones.
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/redes_16.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/redes_16.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_16.png" width="50%">
+</picture>
+</p>
+
+> En este caso, es necesaria la <b>IP</b> ya que, cuando los usuarios envían o reciben datos de un dispositivo, los datos se dividen en paquetes con dos direcciones IP: una para el remitente y otra para el destinatario ya que, después que el remitente envía el paquete, se dirige a una puerta de enlace, la cual reenvía el paquete en la dirección correcta para, finalmente, llegar a su destino.
+
+- <b>Modelo TCP/IP</b>: con el se divide la información en pequeños <b>paquetes de información</b> que viajan de forma independiente y se ensamblan de nuevo al final del proceso, mientras que IP es el encargado de encontrar la ruta al destino.
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/redes_17.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/redes_17.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/redes_17.png" width="50%">
+</picture>
+</p>
 
 
 
+# :mailbox: Tipos de redes en informática
 
 > En la actualidad, utilizamos la <b>arquitectura cliente-servidor</b>, donde la red de comunicaciones está dispuesta de manera que todos los clientes están conectados a un servidor en el que se centralizan los recursos y aplicaciones con que se cuenta, los cuales pone a disposición de los clientes cada vez que estos son solicitados. Esto, realmente, significa que todas las gestiones que se realizan se concentran en el servidor, de manera que en él se disponen los requerimientos provenientes de los clientes que tienen prioridad, los archivos que son de uso público y los que son de uso restringido... La principal característica es que en este tipo de redes los roles están bien definidos y no se intercambian, es decir, los clientes en ningún momento pueden tener el rol de servidores y viceversa, manteniendo un control centralizado de la información, aportando con esto mayor seguridad y mayor rendimiento a menores costes. 
 
