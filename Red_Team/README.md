@@ -6,7 +6,21 @@
 </picture>
 </p>
 
-# :desktop_computer:	Metasploit 
+# :boom:	Red Team 
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/hack.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/hack.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/hack.png" width="45%">
+</picture>
+</p>
+
+> [!CAUTION]
+> Laboratorios preparados herramientas y técnicas de suma utilizar gracias a las distro por excelencia <b>Kali Linux 2023.4</b>, una de las más utilizadas en el mundo del pentesting, el hacking ético y la ciberseguridad en general. Cada laboratorio trata de comprometer sistemas, servicios y websites completos utilizando cualquiera de sus más de 1600 exploits y funcionalidades que, de una forma u otra, tratarán de aprovechar las vulnerabilidades que se hayan encontrado en las fases previas de analítica y OSINT. Está muy enfocada a  auditores de seguridad y equipos Red Team y Blue Team.
+
+
+# :desktop_computer:	Metasploit: un FrameWork diferente... 
 
 <p align="center">
 <picture>
@@ -141,4 +155,4 @@ Veamos el porqué de esta codificación:
 
 - [LABORATORIO II](SYNFloodDoS):  - Ataque DoS <b>(Denial Of Service)</b> utilizando <b>SYNFlood</b> (inundación de peticiones al objetivo mediante paquetes SYN).
 
-- [LABORATORIO III]():  - Ataque DoS <b>(Denial Of Service)</b> utilizando <b>HTTPlood</b> (inundación de peticiones al objetivo mediante peticiones GET o POST del cliente).
+- [LABORATORIO III](HTTPFloodDoS):  - Ataque DoS <b>(Denial Of Service)</b> utilizando <b>HTTPlood</b> (inundación de peticiones al objetivo mediante peticiones GET o POST del cliente).
