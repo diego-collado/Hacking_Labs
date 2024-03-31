@@ -97,9 +97,9 @@ En general se utiliza un bus doble (ida y vuelta de fibra óptica) para intercon
 </picture>
 </p>
 
-El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, superando los 100km.
+> El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, superando los 100km.
 
-- <b> Red de área global (GAN)</b>: es muy utilizado para vincular redes WAN, ya que la distancia que abarca este tipo de red es global. A nivel internacional, las empresas mantienen redes aisladas que comprenden varias redes WAN propias, logrando la comunicación entre los ordenadores de los mismos grupos de empresa a nivel mundial. Las redes GAN utilizan la infraestructura de fibra de vidrio de las redes de área amplia (WAN) y las agrupan mediante cables submarinos internacionales o transmisión por satélite.
+> - <b> Red de área global (GAN)</b>: es muy utilizado para vincular redes WAN, ya que la distancia que abarca este tipo de red es global. A nivel internacional, las empresas mantienen redes aisladas que comprenden varias redes WAN propias, logrando la comunicación entre los ordenadores de los mismos grupos de empresa a nivel mundial. Las redes GAN utilizan la infraestructura de fibra de vidrio de las redes de área amplia (WAN) y las agrupan mediante cables submarinos internacionales o transmisión por satélite.
 
 <p align="center">
 <picture>
@@ -119,7 +119,7 @@ El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, s
 </picture>
 </p>
 
-- <b>Red Inalámbrica de Area Amplia (WMAN)</b>: es la versión inalámbrica de MAN, la cual puede llegar a tener un rango de alcance de decenas de kilómetros ya que está basada en el estándar de comunicaciones <b>WiMAX (Worldwide Interoperability for Microwave Access)</b>, UMTS, GPRS, EDGE, CDMA2000, GSM, CDPD, Mobitex, HSPA y 3G para realizar la transferencia de los datos entre los nodos que componen la red, logrando cobertura inalámbrica a un área geográfica relativamente grande. 
+> - <b>Red Inalámbrica de Area Amplia (WMAN)</b>: es la versión inalámbrica de MAN, la cual puede llegar a tener un rango de alcance de decenas de kilómetros ya que está basada en el estándar de comunicaciones <b>WiMAX (Worldwide Interoperability for Microwave Access)</b>, UMTS, GPRS, EDGE, CDMA2000, GSM, CDPD, Mobitex, HSPA y 3G para realizar la transferencia de los datos entre los nodos que componen la red, logrando cobertura inalámbrica a un área geográfica relativamente grande. 
 
 <p align="center">
 <picture>
@@ -139,7 +139,7 @@ El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, s
 </picture>
 </p>
 
-> -  <b>Red de área local óptica pasiva (POLAN)</b>: es una alternativa a las típica LAN basada en conmutadores, ya que la tecnología <b>POLAN</b> se integra en el cableado para superar las preocupaciones sobre la compatibilidad con los protocolos Ethernet tradicionales mediante una arquitectura de LAN de punto a multipunto que emplea divisores ópticos para multiplicar la señal de una hebra de fibra óptica para repartirla entre usuarios y dispositivos.
+> - <b>Red de área local óptica pasiva (POLAN)</b>: es una alternativa a las típica LAN basada en conmutadores, ya que la tecnología <b>POLAN</b> se integra en el cableado para superar las preocupaciones sobre la compatibilidad con los protocolos Ethernet tradicionales mediante una arquitectura de LAN de punto a multipunto que emplea divisores ópticos para multiplicar la señal de una hebra de fibra óptica para repartirla entre usuarios y dispositivos.
 
 <p align="center">
 <picture>
@@ -160,7 +160,7 @@ El rango IP es de clase A, dada su magnitud y el territorio que han de cubrir, s
 </p>
 
 
-- <b>Redes de área personal (PAN)</b>: Son redes diseñadas para la comunicación entre dispositivos personales cercanos (smartphones, tablets, smartTVs, portátiles), utilizando tecnologías como <b>Bluetooth</b>, infrarrojos y <b>Near Field Communication (NFC)</b> para intercambiar información entre los mismos.
+> - <b>Redes de área personal (PAN)</b>: Son redes diseñadas para la comunicación entre dispositivos personales cercanos (smartphones, tablets, smartTVs, portátiles), utilizando tecnologías como <b>Bluetooth</b>, infrarrojos y <b>Near Field Communication (NFC)</b> para intercambiar información entre los mismos.
 
 <p align="center">
 <picture>
