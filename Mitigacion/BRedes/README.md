@@ -3,7 +3,24 @@
 > [!IMPORTANT]
 > Las redes de computadoras son un componente fundamental en el mundo moderno de las TICs ya que nos permiten la comunicación y el intercambio de datos entre dispositivos (PCs, smartphones, tablets y otros dispositivos) conectados a Internet. Si bien es cierto que existen diferentes tipos de redes, cada una con sus propias características y aplicaciones.
 
-En la actualiddad, utilizamos la <b>arquitectura cliente-servidor</b>, donde la red de comunicaciones está dispuesta de manera que todos los clientes están conectados a un servidor en el que se centralizan los recursos y aplicaciones con que se cuenta, los cuales pone a disposición de los clientes cada vez que estos son solicitados. Esto, realmente, significa que todas las gestiones que se realizan se concentran en el servidor, de manera que en él se disponen los requerimientos provenientes de los clientes que tienen prioridad, los archivos que son de uso público y los que son de uso restringido... La principal característica es que en este tipo de redes los roles están bien definidos y no se intercambian, es decir, los clientes en ningún momento pueden tener el rol de servidores y viceversa, manteniendo un control centralizado de la información, aportando con esto mayor seguridad y mayor rendimiento a menores costes. 
+# :closed_lock:	Modelos OSI y TCP/IP en protocolos de red: Cómo funcionan las redes
+
+> Pero como en todo,, lo primero que debemos ver es el concepto fundamental: <b>¿Qué es un protocolo de red?</b> Como tal, realmente es un estándar de comunicaciones que contiene las reglas e información necesaria de cómo las computadoras intercambian datos entre sí, por lo que podemos resumir en que cada uno de los protocolos de comunicación de redes asume entonces una tarea específica en el medio que se requiera, el cual puede abarcar múltiples sectores, siendo desarrollados por entidades, organizaciones y personas que trabajan en la industria, institutos de investigación, y muchas entidades más que, posteriormente, publican y aceptan en conferencias internacionales para marcar estándares de comunicaciones, como en el caso de la <b>ISO (International Standars Organization)</b>, por medio de la <b>arquitectura OSI (Open Systems Interconnect)</b>, dos de las más importantes. De manera general, los protocolos de red llevan a cabo las siguientes tareas:
+
+- Establecer una conexión confiable entre los equipos implicados en la comunicación
+- Dirigir los paquetes de datos enviados al destinatario correcto
+- Si los paquetes no llegan, el protocolo se asegura de que se reenvíen
+- Transmisión sin errores de los paquetes de información
+- Organización y fusión de los paquetes de datos entrantes
+- Cifrado de los datos transmitidos para que no puedan ser leídos por terceros (encriptación)
+
+> Así, podemos decir que los protocolos de red se definen como <b>lineamientos</b>, <b>normas</b> o <b>reglas</b> bien definidas mediante las cuales un usuario se comunica a través de Internet o Intranet, por lo que existen diversos tipos como el <b>IP</b> o <b>Protocolo de Internet</b>, los protocolos de red como <b>IMAP (Protocolo de acceso a mensajes de Internet)</b>, <b>SMTP (Protocolo simple de transferencia de correo)</b> y POP3 (Protocolo de oficina de correos, emails entrantes), entre los más conocidos. 
+
+
+
+
+
+> En la actualidad, utilizamos la <b>arquitectura cliente-servidor</b>, donde la red de comunicaciones está dispuesta de manera que todos los clientes están conectados a un servidor en el que se centralizan los recursos y aplicaciones con que se cuenta, los cuales pone a disposición de los clientes cada vez que estos son solicitados. Esto, realmente, significa que todas las gestiones que se realizan se concentran en el servidor, de manera que en él se disponen los requerimientos provenientes de los clientes que tienen prioridad, los archivos que son de uso público y los que son de uso restringido... La principal característica es que en este tipo de redes los roles están bien definidos y no se intercambian, es decir, los clientes en ningún momento pueden tener el rol de servidores y viceversa, manteniendo un control centralizado de la información, aportando con esto mayor seguridad y mayor rendimiento a menores costes. 
 
 <p align="center">
 <picture>
@@ -13,7 +30,7 @@ En la actualiddad, utilizamos la <b>arquitectura cliente-servidor</b>, donde la 
 </picture>
 </p>
 
-Ahora bien, las redes podríamos clasificarlas según su localización y magnitud:
+> Ahora bien, las redes podríamos clasificarlas según su localización y magnitud:
 
  - <b>Redes de área local (LAN)</b>: redes que conectan dispositivos en un área geográfica limitada (oficina, edificio o campus universitario), siendo de propiedad privada y utilizando tecnologías como Ethernet para la transmisión de datos. La velocidad de transmisión debe ser relativamente elevada, debe ser privada, es decir, perteneciente a una misma organización y con una tasa de error debe ser muy baja. 
 
