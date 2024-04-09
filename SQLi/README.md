@@ -40,3 +40,48 @@ Ahora bien, la cruda realidad nos demuestra que debemos considerar la responsabi
   
   - <b>Exfiltración de datos</b>: Después de realizar el ataque de inyección SQL con éxito, el atacante puede <b>exfiltrar</b> los datos obtenidos de la base de datos a través de la misma aplicación web o de otros métodos (descarga de archivos o visualización de información en pantalla). En este momento, cualquier herramienta es válida para conseguir la información deseada.
 
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/previo.png" width="4%"> Antes de todo... 
+
+> [!IMPORTANT]
+> Antes de comenzar a enteder cómo funciona SQLi, se necesario seguir una serie de pasos imprescindibles para que el sistema esté completamente preparado para la realización correcta del laboratorio, lo que incluye la instalación de un entorno de trabajo para testear este tipo de ataques.
+
+
+> ### Pre-requisitos 📋
+Paso 1: Instalación de <b>DVWA (Damn Vulnerable Web App)</b>, la aplicación web vulnerable a los tipos de ataques más conocidos que, junto con <b>BadStore</b>, <b>BWAPP</b>(online), <b>Gruyère</b> (online), <b>WSD</b> (online), <b>Metaexplotable 2</b>, <b>OWASP Mutillidae II</b> y <b>OWASP Web Goat</b>, nos permiten testear fallos de seguridad de tipo scripting entre sitios (XSS) y falsificación de solicitudes entre sitios (CSRF), DoS (Ataques de denegación de servicio), Ataques de hombre en el medio (MITM), Falsificación de solicitudes del lado del servidor (SSRF), Inyecciones (SQL, OS Command, HTML, PHP y SMTP, etc), carga de archivos insegura/inclusión de archivos, ejecución de comandos, fuerza bruta, manejo inadecuado de errores, manipulación de parámetros, manipulación de defectos en la gestión de sesiones, comunicación/configuración inserguras, phishing, manipulación de tiempos de ejecución, parcheo binario, aplicación de parches, rotura de la criptografía... 
+Aquí tienes disponibles las URL o descargas de estas aplicaciones vulnerables:
+
+- [bWAPP](http://itsecgames.com/): BuggyWeb
+
+
+
+
+
+
+
+> ### Ejecutando las pruebas previas en busca de información: <b>INFORMATION GATHERING</b> ⚙️
+
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/metasploit_2.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/metasploit_2.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/metasploit_2.png" width="50%">
+</picture>
+</p>
+
+<br>
+
+## :bricks:	CheatSheets de utilidad	:books:
+- [CheatSheet](CheatSheet): CheatSheet (hoja de trucos) para <b>Metasploit</b> y <b>Nmap</b>.
+
+
+<br>
+<br>
+
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/fuego.png" width="4%"> Accede a los laboratorios  :floppy_disk:
+
+- [LABORATORIO I](Meterpreter):  - Creación, instalación y manejo de Meterpreter (<b>Metasploit + MSFVenom</b>). 
+
+- [LABORATORIO II](SYNFloodDoS):  - Ataque DoS <b>(Denial Of Service)</b> utilizando <b>SYNFlood</b> (inundación de peticiones al objetivo mediante paquetes SYN).
+
+- [LABORATORIO III](HTTPFloodDoS):  - Ataque DoS <b>(Denial Of Service)</b> utilizando <b>HTTPlood</b> (inundación de peticiones al objetivo mediante peticiones GET o POST del cliente).
