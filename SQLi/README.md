@@ -1,18 +1,29 @@
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/bicho.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/bicho.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/bicho.png" width="25%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/inyeccion-sql.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/inyeccion-sql.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/inyeccion-sql.png" width="25%">
 </picture>
 </p>
 
-# :lady_beetle:	Cross-Site Scripting - XSS 
+# :syringe:	SQLi: Structured Query Language Injection
 
 > [!CAUTION]
-> Laboratorios preparados para la realización de <b>ataques Cross-Site Scripting (XSS)</b> (Kali Linux 2023.4). Este laboratorio trata de realizar un ataque de inyección de código en el lado cliente, es decir, el atacante pretende ejecutar scripts (maliciosos) en el navegador web de la víctima, así como incluir código maligno en una página o aplicación web legítima de modo que al conectar se ejecute ese código, infectando o robando cierta información al browser de la víctima. Este tipo de ataques se realizan mediante scripts programados en VBScript, ActiveX, Flash e incluso CSS, aunque lo más común es la utilización de JavaScript.
+> Laboratorios preparados para la realización de <b>ataques SQLi (SQL Injection)</b> (Kali Linux 2023.4). Este laboratorio trata de realizar un ataque de inyección de código en el lado servidor, es decir, inyectar código malicioso a la hora de realizar una consulta que se envía a una base de datos a través de una aplicación web, si bien este tipo de ataque aprovecha las vulnerabilidades de seguridad que están presentes en las aplicaciones que interactúan con bases de datos de tipo SQL, como pueden ser <b>MySQL</b>, <b>PostgreSQL</b>, <b>Microsoft SQL Server</b>, <b>Oracle Database</b> y <b>SQLite</b>, por ejemplo. 
 
-## XSS... ¿No es un problema del usuario?
-En realidad <b>NO</b>, no es un problema del usuario, como cualquiera de las otras vulnerabilidades conocidas... XSS aprovecha vulnerabilidades para poder cambiar el contenido del site, redirigir al browser a otro website y muchas acciones más.
+## SQLi... ¿No es un problema del DBA (DataBase Administrator)?
+Como estamos comentando, el objetivo principal de un <b>ataque de inyección SQL</b> es manipular la consulta SQL original de manera que se ejecuten "acciones no autorizadas" en la base de datos (extracción de datos confidenciales, modificación de datos o eliminación de información, entre otras muchas).
+Ahora bien, la cruda realidad nos demuestra que debemos considerar la responsabilidad de desarrolladores y DBA en los posibles ataques de este tipo ya que:
+
+- Desarrolladores de software: Tienen la responsabilidad de escribir código seguro y resistente a los ataques de inyección SQL, lo que implica implementar prácticas de codificación segura (uso de consultas parametrizadas, uso del filtrado y validación adecuados de las entradas de usuario, manejo de expresiones regulares o RegExp...)
+
+- Administradores de sistemas: Deben mantener actualizados los sistemas y aplicaciones e implementar medidas de seguridad en capas (firewalls, IDS/IPS o SIEM) para prevenir y detectar posibles ataques.
+
+- Usuarios finales: Aunque su responsabilidad es <b>indirecta</b>, los usuarios finales deberían adoptar buenas prácticas de seguridad, como usar contraseñas seguras (en longitud y tipo), ademásw de estar alerta ante posibles signos de actividad maliciosa en sitios web o aplicaciones.
+
+
+
+
 
 ## Utilizando JavaScript (JS) por parte del atacante...
 Es cierto que si buscamos por Internet, las vulnerabilidades XSS son percibidas como menos peligrosas que, por ejemplo, las vulnerabilidades de inyección SQL... Nada más lejos de la realidad ya que las consecuencias de la capacidad de ejecutar JavaScript por parte de los navegadores web (aunque en un entorno muy controlado), proporcionan un acceso limitado al sistema operativo del usuario y a sus archivos, lo que lo convierte en un peligroso ataque: 
