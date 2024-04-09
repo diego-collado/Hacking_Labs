@@ -18,7 +18,6 @@ Ejemplos funcionales de cada tipos de ataque (últimas versiones), orientados a 
 ## <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/mal.png" width="8%">Accede al contenido 
 
 - [Red Team](Red_Team): Diversos tipos de ataque utilizando técnicas y entornos como <b>Framework METASPLOIT</b> y otras herramientas
-- [XSS](XSS): Diversos ataques utilizando las técnicas y herramientas de <b>Cross-Site Scripting (XSS)</b>
 - [SQLi](SQLi): Diversos ataques utilizando las técnicas y herramientas de <b>SQLi (SQL Injection)</b>
 - [Anonimato](Anonimato): Encubriendo nuestras huellas mediante <b>TOR y enrutadores ONION</b>
 - [Vulnerabilidades](Vulnerabilidades): Realización de informes completos de vulnerabilidades (brechas de seguridad, aplicaciones antiguas/sin update...)
