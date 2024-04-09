@@ -19,7 +19,15 @@ Ahora bien, la cruda realidad nos demuestra que debemos considerar la responsabi
 
 - Administradores de sistemas: Deben mantener actualizados los sistemas y aplicaciones e implementar medidas de seguridad en capas (firewalls, IDS/IPS o SIEM) para prevenir y detectar posibles ataques.
 
-- Usuarios finales: Aunque su responsabilidad es <b>indirecta</b>, los usuarios finales deberían adoptar buenas prácticas de seguridad, como usar contraseñas seguras (en longitud y tipo), ademásw de estar alerta ante posibles signos de actividad maliciosa en sitios web o aplicaciones.
+- Usuarios finales: Aunque su responsabilidad es <b>indirecta</b>, los usuarios finales deberían adoptar buenas prácticas de seguridad, como usar contraseñas seguras (en longitud y tipo), además de estar alerta ante posibles signos de actividad maliciosa en sitios web o aplicaciones.
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/inyeccion-sql_1.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/inyeccion-sql_1.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/inyeccion-sql_1.png" width="50%">
+</picture>
+</p>
 
 > El funcionamiento consta de las siguientes fases:
   - <b>Identificación de la vulnerabilidad</b>: El atacante examina la aplicación web en busca de campos de entrada que puedan estar conectados a una base de datos y que puedan ser vulnerables a la inyección SQL, los cuales pueden ser cualquiera de los campos que tenemos disponibles en websites y aplicaciones web, como formularios de búsqueda, campos de inicio de sesión, parámetros de URL, entre otros.
@@ -30,6 +38,5 @@ Ahora bien, la cruda realidad nos demuestra que debemos considerar la responsabi
   
   - <b>Manipulación de la base de datos</b>: Dependiendo de la naturaleza del código SQL malicioso utilizado, el resultado del ataque puede variar desde permitir al atacante extraer información confidencial de la base de datos, modificar o eliminar datos, o incluso tomar el control total del sistema...
   
-  -<b>Exfiltración de datos</b>: Después de realizar el ataque de inyección SQL con éxito, el atacante puede <b>exfiltrar</b> los datos obtenidos de la base de datos a través de la misma aplicación web o de otros métodos (descarga de archivos o visualización de información en pantalla). En este momento, cualquier herramienta es válida para conseguir la información deseada.
+  - <b>Exfiltración de datos</b>: Después de realizar el ataque de inyección SQL con éxito, el atacante puede <b>exfiltrar</b> los datos obtenidos de la base de datos a través de la misma aplicación web o de otros métodos (descarga de archivos o visualización de información en pantalla). En este momento, cualquier herramienta es válida para conseguir la información deseada.
 
-  
