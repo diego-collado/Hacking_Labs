@@ -47,10 +47,12 @@ Ahora bien, la cruda realidad nos demuestra que debemos considerar la responsabi
 
 
 > ### Pre-requisitos 📋
-Paso 1: Instalación de <b>DVWA (Damn Vulnerable Web App)</b>, la aplicación web vulnerable a los tipos de ataques más conocidos que, junto con <b>BadStore</b>, <b>BWAPP</b>(online), <b>Gruyère</b> (online), <b>WSD</b> (online), <b>Metaexplotable 2</b>, <b>OWASP Mutillidae II</b> y <b>OWASP Web Goat</b>, nos permiten testear fallos de seguridad de tipo scripting entre sitios (XSS) y falsificación de solicitudes entre sitios (CSRF), DoS (Ataques de denegación de servicio), Ataques de hombre en el medio (MITM), Falsificación de solicitudes del lado del servidor (SSRF), Inyecciones (SQL, OS Command, HTML, PHP y SMTP, etc), carga de archivos insegura/inclusión de archivos, ejecución de comandos, fuerza bruta, manejo inadecuado de errores, manipulación de parámetros, manipulación de defectos en la gestión de sesiones, comunicación/configuración inserguras, phishing, manipulación de tiempos de ejecución, parcheo binario, aplicación de parches, rotura de la criptografía... 
+Paso 1: Instalación de <b>DVWA (Damn Vulnerable Web App)</b>, la aplicación web vulnerable a los tipos de ataques más conocidos que, junto con <b>BadStore</b>, <b>BWAPP</b>(online), <b>Gruyere</b> (online), <b>WSD</b> (online), <b>Metaexplotable 2</b>, <b>OWASP Mutillidae II</b> y <b>OWASP Web Goat</b>, nos permiten testear fallos de seguridad de tipo scripting entre sitios (XSS) y falsificación de solicitudes entre sitios (CSRF), DoS (Ataques de denegación de servicio), Ataques de hombre en el medio (MITM), Falsificación de solicitudes del lado del servidor (SSRF), Inyecciones (SQL, OS Command, HTML, PHP y SMTP, etc), carga de archivos insegura/inclusión de archivos, ejecución de comandos, fuerza bruta, manejo inadecuado de errores, manipulación de parámetros, manipulación de defectos en la gestión de sesiones, comunicación/configuración inserguras, phishing, manipulación de tiempos de ejecución, parcheo binario, aplicación de parches, rotura de la criptografía... 
 Aquí tienes disponibles las URL o descargas de estas aplicaciones vulnerables:
 
-- [bWAPP](http://itsecgames.com/): BuggyWeb
+- [bWAPP](http://itsecgames.com/): <b>BuggyWeb</b>
+- [Gruyere](https://google-gruyere.appspot.com/): <b>Gruyere</b>
+- [OWASP WebGoat](https://owasp.org/www-project-webgoat/): <b>OWASP WebGoat</b>
 
 
 
