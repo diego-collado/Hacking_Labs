@@ -19,7 +19,8 @@ Ejemplos funcionales de cada tipos de ataque (últimas versiones), orientados a 
 
 - [Red Team](Red_Team): Diversos tipos de ataque utilizando técnicas y entornos como <b>Framework METASPLOIT</b> y otras herramientas
 - [BurpSuite](BurpSuite): Diversos tipos de ataque utilizando la herramienta <b>BurpSuite Community Edition</b>.
-- [XSS](XSS): Diversos tipos de ataque utilizando <b>Cross-Site Scripting (XSS)</b> y sus variantes más comunes
+- [XSS](XSS): Diversos ataques utilizando las técnicas y herramientas de <b>Cross-Site Scripting (XSS)</b>
+- [SQLi](SQLi): Diversos ataques utilizando las técnicas y herramientas de <b>SQLi (SQL Injection)</b>
 - [Anonimato](Anonimato): Encubriendo nuestras huellas mediante <b>TOR y enrutadores ONION</b>
 - [Vulnerabilidades](Vulnerabilidades): Realización de informes completos de vulnerabilidades (brechas de seguridad, aplicaciones antiguas/sin update...)
 - [Mitigacion](Mitigacion): Mitigación de diferentes ataques gracias a reconfiguraciones, updates o software de terceros configurado para evadir cualquier tipo de ataque
