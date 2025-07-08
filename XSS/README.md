@@ -47,4 +47,4 @@ Ejemplo: https://ejemplo.com/?q=<script>alert(1)</script>
 - 🔥 Uso de Machine Learning: Los WAFs que "aprenden" el tráfico normal son mucho más difíciles de evadir
 - 🔥 Normalización previa: Si el WAF decodifica correctamente el tráfico antes de filtrarlo, es muy difícil atacarlo
 
-<h4 align="center">⚠️ ¡¡Si configuran reglas personalizadas, la evasión es más difícil!! ⚠️</h4>
+# ⚠️ ¡¡Si configuran reglas personalizadas, la evasión es más difícil!! ⚠️
