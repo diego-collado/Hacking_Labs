@@ -48,3 +48,19 @@ Ejemplo: https://ejemplo.com/?q=<script>alert(1)</script>
 - 🔥 Normalización previa: Si el WAF decodifica correctamente el tráfico antes de filtrarlo, es muy difícil atacarlo
 
 # ⚠️ ¡¡Con reglas personalizadas, la evasión es más difícil!! ⚠️
+
+> Veamos ahora una lista actualizada de WAFs, ordenados por qué tan fácil o difícil es evadirlos, siempre basándonos en reportes de pentesting real, CTFs y Red Teams:
+
+| **WAF**                    | **DIFICULTAD DE EVASIÓN**       | **EXPLICACIÓN**                                                                                   |
+|----------------------------|----------------------------------|----------------------------------------------------------------------------------------------------|
+| **INCAPSULA (IMPERVA)**    | 🟠 Moderadamente - Difícil       | Tiene protección buena, pero no perfecta                                                          |
+| **AWS WAF (AMAZON)**       | 🟢 Bastante fácil (por defecto)  | Si no está configurado con reglas avanzadas, es más fácil evadirlo                                |
+| **CLOUDFLARE WAF**         | 🔴 Muy difícil                   | Su sistema de *Machine Learning* y normalización es de los mejores                                |
+| **AKAMAI KONA SITE DEFENDER** | 🔴 Muy difícil                   | Sistema de los más potentes, muy difícil de evadir sin tráfico anómalo claro                      |
+| **F5 BIG-IP ASM**          | 🟡 Depende de la configuración   | Muy fuerte si está bien ajustado                                                                  |
+| **MODSECURITY (OPEN-SOURCE)** | 🟢 Fácil - Moderado             | Depende totalmente de las reglas aplicadas (muy flexible)                                         |
+| **BARRACUDA WAF**          | 🟡 Medio                         | Protección relativamente buena, pero con algunas firmas antiguas                                 |
+| **DENYALL WAF**            | 🟢 Bastante fácil                | Sus firmas son más antiguas y actualizaciones lentas                                              |
+| **FORTINET FORTIWEB**      | 🟡 Medio - Difícil               | Si está actualizado, puede ser un buen sistema WAF                                                |
+| **RADWARE APPWALL**        | 🟡 Medio                         | Bastante sólido en *DDoS*, algo más flojo en XSS avanzado                                         |
+
