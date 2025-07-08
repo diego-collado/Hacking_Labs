@@ -7,7 +7,7 @@
 </p>
 
 <h4 align="center">
-:construction: MEGAPROYECTO EN CONTINUA EVOLUCIÓN :construction:
+:construction: <b>MEGAPROYECTO EN CONTINUA EVOLUCIÓN</b> :construction:
 </h4>
 
 
