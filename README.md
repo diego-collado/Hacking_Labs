@@ -1,6 +1,6 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
-
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-en%20constante%20desarrollo-green)
 
 
 <p align="center">
@@ -48,6 +48,5 @@ Ejemplos funcionales de cada tipos de ataque (últimas versiones), orientados a 
 <br>
 <br>
 
-![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20CONSTANTE%20DESAROLLO-green)
 [![forthebadge cc-by](http://ForTheBadge.com/images/badges/cc-by.svg)](https://creativecommons.org/licenses/by/4.0)
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
