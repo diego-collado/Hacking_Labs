@@ -1,4 +1,4 @@
-# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/xss.png" width="10%">	Ataque XSS con evasión de WAFs
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/xss.png" width="8%">	Ataque XSS con evasión de WAFs
 
 
 > [!IMPORTANT]
