@@ -31,7 +31,7 @@ Después de realizar los pasos anteriores, aparecerá la pantalla adjunta
 
 > ### Trabajando con Hound :computer:
 > Al ser un phishing, debemos tener en cuenta muchos factores, aunque el factor principal es la posible detección de nuestra campaña de phishing, por lo que, para evitar posibles detecciones, pulsamos Y en la opción de <b>Cloudflare</b>. 
-Se cargará todos los parámetros necesarios hasta proporcionarnos un enlace: https://cable-expenditures-col-hardware.trycloudflare.com.
+> Se cargará todos los parámetros necesarios hasta proporcionarnos un enlace: https://cable-expenditures-col-hardware.trycloudflare.com.
 
 <p align="center">
 <picture>
@@ -41,7 +41,7 @@ Se cargará todos los parámetros necesarios hasta proporcionarnos un enlace: ht
 </picture>
 </p>
 
-El usuario podría acceder al link, pero lo que realmente mostrará es un simple chat... 
+> El usuario podría acceder al link, pero lo que realmente mostrará es un simple chat... 
 
 <p align="center">
 <picture>
@@ -51,7 +51,7 @@ El usuario podría acceder al link, pero lo que realmente mostrará es un simple
 </picture>
 </p>
 
-Ahora bien, cuando la víctima comience a interactuar con el enlace, en el terminal de nuestro sistema aparecerán los siguientes datos:
+> Ahora bien, cuando la víctima comience a interactuar con el enlace, en el terminal de nuestro sistema aparecerán los siguientes datos:
 
 <p align="center">
 <picture>
