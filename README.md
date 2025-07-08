@@ -24,6 +24,7 @@ Ejemplos funcionales de cada tipos de ataque (últimas versiones), orientados a 
 
 - [Red Team](Red_Team): Diversos tipos de ataque utilizando técnicas y entornos como <b>Framework METASPLOIT</b> y otras herramientas
 - [SQLi](SQLi): Diversos ataques utilizando las técnicas y herramientas de <b>SQLi (SQL Injection)</b>
+- [XSS](XSS): Mitigación de diferentes ataques gracias a reconfiguraciones, updates o software de terceros configurado para evadir cualquier tipo de ataque
 - [Anonimato](Anonimato): Encubriendo nuestras huellas mediante <b>TOR y enrutadores ONION</b>
 - [Vulnerabilidades](Vulnerabilidades): Realización de informes completos de vulnerabilidades (brechas de seguridad, aplicaciones antiguas/sin update...)
 - [Mitigacion](Mitigacion): Mitigación de diferentes ataques gracias a reconfiguraciones, updates o software de terceros configurado para evadir cualquier tipo de ataque
