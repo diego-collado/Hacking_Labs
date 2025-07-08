@@ -60,3 +60,43 @@ Después de realizar los pasos anteriores, aparecerá la pantalla adjunta
   <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/hound4.png" width="50%">
 </picture>
 </p>
+
+> ### Continuando: Instalación Geotracker IP :computer:
+> Accedemos al repositorio de <b>GeoTrackerIP</b>: https://github.com/jric2002/GeoTrackerIP. Posteriormente, clonamos el repositorio en nuestro sistema (carpeta de sistema /OPT). DE nuevo, para realizar estas tareas es más seguro realizarlo con el usuario administrador:
+ 
+```
+git clone https://github.com/jric2002/GeoTrackerIP
+```
+```
+cd GeoTrackerIP
+```
+```
+chmod +x GeoTrackerIP.py
+```
+```
+chmod +x install.py
+```
+```
+python3 install.py
+```
+> Después de realizar los pasos anteriores, nos ponemos "manos a la obra" y arrancamos la aplicación:  
+
+```
+python3 GeoTrackerIP.py 
+```
+
+> De la dirección ip y dominio que nos ha proporcionado Hound, se la copiamos e introducimos a esta nueva aplicación: 
+
+```
+python3 GeoTrackerIP.py -t https://example.com
+```
+
+> Es muy posible que la geolocalización no sea exacta, ya que se depende de la compañía, pero sí proporcionará otra información como sistema operativo y otros tantos datos de interés.
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/geo.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/geo.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/geo.png" width="50%">
+</picture>
+</p>
