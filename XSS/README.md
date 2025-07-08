@@ -30,9 +30,9 @@ Ejemplo: https://ejemplo.com/?q=<script>alert(1)</script>
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="/images/xss1.png">
-  <source media="(prefers-color-scheme: light)" srcset="/images/xss1.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/xss1.png" width="25%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/xss1.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/xss1.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/xss1.png" width="25%">
 </picture>
 </p>
 
