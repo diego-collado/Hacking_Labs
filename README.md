@@ -12,9 +12,8 @@
 </p>
 
 <h4 align="center">
-:construction: <b>MEGAPROYECTO EN CONTINUA EVOLUCIÓN</b> :construction:
+:gear: <b>MEGAPROYECTO EN CONTINUA EVOLUCIÓN</b> :keyboard:
 </h4>
-
 
 # :desktop_computer:	Hacking_Labs 
 
