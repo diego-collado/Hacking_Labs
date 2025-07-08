@@ -77,3 +77,12 @@ Ejemplo: https://ejemplo.com/?q=<script>alert(1)</script>
 | **TIMING / TRÁFICO LENTO**        | Mandar el `payload` en partes (*slowloris-like*)                       | Avanzado, para romper inspecciones en tiempo real            |
 | **PAYLOADS DE COMPORTAMIENTO**    | Hacerlo parecer tráfico válido de navegador/bot                        | `User-Agent` igual a `"GoogleBot"`                           |
 
+> Ahora bien, necesitamos prepararnos antes de atacar y evadir un WAF… Lo más común es seguir los pasos citados a continuación:
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/xss2.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/xss2.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/xss2.png" width="75%">
+</picture>
+</p>
