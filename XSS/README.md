@@ -17,6 +17,11 @@ Ejemplo: https://ejemplo.com/?q=<script>alert(1)</script>
 > Un <b>WAF</b> se pone entre el usuario y el servidor (o API) para inspeccionar el tráfico HTTP/HTTPS y poder detectar y/bloquear bloquear ataques dirigidos contra aplicaciones web. Pero… ¿De qué nos protege realmente un WAF? La respuesta es muy sencilla:
 
 
+Inyecciones SQL (SQLi)		 ✅ Cross-Site Scripting (XSS)
+   ✅ Fuerza bruta		 ✅ File inclusion (RFI/LFI)
+   ✅ Cross-Site Request Forgery (CSRF)	 ✅ Exposición de datos sensibles
+   ✅ Comandos no autorizados (RCE)
+La misión del WAF es proteger las aplicaciones que un firewall tradicional no puede proteger, porque los firewalls de red operan en niveles más bajos (IP/TCP).
 
 
 
