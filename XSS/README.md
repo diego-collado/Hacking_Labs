@@ -64,3 +64,16 @@ Ejemplo: https://ejemplo.com/?q=<script>alert(1)</script>
 | **FORTINET FORTIWEB**      | 🟡 Medio - Difícil               | Si está actualizado, puede ser un buen sistema WAF                                                |
 | **RADWARE APPWALL**        | 🟡 Medio                         | Bastante sólido en *DDoS*, algo más flojo en XSS avanzado                                         |
 
+# :desktop_computer:	Cómo preparar payloads para evadir WAF
+> La clave es modificar e implementar un buen ataque a un WAF, realmente es modificar todo para no lo detecten las reglas normales del WAF, pero el navegador o servidor sigan interpretándolo correctamente. Veamos las principales técnicas que se pueden utilizar para crear un payload de evasión:
+
+| **TÉCNICA DE EVASIÓN**             | **FUNCIONAMIENTO**                                                     | **UN EJEMPLO PRÁCTICO**                                      |
+|-----------------------------------|------------------------------------------------------------------------|--------------------------------------------------------------|
+| **OFUSCACIÓN**                    | Alterar visualmente el ataque                                          | `<svg/onload=alert(1)>` → `<svg/onload=confirm(1)>`          |
+| **CODIFICACIÓN DOBLE O MÚLTIPLE** | Codificar varias veces la carga útil                                   | `%253Cscript%253Ealert(1)%253C/script%253E`                  |
+| **FRAGMENTACIÓN**                 | Partir el `payload` en trozos                                          | `<scr` + `ipt>alert(1)</scr` + `ipt>`                        |
+| **POLIMORFISMO**                  | Cambiar la forma del `payload` sin cambiar su efecto                   | `jaVaScRipt:alert(1)`                                        |
+| **USO DE CARACTERES ESPECIALES**  | Insertar entidades HTML o hexadecimales raras                          | `&#x3C;script&#x3E;alert(1)&#x3C;/script&#x3E;`               |
+| **TIMING / TRÁFICO LENTO**        | Mandar el `payload` en partes (*slowloris-like*)                       | Avanzado, para romper inspecciones en tiempo real            |
+| **PAYLOADS DE COMPORTAMIENTO**    | Hacerlo parecer tráfico válido de navegador/bot                        | `User-Agent` igual a `"GoogleBot"`                           |
+
