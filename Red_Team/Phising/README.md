@@ -8,17 +8,26 @@ Un ataque de <b>ingeniería social</b> es una técnica de manipulación (psicol�
 > Dentro de los ataques de ingeniería social, existen diferentes tipos, los cuales van desde el <b>Phishing</b>	(se reciben correos o mensajes falsos que parecen legítimos y piden hacer clic en enlaces maliciosos), el <b>Vishing</b> (llamadas telefónicas donde el atacante se hace pasar por soporte técnico o personal del banco), el <b>Smishing</b> (se reciben mensajes SMS engañosos con enlaces o instrucciones falsas), el <b>Pretexting</b> (donde el atacante inventa una historia/pretexto para obtener datos, como un falso auditor o reclutador), el <b>Baiting</b> (un clásico que ofrece algo atractivo como descargas gratis, USB olvidado para que la víctima lo use y active malware) o el <b>Tailgating</b>	(en esta caso un atacante entra físicamente a un edificio aprovechando que alguien le abre la puerta sin preguntar).
 
 > ### Primeros pasos: Instalación HOUND :computer:
-> En primer lugar, debemos llegar hasta el repo de Github de <b>Hound</b>: https://github.com/techchipnet/hound
+> En primer lugar, debemos llegar hasta el repo de Github de <b>Hound</b>: https://github.com/techchipnet/hound. Posteriormente, clonamos el repositorio en nuestro sistema (carpeta de sistema /OPT). Para realizar estas tareas es más seguro realizarlo con el usuario administrador:
+
+```
+git clone https://github.com/techchipnet/hound
+```
+```
+cd hound
+```
+```
+bash hound.sh
+```
+Después de realizar los pasos anteriores, aparecerá la pantalla adjunta
 
 
-
- primer concepto, se ha de conocer el <b>modelo TCP/IP</b>, protocolo de red que permite la comunicación a través de Internet (abreviatura de <b>Protocolo de control de transmisión/Protocolo de Internet</b>), el cual es un protocolo estándar y un modelo (en la actualidad) de 4 capas que define cómo se transmiten los datos a través de una red y cómo se comunican los dispositivos. Su origen se da en la década de 1970 gracias al Departamento de Defensa de USA (DOD), ya que se pretendía crear una red que pudiera funcionar incluso si partes de ella resultaran dañadas o destruidas. Posteriormente, el modelo TCP/IP se publicó por primera vez en 1981 (versión 4) y luego se actualizó a la versión 6 en 1995. 
 
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/TCPSyn_1.png">
-  <source media="(prefers-color-scheme: light)" srcset="images/TCPSyn_1.png">
-  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/TCPSyn_1.png" width="50%">
+  <source media="(prefers-color-scheme: dark)" srcset="images/hound.png">
+  <source media="(prefers-color-scheme: light)" srcset="images/hound.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/hound.png" width="50%">
 </picture>
 </p>
 
