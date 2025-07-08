@@ -2,7 +2,6 @@
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-en%20constante%20desarrollo-green)
 
-
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="/images/lab.png">

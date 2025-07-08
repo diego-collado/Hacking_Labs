@@ -23,3 +23,28 @@ Ejemplo: https://ejemplo.com/?q=<script>alert(1)</script>
 | **BASADO EN RED**  | - Se instala físicamente en la red<br> - Súper rápido y potente <br> - Instalado en el perímetro de la red (hardware o máquina virtual) <br> - Protege todo el tráfico (salida) <br> - Ideal para grandes empresas         | ✅ **Ventaja:** Bajísima latencia, control total <br> ❌ **Desventaja:** Costosos y más difícil de escalar                                                                  | F5 BIG-IP ASM, Imperva                       |
 | **BASADO EN NUBE** | - Servicio online, no tienes que instalar nada, solo configurar <br> - No se instala nada físico <br> - Se usan servicios como *Cloudflare, AWS WAF, Akamai, Sucuri* <br> - Funciona como proxy inverso (redirecciona el DNS hacia ellos)          | ✅ **Ventaja:** Fácil de desplegar/mantener, escala automáticamente <br> ❌ **Desventaja:** Dependencia de terceros y configuración de políticas puede ser limitada         | Cloudflare WAF, AWS WAF, Akamai              |
 | **BASADO EN HOST** | - Se instala en el mismo servidor donde corre la aplicación <br> - Instala directamente un software en el servidor (app web) <br> - Protege solo esa máquina específica                                                                         | ✅ **Ventaja:** Mucho control y personalización de reglas <br> ❌ **Desventaja:** Consume recursos del propio servidor (CPU/RAM)                                            | ModSecurity, NAXSI (para Nginx)              |
+
+> Estos WAF suelen utilizar para la detección sistemas como el basado en firmas, el cual reconoce patrones de ataques conocidos, el basado en comportamiento, que detecta tráfico anómalo (por ejemplo, tráfico que rompe patrones normales), o también el basado en aprendizaje automático (los más modernos), que aprenden cómo es el tráfico normal de una aplicación.
+
+> En realidad, ¿dónde tenemos que instalar el WAF? Veamos un pequeño esquema:
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/images/xss1.png">
+  <source media="(prefers-color-scheme: light)" srcset="/images/xss1.png">
+  <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="/images/xss1.png" width="25%">
+</picture>
+</p>
+
+> Ahora nos hacemos esta pregunta: <b>¿Qué hace un WAF moderno para evitar ser evadido?</b> Pues, la respuesta es fácil:
+- Análisis de comportamiento: aprende cómo se ve un tráfico normal y detecta desvíos
+- Normalización de solicitudes: antes de analizarlas, decodifica toda la entrada
+- Machine learning: algunos WAFs como AWS WAF y Cloudflare usan IA para detectar nuevos patrones
+
+> En realidad, son muchos los parámetros que afectan a la facilidad de evasión:
+- 🔥 Configuración: Un WAF mal configurado es fácil de saltar, por muy caro que sea
+- 🔥 Actualización: Si las firmas de ataques no se actualizan, los nuevos exploits pasan
+- 🔥 Uso de Machine Learning: Los WAFs que "aprenden" el tráfico normal son mucho más difíciles de evadir
+- 🔥 Normalización previa: Si el WAF decodifica correctamente el tráfico antes de filtrarlo, es muy difícil atacarlo
+
+> ⚠️ ¡¡Si configuran reglas personalizadas, la evasión es más difícil!! ⚠️
