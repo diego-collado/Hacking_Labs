@@ -1,4 +1,4 @@
-# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/ingsoc.png" width="4%">	Ataque Ingeniería Social utilizando Hound y Geotracker-IP
+# <img alt="Hacking_Labs, más allá de la Ciberseguridad" src="images/xss.png" width="4%">	Ataque XSS
 
 
 > [!IMPORTANT]
